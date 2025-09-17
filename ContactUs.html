@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Dr. Maha El-Hakim</title>
+    <link rel="stylesheet" href="output.css" />
+    <style></style>
+  </head>
+  <body class="font-sans bg-secondary text-darkText">
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 w-full bg-white shadow-md">
+      <nav
+        class="flex items-center justify-between py-5 px-8 md:px-12 max-w-[1200px] mx-auto"
+      >
+        <a
+          href="index.html"
+          class="text-2xl font-bold text-pink-600 transition"
+        >
+          Maha El-Hakim
+        </a>
+        <div class="flex items-center gap-6">
+          <ul class="flex items-center gap-8 text-lg font-medium">
+            <li>
+              <a
+                href="index.html"
+                class="text-gray-800 hover:text-pink-600 transition"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="AboutUs.html"
+                class="text-gray-800 hover:text-pink-600 transition"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="Services.html"
+                class="text-gray-800 hover:text-pink-600 transition"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="Reviews.html"
+                class="text-gray-800 hover:text-pink-600 transition"
+                >Patient Stories</a
+              >
+            </li>
+            <li>
+              <a
+                href="ContactUs.html"
+                class="text-gray-800 hover:text-pink-600 transition"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <a
+          href="Booking.html"
+          class="ml-4 px-5 py-2 bg-pink-600 text-white rounded-full shadow-md hover:bg-pink-700 transition"
+        >
+          Book Appointment
+        </a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="relative w-full h-[50vh] flex items-center justify-center bg-gradient-to-br from-purple-300 via-pink-200 to-yellow-100"
+    >
+      <div class="text-center">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-gray-800">
+          <span id="typed-text"></span><span class="blinking-cursor">|</span>
+        </h1>
+        <p class="text-gray-700 mt-4 text-lg max-w-xl mx-auto">
+          Get in touch with us for appointments, inquiries, or any dental
+          questions.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-16 bg-white">
+      <div class="container mx-auto px-6 max-w-3xl">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12"
+        >
+          Contact <span class="text-pink-600">Us</span>
+        </h2>
+        <form class="space-y-6 bg-gray-100 p-8 rounded-3xl shadow-lg">
+          <div>
+            <label for="name" class="block mb-2 font-medium text-gray-700"
+              >Full Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500"
+            />
+          </div>
+          <div>
+            <label for="email" class="block mb-2 font-medium text-gray-700"
+              >Email Address</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@example.com"
+              class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500"
+            />
+          </div>
+          <div>
+            <label for="phone" class="block mb-2 font-medium text-gray-700"
+              >Phone Number</label
+            >
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+20 123 456 789"
+              class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500"
+            />
+          </div>
+          <div>
+            <label for="message" class="block mb-2 font-medium text-gray-700"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Your message..."
+              class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500"
+            ></textarea>
+          </div>
+          <div class="text-center">
+            <button
+              type="submit"
+              class="px-8 py-3 bg-pink-600 text-white font-bold rounded-full shadow-md hover:bg-pink-700 transition"
+            >
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-6 max-w-7xl grid md:grid-cols-4 gap-10">
+        <div class="space-y-4">
+          <h3 class="text-xl font-bold">Maha El-Hakim</h3>
+          <p>123 Dental Street, Cairo, Egypt</p>
+          <p>Email: example@gmail.com</p>
+          <p>Phone: 123 456 789</p>
+        </div>
+        <div class="space-y-4">
+          <h4 class="font-semibold">Services</h4>
+          <ul class="space-y-2">
+            <li>
+              <a href="services.html" class="hover:text-pink-500 transition"
+                >All Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="index.html#services"
+                class="hover:text-pink-500 transition"
+                >Home Services</a
+              >
+            </li>
+            <li>
+              <a href="about.html" class="hover:text-pink-500 transition"
+                >About</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="space-y-4">
+          <h4 class="font-semibold">Useful Links</h4>
+          <ul class="space-y-2">
+            <li>
+              <a href="index.html#hero" class="hover:text-pink-500 transition"
+                >Homepage</a
+              >
+            </li>
+            <li>
+              <a href="about.html" class="hover:text-pink-500 transition"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="index.html#contact"
+                class="hover:text-pink-500 transition"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="space-y-4">
+          <h4 class="font-semibold">Help & Info</h4>
+          <ul class="space-y-2">
+            <li>
+              <a href="index.html#faq" class="hover:text-pink-500 transition"
+                >FAQ</a
+              >
+            </li>
+            <li>
+              <a
+                href="index.html#contact"
+                class="hover:text-pink-500 transition"
+                >Support</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-12 text-center text-gray-400">
+        &copy; 2025 Dr. Maha El-Hakim. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      const texts = [
+        "Contact Us",
+        "Book Your Appointment",
+        "We Are Here To Help",
+      ];
+      let count = 0;
+      let index = 0;
+      let currentText = "";
+      let letter = "";
+      (function type() {
+        if (count === texts.length) {
+          count = 0;
+        }
+        currentText = texts[count];
+        letter = currentText.slice(0, ++index);
+        document.getElementById("typed-text").textContent = letter;
+        if (letter.length === currentText.length) {
+          count++;
+          index = 0;
+          setTimeout(type, 2000);
+        } else {
+          setTimeout(type, 150);
+        }
+      })();
+    </script>
+  </body>
+</html>
