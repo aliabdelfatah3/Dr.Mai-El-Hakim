@@ -7,63 +7,153 @@
     <link rel="stylesheet" href="output.css" />
   </head>
   <body class="font-sans bg-secondary text-darkText">
-    <!-- Navbar -->
-    <header class="sticky top-0 z-50 w-full bg-white shadow-md">
+    <!-- ✅ Responsive Navbar -->
+    <!-- ✅ Creative & Responsive Navbar -->
+    <header
+      class="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md shadow-sm transition-all duration-500 border-b border-pink-100"
+    >
       <nav
-        class="flex items-center justify-between py-5 px-8 md:px-12 max-w-[1200px] mx-auto"
+        class="flex items-center justify-between py-4 px-6 md:px-12 max-w-[1200px] mx-auto"
       >
+        <!-- Logo -->
         <a
           href="index.html"
-          class="text-2xl font-bold text-pink-600 transition"
+          class="text-2xl md:text-3xl font-extrabold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300"
         >
           Maha El-Hakim
         </a>
-        <div class="flex items-center gap-6">
-          <ul class="flex items-center gap-8 text-lg font-medium">
-            <li>
-              <a
-                href="index.html"
-                class="text-gray-800 hover:text-pink-600 transition"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="AboutUs.html"
-                class="text-gray-800 hover:text-pink-600 transition"
-                >About</a
-              >
-            </li>
-            <li>
-              <a
-                href="Services.html"
-                class="text-gray-800 hover:text-pink-600 transition"
-                >Services</a
-              >
-            </li>
-            <li>
-              <a
-                href="Reviews.html"
-                class="text-gray-800 hover:text-pink-600 transition"
-                >Patient Stories</a
-              >
-            </li>
-            <li>
-              <a
-                href="ContactUs.html"
-                class="text-gray-800 hover:text-pink-600 transition"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </div>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex items-center gap-2 lg:gap-6">
+          <li>
+            <a
+              href="index.html"
+              class="px-4 py-2 text-gray-700 font-medium rounded-full hover:bg-pink-100 hover:text-pink-600 transform hover:-translate-y-1 transition-all duration-300 relative group"
+            >
+              Home
+              <span
+                class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-pink-500 group-hover:w-8 group-hover:left-0 transition-all duration-300"
+              ></span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="AboutUs.html"
+              class="px-4 py-2 text-gray-700 font-medium rounded-full hover:bg-pink-100 hover:text-pink-600 transform hover:-translate-y-1 transition-all duration-300 relative group"
+            >
+              About
+              <span
+                class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-pink-500 group-hover:w-8 group-hover:left-0 transition-all duration-300"
+              ></span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="Services.html"
+              class="px-4 py-2 text-gray-700 font-medium rounded-full hover:bg-pink-100 hover:text-pink-600 transform hover:-translate-y-1 transition-all duration-300 relative group"
+            >
+              Services
+              <span
+                class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-pink-500 group-hover:w-8 group-hover:left-0 transition-all duration-300"
+              ></span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="Reviews.html"
+              class="px-4 py-2 text-gray-700 font-medium rounded-full hover:bg-pink-100 hover:text-pink-600 transform hover:-translate-y-1 transition-all duration-300 relative group"
+            >
+              Patient Stories
+              <span
+                class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-pink-500 group-hover:w-8 group-hover:left-0 transition-all duration-300"
+              ></span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="ContactUs.html"
+              class="px-4 py-2 text-gray-700 font-medium rounded-full hover:bg-pink-100 hover:text-pink-600 transform hover:-translate-y-1 transition-all duration-300 relative group"
+            >
+              Contact
+              <span
+                class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-pink-500 group-hover:w-8 group-hover:left-0 transition-all duration-300"
+              ></span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Desktop CTA Button -->
         <a
           href="Booking.html"
-          class="ml-4 px-5 py-2 bg-pink-600 text-white rounded-full shadow-md hover:bg-pink-700 transition"
+          class="hidden md:inline-block px-6 py-3 bg-gradient-to-r from-pink-600 to-purple-600 text-white font-semibold rounded-full shadow-lg hover:shadow-pink-400/50 hover:scale-105 transform transition-all duration-300 hover:-translate-y-1 relative overflow-hidden group"
+        >
+          <span class="relative z-10">Book Appointment</span>
+          <span
+            class="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          ></span>
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button
+          id="mobile-menu-button"
+          class="md:hidden p-3 rounded-full text-pink-600 hover:bg-pink-100 focus:outline-none focus:ring-2 focus:ring-pink-300 transition-all duration-300 group"
+          aria-label="Toggle menu"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 transition-transform duration-300 group-hover:rotate-90"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            id="menu-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </nav>
+
+      <!-- Mobile Menu Dropdown -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white/95 backdrop-blur-sm border-t border-pink-100 px-6 py-6 space-y-4 animate-fade-in"
+      >
+        <a
+          href="index.html"
+          class="block py-3 px-4 text-lg font-medium text-gray-800 hover:bg-pink-100 hover:text-pink-600 rounded-xl transition-all duration-300 hover:scale-105"
+          >Home</a
+        >
+        <a
+          href="AboutUs.html"
+          class="block py-3 px-4 text-lg font-medium text-gray-800 hover:bg-pink-100 hover:text-pink-600 rounded-xl transition-all duration-300 hover:scale-105"
+          >About</a
+        >
+        <a
+          href="Services.html"
+          class="block py-3 px-4 text-lg font-medium text-gray-800 hover:bg-pink-100 hover:text-pink-600 rounded-xl transition-all duration-300 hover:scale-105"
+          >Services</a
+        >
+        <a
+          href="Reviews.html"
+          class="block py-3 px-4 text-lg font-medium text-gray-800 hover:bg-pink-100 hover:text-pink-600 rounded-xl transition-all duration-300 hover:scale-105"
+          >Patient Stories</a
+        >
+        <a
+          href="ContactUs.html"
+          class="block py-3 px-4 text-lg font-medium text-gray-800 hover:bg-pink-100 hover:text-pink-600 rounded-xl transition-all duration-300 hover:scale-105"
+          >Contact</a
+        >
+        <a
+          href="Booking.html"
+          class="block w-full mt-4 px-6 py-4 bg-gradient-to-r from-pink-600 to-purple-600 text-white text-center font-bold rounded-xl shadow-lg hover:shadow-pink-400/50 hover:scale-105 transform transition-all duration-300"
         >
           Book Appointment
         </a>
-      </nav>
+      </div>
     </header>
 
     <!-- Hero Section -->
@@ -89,56 +179,142 @@
       </div>
     </section>
 
-    <!-- Patient Stories / Videos Section -->
-    <section class="py-16 bg-white">
-      <div class="container mx-auto px-6 max-w-7xl">
+    <!-- ✅ Videos -->
+    <section
+      id="videos"
+      class="relative py-24 bg-gradient-to-tr from-purple-50 via-pink-50 to-indigo-50 overflow-hidden"
+    >
+      <div class="container mx-auto px-6 max-w-7xl relative z-10 text-center">
         <h2
-          class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12"
+          class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent"
         >
-          <span class="text-pink-600">Patient Stories</span>
+          Watch Our Patient Stories
         </h2>
-        <div class="grid md:grid-cols-3 gap-10">
-          <!-- Story 1 -->
-          <div
-            class="bg-gray-100 rounded-3xl p-6 text-center shadow-lg hover:shadow-xl transition"
+        <p class="text-gray-600 mb-12 max-w-2xl mx-auto text-sm sm:text-base">
+          Real transformations. Real smiles. Hear from patients who trusted us
+          with their dental journey.
+        </p>
+
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- Video 1 -->
+          <a
+            href="#"
+            class="group relative rounded-3xl overflow-hidden shadow-2xl hover:shadow-pink-300/50 transition-all duration-500 hover:-translate-y-3 hover:scale-105 block"
           >
-            <video class="w-full h-48 object-cover rounded-xl mb-4" controls>
-              <source src="videos/patient1.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-            <h3 class="text-xl font-bold text-gray-800 mb-2">Sarah A.</h3>
-            <p class="text-gray-700">
-              "Dr. Maha gave me the confidence to smile again. Highly
-              recommended!"
-            </p>
-          </div>
-          <!-- Story 2 -->
-          <div
-            class="bg-gray-100 rounded-3xl p-6 text-center shadow-lg hover:shadow-xl transition"
+            <div class="relative">
+              <img
+                src="images/video1.jpg"
+                alt="Patient Story 1"
+                class="w-full h-64 sm:h-72 object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
+                <div
+                  class="w-12 sm:w-16 h-12 sm:h-16 bg-pink-600 rounded-full flex items-center justify-center animate-pulse"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 sm:h-8 w-5 sm:w-8 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 sm:p-6 bg-white">
+              <h3
+                class="text-lg sm:text-xl font-bold text-gray-800 group-hover:text-pink-600 transition-colors"
+              >
+                Patient Story 1
+              </h3>
+              <p class="text-gray-600 mt-2 text-sm">
+                From pain to perfect smile in 3 months.
+              </p>
+            </div>
+          </a>
+
+          <!-- Video 2 -->
+          <a
+            href="#"
+            class="group relative rounded-3xl overflow-hidden shadow-2xl hover:shadow-purple-300/50 transition-all duration-500 hover:-translate-y-3 hover:scale-105 block"
           >
-            <video class="w-full h-48 object-cover rounded-xl mb-4" controls>
-              <source src="videos/patient2.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-            <h3 class="text-xl font-bold text-gray-800 mb-2">Mohamed H.</h3>
-            <p class="text-gray-700">
-              "Amazing results with braces and aligners. My teeth are perfect
-              now!"
-            </p>
-          </div>
-          <!-- Story 3 -->
-          <div
-            class="bg-gray-100 rounded-3xl p-6 text-center shadow-lg hover:shadow-xl transition"
+            <div class="relative">
+              <img
+                src="images/video2.jpg"
+                alt="Patient Story 2"
+                class="w-full h-64 sm:h-72 object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
+                <div
+                  class="w-12 sm:w-16 h-12 sm:h-16 bg-purple-600 rounded-full flex items-center justify-center animate-pulse"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 sm:h-8 w-5 sm:w-8 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 sm:p-6 bg-white">
+              <h3
+                class="text-lg sm:text-xl font-bold text-gray-800 group-hover:text-purple-600 transition-colors"
+              >
+                Patient Story 2
+              </h3>
+              <p class="text-gray-600 mt-2 text-sm">
+                Implants that feel like real teeth.
+              </p>
+            </div>
+          </a>
+
+          <!-- Video 3 -->
+          <a
+            href="#"
+            class="group relative rounded-3xl overflow-hidden shadow-2xl hover:shadow-indigo-300/50 transition-all duration-500 hover:-translate-y-3 hover:scale-105 block"
           >
-            <video class="w-full h-48 object-cover rounded-xl mb-4" controls>
-              <source src="videos/patient3.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-            <h3 class="text-xl font-bold text-gray-800 mb-2">Laila M.</h3>
-            <p class="text-gray-700">
-              "Professional and caring staff. My smile has never looked better!"
-            </p>
-          </div>
+            <div class="relative">
+              <img
+                src="images/video3.jpg"
+                alt="Patient Story 3"
+                class="w-full h-64 sm:h-72 object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
+                <div
+                  class="w-12 sm:w-16 h-12 sm:h-16 bg-indigo-600 rounded-full flex items-center justify-center animate-pulse"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 sm:h-8 w-5 sm:w-8 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 sm:p-6 bg-white">
+              <h3
+                class="text-lg sm:text-xl font-bold text-gray-800 group-hover:text-indigo-600 transition-colors"
+              >
+                Patient Story 3
+              </h3>
+              <p class="text-gray-600 mt-2 text-sm">
+                Invisible aligners changed my life.
+              </p>
+            </div>
+          </a>
         </div>
       </div>
     </section>
@@ -245,6 +421,47 @@
           setTimeout(type, 150);
         }
       })();
+    </script>
+
+    <!-- ✅ Mobile Menu Toggle Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const menuIcon = document.getElementById("menu-icon");
+
+        if (mobileMenuButton && mobileMenu) {
+          mobileMenuButton.addEventListener("click", () => {
+            const isVisible = !mobileMenu.classList.contains("hidden");
+
+            if (isVisible) {
+              // Close menu
+              mobileMenu.classList.add("hidden");
+              menuIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />`;
+            } else {
+              // Open menu
+              mobileMenu.classList.remove("hidden");
+              mobileMenu.classList.add("animate-fade-in");
+              menuIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />`;
+            }
+          });
+        }
+      });
+    </script>
+
+    <script>
+      window.addEventListener("scroll", () => {
+        const header = document.querySelector("header");
+        if (window.scrollY > 50) {
+          header.classList.add("bg-white/95", "backdrop-blur-md", "shadow-lg");
+        } else {
+          header.classList.remove(
+            "bg-white/95",
+            "backdrop-blur-md",
+            "shadow-lg"
+          );
+        }
+      });
     </script>
   </body>
 </html>
