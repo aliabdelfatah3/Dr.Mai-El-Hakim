@@ -156,68 +156,106 @@
       </div>
     </header>
 
-    <!-- ✅ Hero -->
+    <!-- ✅ Final Hero Section - Floating Card Design (Larger Image + Refined Text) -->
     <section
       id="hero"
-      class="relative w-full h-screen overflow-hidden bg-gradient-to-br from-purple-300 via-pink-200 to-yellow-100 flex items-center justify-center"
+      class="relative w-full h-screen overflow-hidden bg-gradient-to-br from-purple-300 via-pink-200 to-yellow-100"
     >
-      <div
-        class="absolute w-64 h-64 bg-purple-400 rounded-full mix-blend-multiply opacity-20 animate-blob top-20 left-10"
-      ></div>
-      <div
-        class="absolute w-80 h-80 bg-pink-300 rounded-full mix-blend-multiply opacity-20 animate-blob animation-delay-2000 bottom-20 right-20"
-      ></div>
-      <div
-        class="absolute w-48 h-48 bg-yellow-300 rounded-full mix-blend-multiply opacity-25 animate-blob animation-delay-4000 top-1/2 left-1/2"
-      ></div>
+      <!-- Subtle Background Pattern -->
+      <div class="absolute inset-0 opacity-5">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern
+              id="dots"
+              x="0"
+              y="0"
+              width="40"
+              height="40"
+              patternUnits="userSpaceOnUse"
+            >
+              <circle cx="2" cy="2" r="1.5" fill="white" />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#dots)" />
+        </svg>
+      </div>
 
       <div
-        class="relative z-10 flex flex-col md:flex-row items-center gap-10 max-w-6xl mx-auto px-6"
+        class="relative z-10 flex items-center justify-between max-w-7xl mx-auto px-6 h-full"
       >
-        <div class="flex-1 space-y-6 text-center md:text-left">
-          <h1
-            class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-800"
-          >
-            <span class="text-purple-700">Welcome to Our Clinic</span>
-          </h1>
-          <p
-            class="text-gray-700 text-base sm:text-lg mx-auto md:mx-0 max-w-lg"
-          >
-            Personalized dental care, modern treatments, and a smile you'll love
-            to show off.
-          </p>
+        <!-- Floating Card with Text -->
+        <div class="w-full lg:w-1/2 flex items-center">
           <div
-            class="flex flex-wrap gap-4 mt-6 justify-center md:justify-start"
+            class="bg-white/80 backdrop-blur-sm rounded-3xl p-10 lg:p-14 shadow-xl mx-auto lg:ml-0"
           >
-            <div
-              class="p-3 sm:p-4 bg-white rounded-2xl shadow-lg hover:scale-105 transition text-sm sm:text-base"
-            >
-              Free Consultation
-            </div>
-            <div
-              class="p-3 sm:p-4 bg-white rounded-2xl shadow-lg hover:scale-105 transition text-sm sm:text-base"
-            >
-              Smile Makeover
-            </div>
-            <div
-              class="p-3 sm:p-4 bg-white rounded-2xl shadow-lg hover:scale-105 transition text-sm sm:text-base"
-            >
-              Patient Stories
+            <div class="space-y-8 max-w-lg">
+              <h1
+                class="text-4xl md:text-5xl font-bold text-gray-800 leading-tight"
+              >
+                Dr. Maha El-Hakim
+              </h1>
+
+              <p
+                class="text-gray-600 text-lg md:text-xl leading-relaxed font-normal"
+              >
+                Where modern dentistry meets compassionate care. Your journey to
+                a confident, healthy smile begins here.
+              </p>
+
+              <!-- Single Elegant Button -->
+              <div>
+                <a
+                  href="Booking.html"
+                  class="hidden md:inline-block px-6 py-3 bg-gradient-to-r from-pink-600 to-purple-600 text-white font-semibold rounded-full shadow-lg hover:shadow-pink-400/50 hover:scale-105 transform transition-all duration-300 hover:-translate-y-1 relative overflow-hidden group"
+                >
+                  <span class="relative z-10">Book Your Visit</span>
+                  <span
+                    class="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  ></span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="flex-1 relative w-full max-w-md mx-auto md:mx-0">
-          <div
-            class="w-full h-80 sm:h-96 md:h-[500px] rounded-3xl shadow-2xl overflow-hidden animate-float mx-auto"
-          >
-            <img
-              src="images/Maha-ElHakim.png"
-              alt="Dr. Maha El-Hakim"
-              class="w-full h-full object-cover"
-            />
+        <!-- Circular Doctor Image - LARGER -->
+        <div class="lg:block w-1/2 flex justify-center">
+          <div class="relative">
+            <!-- Increased size: w-96 h-96 -->
+            <div
+              class="w-96 h-96 rounded-full bg-white/70 backdrop-blur-sm flex items-center justify-center shadow-2xl p-6"
+            >
+              <img
+                src="images/Maha-ElHakim.png"
+                alt="Dr. Maha El-Hakim"
+                class="w-full h-full object-cover rounded-full"
+              />
+            </div>
+            <!-- Subtle Badge -->
+            <div
+              class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-white px-8 py-3 rounded-full shadow-md"
+            >
+              <span class="text-sm font-medium text-gray-700"
+                >Dental Specialist</span
+              >
+            </div>
           </div>
         </div>
+      </div>
+
+      <!-- Bottom Curve -->
+      <div class="absolute bottom-0 left-0 w-full">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 100"
+          class="w-full h-16 md:h-24"
+        >
+          <path
+            fill="#ffffff"
+            fill-opacity="1"
+            d="M0,64L48,64C96,64,192,64,288,74.7C384,85,480,107,576,106.7C672,107,768,85,864,80C960,75,1056,85,1152,85.3C1248,85,1344,75,1392,69.3L1440,64L1440,100L1392,100C1344,100,1248,100,1152,100C1056,100,960,100,864,100C768,100,672,100,576,100C480,100,384,100,288,100C192,100,96,100,48,100L0,100Z"
+          ></path>
+        </svg>
       </div>
     </section>
 
