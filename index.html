@@ -7,77 +7,72 @@
     <link rel="stylesheet" href="output.css" />
   </head>
 
-  <body class="font-sans bg-secondary text-darkText">
-    <!-- ✅ Creative & Responsive Navbar -->
+  <body class="font-sans min-h-screen text-darkText">
+    <!-- Fixed Background Image -->
+    <div class="fixed inset-0 -z-10">
+      <div
+        class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style="background-image: url('/images/Maha-ElHakim.png')"
+      ></div>
+      <div class="absolute inset-0 bg-black/30"></div>
+    </div>
+
+    <!-- Transparent Header -->
     <header
-      class="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md shadow-sm transition-all duration-500 border-b border-pink-100"
+      class="absolute top-0 w-full z-50 bg-transparent border-b border-white/10"
     >
       <nav
-        class="flex items-center justify-between py-4 px-6 md:px-12 max-w-[1200px] mx-auto"
+        class="flex items-center justify-between py-10 px-6 md:px-12 max-w-[1200px] mx-auto"
       >
         <!-- Logo -->
         <a
           href="index.html"
-          class="text-xl lg:text-2xl xl:text-3xl font-extrabold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300"
+          class="text-xl lg:text-2xl xl:text-3xl font-extrabold hover:scale-105 transition-transform duration-300"
         >
-          Maha El-Hakim
+          <span class="text-white">Maha</span>
+          <span class="text-sky-300">El-Hakim</span>
         </a>
 
         <!-- Desktop Menu -->
-        <ul class="hidden lg:flex items-center gap-2 lg:gap-6">
+        <ul class="hidden lg:flex items-center gap-6">
           <li>
             <a
               href="index.html"
-              class="px-4 py-2 text-gray-700 font-medium rounded-full hover:bg-pink-100 hover:text-pink-600 transform hover:-translate-y-1 transition-all duration-300 relative group"
+              class="menu-link active px-4 py-2 text-white font-medium rounded-full hover:bg-white/10 hover:text-white transform hover:-translate-y-1 transition-all duration-300"
             >
               Home
-              <span
-                class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-pink-500 group-hover:w-8 group-hover:left-0 transition-all duration-300"
-              ></span>
             </a>
           </li>
           <li>
             <a
               href="AboutUs.html"
-              class="px-4 py-2 text-gray-700 font-medium rounded-full hover:bg-pink-100 hover:text-pink-600 transform hover:-translate-y-1 transition-all duration-300 relative group"
+              class="menu-link px-4 py-2 text-white font-medium rounded-full hover:bg-white/10 hover:text-white transform hover:-translate-y-1 transition-all duration-300"
             >
               About
-              <span
-                class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-pink-500 group-hover:w-8 group-hover:left-0 transition-all duration-300"
-              ></span>
             </a>
           </li>
           <li>
             <a
               href="Services.html"
-              class="px-4 py-2 text-gray-700 font-medium rounded-full hover:bg-pink-100 hover:text-pink-600 transform hover:-translate-y-1 transition-all duration-300 relative group"
+              class="menu-link px-4 py-2 text-white font-medium rounded-full hover:bg-white/10 hover:text-white transform hover:-translate-y-1 transition-all duration-300"
             >
               Services
-              <span
-                class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-pink-500 group-hover:w-8 group-hover:left-0 transition-all duration-300"
-              ></span>
             </a>
           </li>
           <li>
             <a
               href="Reviews.html"
-              class="px-4 py-2 text-gray-700 font-medium rounded-full hover:bg-pink-100 hover:text-pink-600 transform hover:-translate-y-1 transition-all duration-300 relative group"
+              class="menu-link px-4 py-2 text-white font-medium rounded-full hover:bg-white/10 hover:text-white transform hover:-translate-y-1 transition-all duration-300"
             >
               Patient Stories
-              <span
-                class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-pink-500 group-hover:w-8 group-hover:left-0 transition-all duration-300"
-              ></span>
             </a>
           </li>
           <li>
             <a
               href="ContactUs.html"
-              class="px-4 py-2 text-gray-700 font-medium rounded-full hover:bg-pink-100 hover:text-pink-600 transform hover:-translate-y-1 transition-all duration-300 relative group"
+              class="menu-link px-4 py-2 text-white font-medium rounded-full hover:bg-white/10 hover:text-white transform hover:-translate-y-1 transition-all duration-300"
             >
               Contact
-              <span
-                class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-pink-500 group-hover:w-8 group-hover:left-0 transition-all duration-300"
-              ></span>
             </a>
           </li>
         </ul>
@@ -85,18 +80,15 @@
         <!-- Desktop CTA Button -->
         <a
           href="Booking.html"
-          class="hidden lg:inline-block px-4 py-2 lg:px-4 lg:py-2 xl:px-6 xl:py-3 text-sm lg:text-sm xl:text-base bg-gradient-to-r from-pink-600 to-purple-600 text-white font-semibold rounded-full shadow-md lg:shadow-md xl:shadow-lg hover:scale-105 transform transition-all duration-300 hover:-translate-y-0.5 relative overflow-hidden group"
+          class="hidden lg:inline-block px-6 py-3 border border-gray-300 text-white font-semibold bg-transparent hover:bg-sky-600 hover:text-white transition-colors duration-300"
         >
-          <span class="relative z-10">Book Appointment</span>
-          <span
-            class="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-          ></span>
+          Book Appointment
         </a>
 
         <!-- Mobile Hamburger Button -->
         <button
           id="mobile-menu-button"
-          class="lg:hidden p-3 rounded-full text-pink-600 hover:bg-pink-100 focus:outline-none focus:ring-2 focus:ring-pink-300 transition-all duration-300 group"
+          class="lg:hidden p-3 rounded-full text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/30 transition-all duration-300 group"
           aria-label="Toggle menu"
         >
           <svg
@@ -120,34 +112,38 @@
       <!-- Mobile Menu Dropdown -->
       <div
         id="mobile-menu"
-        class="hidden lg:hidden bg-white/95 backdrop-blur-sm border-t border-pink-100 px-6 py-6 space-y-4 animate-fade-in"
+        class="hidden lg:hidden bg-black/20 backdrop-blur-sm border-t border-white/10 px-6 py-6 space-y-4 animate-fade-in"
       >
         <a
           href="index.html"
-          class="block py-3 px-4 text-lg font-medium text-gray-800 hover:bg-pink-100 hover:text-pink-600 rounded-xl transition-all duration-300 hover:scale-105"
-          >Home</a
+          class="block py-3 px-4 text-lg font-medium text-white hover:bg-white/10 hover:text-white rounded-xl transition-all duration-300 hover:scale-105"
         >
+          Home
+        </a>
         <a
           href="AboutUs.html"
-          class="block py-3 px-4 text-lg font-medium text-gray-800 hover:bg-pink-100 hover:text-pink-600 rounded-xl transition-all duration-300 hover:scale-105"
-          >About</a
+          class="block py-3 px-4 text-lg font-medium text-white hover:bg-white/10 hover:text-white rounded-xl transition-all duration-300 hover:scale-105"
         >
+          About
+        </a>
         <a
           href="Services.html"
-          class="block py-3 px-4 text-lg font-medium text-gray-800 hover:bg-pink-100 hover:text-pink-600 rounded-xl transition-all duration-300 hover:scale-105"
-          >Services</a
+          class="block py-3 px-4 text-lg font-medium text-white hover:bg-white/10 hover:text-white rounded-xl transition-all duration-300 hover:scale-105"
         >
+          Services
+        </a>
         <a
           href="Reviews.html"
-          class="block py-3 px-4 text-lg font-medium text-gray-800 hover:bg-pink-100 hover:text-pink-600 rounded-xl transition-all duration-300 hover:scale-105"
-          >Patient Stories</a
+          class="block py-3 px-4 text-lg font-medium text-white hover:bg-white/10 hover:text-white rounded-xl transition-all duration-300 hover:scale-105"
         >
+          Patient Stories
+        </a>
         <a
           href="ContactUs.html"
-          class="block py-3 px-4 text-lg font-medium text-gray-800 hover:bg-pink-100 hover:text-pink-600 rounded-xl transition-all duration-300 hover:scale-105"
-          >Contact</a
+          class="block py-3 px-4 text-lg font-medium text-white hover:bg-white/10 hover:text-white rounded-xl transition-all duration-300 hover:scale-105"
         >
-        <!-- Desktop CTA Button -->
+          Contact
+        </a>
         <a
           href="Booking.html"
           class="block w-full mt-4 px-6 py-4 bg-gradient-to-r from-pink-600 to-purple-600 text-white text-center font-bold rounded-xl shadow-lg hover:shadow-pink-400/50 hover:scale-105 transform transition-all duration-300"
@@ -157,203 +153,220 @@
       </div>
     </header>
 
-    <!-- ✅ Hero Section with Auto-Slider (Compact & Full) -->
+    <!-- Hero Section -->
     <section
-      id="hero"
-      class="relative w-full min-h-[60vh] flex items-center justify-center bg-gradient-to-br from-purple-300 via-pink-200 to-yellow-100 py-8 lg:py-16 overflow-hidden"
+      class="flex flex-col w-full justify-between px-6 overflow-x-hidden pt-24"
+      style="min-height: 125vh"
     >
-      <!-- Subtle Background Pattern -->
-      <div class="absolute inset-0 opacity-5">
-        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <pattern
-              id="dots"
-              x="0"
-              y="0"
-              width="40"
-              height="40"
-              patternUnits="userSpaceOnUse"
+      <!-- Hero Content Container -->
+      <div
+        class="w-full flex-1 flex items-center justify-end pr-6 md:pr-12 lg:pr-24"
+      >
+        <!-- ✅ ده اللي بيحدد المحاذاة -->
+        <!-- Hero Content - لصق اليمين -->
+        <div class="hero-content max-w-lg lg:max-w-xl">
+          <!-- ✅ padding right + عرض محدود -->
+          <div class="text-right">
+            <!-- ✅ نص محاذاة لليمين -->
+            <h1
+              class="text-5xl md:text-6xl font-bold text-left text-white mb-6 opacity-95"
             >
-              <circle cx="2" cy="2" r="1.5" fill="white" />
-            </pattern>
-          </defs>
-          <rect width="100%" height="100%" fill="url(#dots)" />
-        </svg>
-      </div>
-
-      <!-- Main Container -->
-      <div class="relative z-10 flex items-center px-4 sm:px-6">
-        <div
-          class="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 max-w-7xl mx-auto w-full"
-        >
-          <!-- Floating Card with Slider -->
-          <div class="w-full lg:w-1/2 flex justify-center lg:justify-start">
+              Dr. Maha El-Hakim
+            </h1>
+            <p
+              class="text-xl md:text-xl text-left text-white/80 leading-relaxed"
+            >
+              An expert in dentistry and oral treatment, with years of
+              experience in providing comprehensive care for smiles and dental
+              health, helping patients maintain healthy and beautiful teeth with
+              confidence.
+            </p>
             <div
-              class="bg-white/80 backdrop-blur-sm rounded-3xl p-6 sm:p-8 lg:p-10 shadow-xl w-full max-w-lg lg:max-w-none"
+              class="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 mt-8 mx-auto w-fit"
             >
-              <!-- Slider Wrapper -->
-              <div id="hero-slider" class="space-y-4 sm:space-y-6">
-                <!-- Slide 1: Doctor Intro -->
-                <div class="slide active">
-                  <h1
-                    class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 leading-tight"
-                  >
-                    Dr. Maha El-Hakim
-                  </h1>
-                  <p
-                    class="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed font-normal mt-3"
-                  >
-                    Where modern dentistry meets compassionate care. Your
-                    journey to a confident, healthy smile begins here.
-                  </p>
-                </div>
-
-                <!-- Slide 2: Patient Quote -->
-                <div class="slide hidden">
-                  <h1
-                    class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 leading-tight"
-                  >
-                    Happy Patient ❤️
-                  </h1>
-                  <p
-                    class="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed font-normal mt-3 italic"
-                  >
-                    “After years of hiding my smile, Dr. Maha gave me the
-                    confidence to laugh out loud again. Thank you!”
-                    <br />
-                    <span class="not-italic font-medium">— Nada R., Giza</span>
-                  </p>
-                </div>
-
-                <!-- Slide 3: Clinic Award -->
-                <div class="slide hidden">
-                  <h1
-                    class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 leading-tight"
-                  >
-                    Excellence in Care 🏆
-                  </h1>
-                  <p
-                    class="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed font-normal mt-3"
-                  >
-                    Voted “Most Patient-Friendly Clinic 2025” by Cairo Dental
-                    Association. Your comfort is our priority.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Slider Dots -->
-              <div class="flex justify-center lg:justify-start space-x-2 mt-6">
-                <button
-                  class="w-2.5 h-2.5 rounded-full bg-pink-500 slider-dot active"
-                  data-slide="0"
-                ></button>
-                <button
-                  class="w-2.5 h-2.5 rounded-full bg-gray-300 slider-dot"
-                  data-slide="1"
-                ></button>
-                <button
-                  class="w-2.5 h-2.5 rounded-full bg-gray-300 slider-dot"
-                  data-slide="2"
-                ></button>
-              </div>
-
-              <!-- Single Elegant Button -->
-              <div class="flex justify-center lg:justify-start pt-6">
-                <a
-                  href="Booking.html"
-                  class="hidden lg:inline-block px-5 py-2 bg-gradient-to-r from-pink-600 to-purple-600 text-white text-sm font-medium rounded-full shadow-md hover:shadow-pink-400/50 hover:scale-105 transform transition-all duration-300 hover:-translate-y-0.5 relative overflow-hidden group"
-                >
-                  <span class="relative z-10">Book Your Visit</span>
-                  <span
-                    class="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                  ></span>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Circular Doctor Image -->
-          <div class="w-full lg:w-1/2 flex justify-center">
-            <div class="relative">
-              <div
-                class="w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full bg-white/70 backdrop-blur-sm flex items-center justify-center shadow-xl p-3 sm:p-5"
+              <!-- Button 1 -->
+              <a
+                href="Services.html"
+                class="px-6 py-3 border border-gray-500 shadow-lg text-gray-300 font-semibold bg-transparent hover:bg-white hover:text-gray-700 transition-colors duration-300 text-center"
               >
-                <img
-                  src="images/Maha-ElHakim.png"
-                  alt="Dr. Maha El-Hakim"
-                  class="w-full h-full object-cover rounded-full"
-                />
-              </div>
-              <div
-                class="absolute text-center -bottom-5 sm:-bottom-6 left-1/2 transform -translate-x-1/2 bg-white px-3 sm:px-6 py-1.5 sm:py-2 rounded-full shadow-md"
+                Discover Our Services
+              </a>
+              <!-- Button 2 -->
+              <a
+                href="Booking.html"
+                class="px-6 py-3 border border-gray-400 shadow-lg text-white font-semibold bg-sky-600 hover:bg-sky-800 transition-colors duration-300 text-center"
               >
-                <span class="text-xs font-medium text-gray-700"
-                  >Dental Specialist</span
-                >
-              </div>
+                Book An Appointment
+              </a>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Bottom Curve -->
-      <div class="absolute bottom-0 left-0 w-full">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1440 100"
-          class="w-full h-10 sm:h-12"
+      <!-- Cards Section -->
+      <div class="w-full flex justify-center px-4 lg:px-6">
+        <div
+          class="flex flex-col lg:flex-row gap-0 mb-10 justify-center lg:justify-end items-center"
         >
-          <path
-            fill="#ffffff"
-            fill-opacity="1"
-            d="M0,64L48,64C96,64,192,64,288,74.7C384,85,480,107,576,106.7C672,107,768,85,864,80C960,75,1056,85,1152,85.3C1248,85,1344,75,1392,69.3L1440,64L1440,100L1392,100C1344,100,1248,100,1152,100C1056,100,960,100,864,100C768,100,672,100,576,100C480,100,384,100,288,100C192,100,96,100,48,100L0,100Z"
-          ></path>
-        </svg>
+          <!-- Working Hours Card -->
+          <a
+            href="ContactUs.html"
+            class="card-hover-effect block bg-black/30 backdrop-blur-md border-r border-white/20 p-8 group relative w-full lg:w-auto"
+          >
+            <div class="flex justify-between items-start mb-8">
+              <div class="text-left">
+                <h3 class="text-2xl font-bold text-white mb-2">
+                  Working Hours
+                </h3>
+                <div class="heading-underline"></div>
+              </div>
+              <div class="arrow-animate bg-gray-600/70 rounded-full p-3">
+                <svg
+                  class="w-6 h-6 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="flex items-center text-left">
+              <div class="mr-4">
+                <svg
+                  class="w-12 h-12 text-cyan-400"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  ></circle>
+                  <polyline
+                    points="12,6 12,12 16,14"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    fill="none"
+                  ></polyline>
+                </svg>
+              </div>
+              <div>
+                <p class="text-white font-semibold text-sm mb-1">MON - SAT</p>
+                <p class="text-white text-xl font-bold">9Am - 8Pm</p>
+              </div>
+            </div>
+          </a>
+
+          <!-- Book Appointment Card -->
+          <a
+            href="Booking.html"
+            class="card-hover-effect block bg-black/30 backdrop-blur-md border-r border-white/20 p-8 group relative w-full lg:w-auto"
+          >
+            <div class="flex justify-between items-start mb-8">
+              <div class="text-left">
+                <h3 class="text-2xl font-bold text-white mb-2">
+                  Book an Appointment
+                </h3>
+                <div class="heading-underline"></div>
+              </div>
+              <div class="arrow-animate bg-gray-600/70 rounded-full p-3">
+                <svg
+                  class="w-6 h-6 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="flex items-center text-left">
+              <div class="mr-4">
+                <svg
+                  class="w-12 h-12 text-cyan-400"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <p class="text-white font-semibold text-sm mb-1">
+                  SCHEDULE NOW
+                </p>
+                <p class="text-white text-xl font-bold">Quick & Easy</p>
+              </div>
+            </div>
+          </a>
+
+          <!-- Contact Us Card -->
+          <a
+            href="ContactUs.html"
+            class="card-hover-effect block bg-black/30 backdrop-blur-md p-8 group relative w-full lg:w-auto"
+          >
+            <div class="flex justify-between items-start mb-8">
+              <div class="text-left">
+                <h3 class="text-2xl font-bold text-white mb-2">Contact Us</h3>
+                <div class="heading-underline"></div>
+              </div>
+              <div class="arrow-animate bg-gray-600/70 rounded-full p-3">
+                <svg
+                  class="w-6 h-6 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="flex items-center text-left">
+              <div class="mr-4">
+                <svg
+                  class="w-12 h-12 text-cyan-400"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <p class="text-white font-semibold text-sm mb-1">
+                  GET IN TOUCH
+                </p>
+                <p class="text-white text-xl font-bold">24/7 Support</p>
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
 
-    <!-- ✅ Slider JavaScript -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const slides = document.querySelectorAll(".slide");
-        const dots = document.querySelectorAll(".slider-dot");
-        let currentSlide = 0;
-
-        function showSlide(index) {
-          slides.forEach((slide, i) => {
-            slide.classList.toggle("hidden", i !== index);
-            slide.classList.toggle("active", i === index);
-          });
-
-          dots.forEach((dot, i) => {
-            dot.classList.toggle("bg-pink-500", i === index);
-            dot.classList.toggle("bg-gray-300", i !== index);
-          });
-        }
-
-        function nextSlide() {
-          currentSlide = (currentSlide + 1) % slides.length;
-          showSlide(currentSlide);
-        }
-
-        // Auto-slide every 5 seconds
-        setInterval(nextSlide, 5000);
-
-        // Click dots to change slide
-        dots.forEach((dot) => {
-          dot.addEventListener("click", () => {
-            currentSlide = parseInt(dot.getAttribute("data-slide"));
-            showSlide(currentSlide);
-          });
-        });
-      });
-    </script>
-
     <!-- ✅ About -->
-    <section
-      id="about"
-      class="relative py-24 bg-gradient-to-r from-purple-50 via-pink-50 to-yellow-50 overflow-hidden"
-    >
+    <section id="about" class="relative py-40 dental-gradient overflow-hidden">
       <div
         class="absolute top-0 -left-16 w-72 h-72 bg-pink-200 rounded-full blur-3xl opacity-40 animate-blob"
       ></div>
@@ -369,23 +382,39 @@
       >
         <div class="space-y-6 animate-fade-in-left text-center md:text-left">
           <h2
-            class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-800"
+            class="text-3xl flex sm:text-4xl md:text-5xl font-extrabold text-gray-800"
           >
-            Meet
+            Meet &nbsp;
             <span
-              class="text-pink-600 relative before:absolute before:-bottom-2 before:left-0 before:w-full before:h-1 before:bg-pink-300 before:animate-pulse-underline"
+              class="relative before:absolute before:-bottom-2 before:left-0 before:w-full before:h-1 before:bg-pink-300 before:animate-pulse-underline"
             >
-              Dr. Maha El-Hakim
+              <span class="text-black">Dr. Maha</span>
+              <span class="text-sky-300">El-Hakim</span>
             </span>
           </h2>
+
+          <h3 class="mt-2 text-4xl font-bold text-gray-600">
+            Consultant Dentist
+          </h3>
+
           <p class="text-gray-700 leading-relaxed text-base sm:text-lg">
-            Dr. Maha El-Hakim is a highly skilled dentist with years of
-            experience providing advanced dental treatments in a caring and
-            relaxed environment.
+            Dr. Maha El-Hakim, a highly experienced consultant in dentistry and
+            oral health, is dedicated to providing advanced dental care using
+            the latest global techniques and technologies. With over 15 years of
+            expertise in cosmetic and restorative dentistry, she combines
+            precision and artistry to create healthy, beautiful smiles while
+            preserving the natural look and comfort of every patient.
           </p>
+          <!-- <a
+            href="ContactUs.html"
+            class="inline-block md:inline-block px-6 sm:px-8 py-3 text-white bg-sky-300 rounded-full shadow-lg hover:bg-white hover:text-black transform hover:scale-105 transition duration-500 mt-4"
+          >
+            Learn More
+          </a> -->
+
           <a
-            href="#contact"
-            class="inline-block md:inline-block px-6 sm:px-8 py-3 text-white bg-pink-600 rounded-full shadow-lg hover:bg-pink-700 transform hover:scale-105 transition duration-500 mt-4"
+            href="ContactUs.html"
+            class="inline-block px-6 py-3 border border-gray-400 shadow-lg text-black font-semibold bg-transparent hover:bg-sky-600 hover:text-white transition-colors duration-300"
           >
             Learn More
           </a>
@@ -402,457 +431,737 @@
       </div>
     </section>
 
-    <!-- ✅ Services -->
-    <section
-      id="services"
-      class="relative py-24 bg-gradient-to-br from-blue-50 via-teal-50 to-purple-50 overflow-hidden"
-    >
-      <div class="absolute inset-0 bg-white opacity-20"></div>
-      <div class="container mx-auto px-6 max-w-7xl relative z-10 text-center">
-        <h2
-          class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
-        >
-          Our Top Services
-        </h2>
-        <p class="text-gray-600 mb-12 max-w-2xl mx-auto text-sm sm:text-base">
-          Explore our most popular treatments designed for comfort, aesthetics,
-          and lasting results.
-        </p>
+    <!-- Services Section -->
+    <section id="services" class="relative py-40 bg-white overflow-hidden">
+      <div class="container mx-auto px-6 max-w-7xl">
+        <!-- Header -->
+        <div class="text-center mb-16">
+          <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
+            Our High-Quality Services
+          </h2>
+          <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+            We offer a comprehensive range of dental care services using the
+            latest technologies and the highest quality standards.
+          </p>
+        </div>
 
-        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          <!-- Service 1 -->
+        <!-- ✅ Flex Container - 6 in one row -->
+        <div class="flex flex-wrap justify-center gap-8">
+          <!-- General Dentistry -->
           <div
-            class="group relative bg-white/70 backdrop-blur-sm p-6 sm:p-8 rounded-3xl shadow-2xl hover:shadow-pink-300/50 border border-transparent hover:border-pink-300 transition-all duration-500 hover:-translate-y-3 hover:scale-105 hover:bg-white cursor-pointer overflow-hidden"
+            class="service-card w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-4"
           >
             <div
-              class="absolute inset-0 bg-gradient-to-br from-pink-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-            ></div>
-            <div class="relative z-10">
-              <div
-                class="w-14 sm:w-16 h-14 sm:h-16 bg-gradient-to-r from-pink-500 to-purple-500 rounded-2xl flex items-center justify-center mb-4 sm:mb-6 mx-auto"
-              >
+              class="bg-white  transition-all duration-300 p-6 h-full flex flex-col items-center text-center"
+            >
+              <div class="service-icon mb-4">
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 sm:h-8 w-6 sm:w-8 text-white"
+                  class="icon-image w-20 h-20"
+                  viewBox="0 0 100 100"
                   fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                  <!-- Clipboard with tooth -->
+                  <rect
+                    x="20"
+                    y="15"
+                    width="50"
+                    height="65"
+                    rx="4"
+                    fill="#fbbf24"
+                    stroke="#f59e0b"
                     stroke-width="2"
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                  <rect
+                    x="25"
+                    y="20"
+                    width="40"
+                    height="5"
+                    rx="2"
+                    fill="#60a5fa"
+                  />
+                  <rect
+                    x="30"
+                    y="30"
+                    width="30"
+                    height="3"
+                    rx="1"
+                    fill="#9ca3af"
+                  />
+                  <rect
+                    x="30"
+                    y="36"
+                    width="25"
+                    height="3"
+                    rx="1"
+                    fill="#9ca3af"
+                  />
+                  <rect
+                    x="30"
+                    y="42"
+                    width="20"
+                    height="3"
+                    rx="1"
+                    fill="#9ca3af"
+                  />
+                  <!-- Tooth icon -->
+                  <path
+                    d="M40 50 C35 50, 35 55, 35 60 C35 65, 40 70, 45 70 C50 70, 55 65, 55 60 C55 55, 55 50, 50 50 C47 48, 43 48, 40 50"
+                    fill="#60a5fa"
+                  />
+                  <circle cx="42" cy="55" r="1" fill="white" />
+                  <circle cx="48" cy="55" r="1" fill="white" />
+                </svg>
+              </div>
+              <h3 class="service-title text-xl font-bold text-gray-800 mb-2">
+                General Dentistry
+              </h3>
+            </div>
+          </div>
+
+          <!-- Dental Surgery -->
+          <div
+            class="service-card w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-4"
+          >
+            <div
+              class="bg-white  transition-all duration-300 p-6 h-full flex flex-col items-center text-center"
+            >
+              <div class="service-icon mb-4">
+                <svg
+                  class="icon-image w-20 h-20"
+                  viewBox="0 0 100 100"
+                  fill="none"
+                >
+                  <!-- Dental chair -->
+                  <rect
+                    x="25"
+                    y="45"
+                    width="35"
+                    height="25"
+                    rx="8"
+                    fill="#22d3ee"
+                  />
+                  <rect
+                    x="20"
+                    y="65"
+                    width="45"
+                    height="8"
+                    rx="4"
+                    fill="#0891b2"
+                  />
+                  <circle cx="35" cy="75" r="3" fill="#374151" />
+                  <circle cx="55" cy="75" r="3" fill="#374151" />
+                  <!-- Dental light -->
+                  <circle cx="65" cy="30" r="8" fill="#fbbf24" />
+                  <rect x="60" y="35" width="3" height="15" fill="#374151" />
+                  <rect x="67" y="35" width="3" height="15" fill="#374151" />
+                </svg>
+              </div>
+              <h3 class="service-title text-xl font-bold text-gray-800 mb-2">
+                Dental Surgery
+              </h3>
+            </div>
+          </div>
+
+          <!-- Tooth Decay -->
+          <div
+            class="service-card w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-4"
+          >
+            <div
+              class="bg-white  transition-all duration-300 p-6 h-full flex flex-col items-center text-center"
+            >
+              <div class="service-icon mb-4">
+                <svg
+                  class="icon-image w-20 h-20"
+                  viewBox="0 0 100 100"
+                  fill="none"
+                >
+                  <!-- Tooth with decay -->
+                  <path
+                    d="M50 20 C40 20, 30 25, 30 35 C30 45, 35 60, 45 75 C47 78, 53 78, 55 75 C65 60, 70 45, 70 35 C70 25, 60 20, 50 20"
+                    fill="#f3f4f6"
+                    stroke="#6b7280"
+                    stroke-width="2"
+                  />
+                  <!-- Decay spots -->
+                  <circle cx="45" cy="35" r="3" fill="#fbbf24" />
+                  <circle cx="55" cy="40" r="2" fill="#fbbf24" />
+                  <!-- Drill tool -->
+                  <rect x="75" y="25" width="2" height="20" fill="#374151" />
+                  <circle cx="76" cy="22" r="3" fill="#60a5fa" />
+                  <path d="M74 45 L78 45 L80 50 L72 50 Z" fill="#9ca3af" />
+                </svg>
+              </div>
+              <h3 class="service-title text-xl font-bold text-gray-800 mb-2">
+                Tooth Decay
+              </h3>
+            </div>
+          </div>
+
+          <!-- Teeth Whitening -->
+          <div
+            class="service-card w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-4"
+          >
+            <div
+              class="bg-white transition-all duration-300 p-6 h-full flex flex-col items-center text-center"
+            >
+              <div class="service-icon mb-4">
+                <svg
+                  class="icon-image w-20 h-20"
+                  viewBox="0 0 100 100"
+                  fill="none"
+                >
+                  <!-- Sparkling tooth -->
+                  <path
+                    d="M50 20 C40 20, 30 25, 30 35 C30 45, 35 60, 45 75 C47 78, 53 78, 55 75 C65 60, 70 45, 70 35 C70 25, 60 20, 50 20"
+                    fill="#ffffff"
+                    stroke="#22d3ee"
+                    stroke-width="3"
+                  />
+                  <!-- Sparkles -->
+                  <path
+                    d="M25 30 L27 35 L32 33 L27 37 L25 42 L23 37 L18 33 L23 35 Z"
+                    fill="#fbbf24"
+                  />
+                  <path
+                    d="M75 45 L77 50 L82 48 L77 52 L75 57 L73 52 L68 48 L73 50 Z"
+                    fill="#fbbf24"
+                  />
+                  <circle cx="40" cy="15" r="2" fill="#fbbf24" />
+                  <circle cx="60" cy="65" r="2" fill="#fbbf24" />
+                  <!-- Shine effect -->
+                  <path
+                    d="M42 25 Q45 30, 42 35"
+                    stroke="#e5e7eb"
+                    stroke-width="2"
+                    fill="none"
                   />
                 </svg>
               </div>
-              <h3
-                class="text-lg sm:text-xl font-bold mb-2 sm:mb-3 bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent group-hover:from-pink-500 group-hover:to-purple-500 transition-all"
-              >
+              <h3 class="service-title text-xl font-bold text-gray-800 mb-2">
                 Teeth Whitening
               </h3>
-              <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
-                Get a brighter, more confident smile in just one visit with our
-                advanced whitening technology.
-              </p>
             </div>
           </div>
 
-          <!-- Service 2 -->
+          <!-- Teeth Braces -->
           <div
-            class="group relative bg-white/70 backdrop-blur-sm p-6 sm:p-8 rounded-3xl shadow-2xl hover:shadow-teal-300/50 border border-transparent hover:border-teal-300 transition-all duration-500 hover:-translate-y-3 hover:scale-105 hover:bg-white cursor-pointer overflow-hidden"
+            class="service-card w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-4"
           >
             <div
-              class="absolute inset-0 bg-gradient-to-br from-teal-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-            ></div>
-            <div class="relative z-10">
-              <div
-                class="w-14 sm:w-16 h-14 sm:h-16 bg-gradient-to-r from-teal-500 to-blue-500 rounded-2xl flex items-center justify-center mb-4 sm:mb-6 mx-auto"
-              >
+              class="bg-white  transition-all duration-300 p-6 h-full flex flex-col items-center text-center"
+            >
+              <div class="service-icon mb-4">
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 sm:h-8 w-6 sm:w-8 text-white"
+                  class="icon-image w-20 h-20"
+                  viewBox="0 0 100 100"
                   fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
                 >
+                  <!-- Tooth with braces -->
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    d="M50 25 C40 25, 35 30, 35 40 C35 50, 40 65, 45 75 C47 78, 53 78, 55 75 C60 65, 65 50, 65 40 C65 30, 60 25, 50 25"
+                    fill="#fca5a5"
+                    stroke="#ef4444"
                     stroke-width="2"
-                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                  />
+                  <!-- Braces -->
+                  <rect
+                    x="42"
+                    y="35"
+                    width="4"
+                    height="4"
+                    rx="1"
+                    fill="#60a5fa"
+                  />
+                  <rect
+                    x="54"
+                    y="35"
+                    width="4"
+                    height="4"
+                    rx="1"
+                    fill="#60a5fa"
+                  />
+                  <rect
+                    x="42"
+                    y="45"
+                    width="4"
+                    height="4"
+                    rx="1"
+                    fill="#60a5fa"
+                  />
+                  <rect
+                    x="54"
+                    y="45"
+                    width="4"
+                    height="4"
+                    rx="1"
+                    fill="#60a5fa"
+                  />
+                  <!-- Wire -->
+                  <path
+                    d="M44 37 Q50 35, 56 37"
+                    stroke="#9ca3af"
+                    stroke-width="1"
+                    fill="none"
+                  />
+                  <path
+                    d="M44 47 Q50 45, 56 47"
+                    stroke="#9ca3af"
+                    stroke-width="1"
+                    fill="none"
                   />
                 </svg>
               </div>
-              <h3
-                class="text-lg sm:text-xl font-bold mb-2 sm:mb-3 bg-gradient-to-r from-teal-600 to-blue-600 bg-clip-text text-transparent group-hover:from-teal-500 group-hover:to-blue-500 transition-all"
-              >
-                Dental Implants
+              <h3 class="service-title text-xl font-bold text-gray-800 mb-2">
+                Teeth Braces
               </h3>
-              <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
-                Permanent, natural-looking solutions to replace missing teeth
-                and restore your full smile.
-              </p>
             </div>
           </div>
 
-          <!-- Service 3 -->
+          <!-- Cosmetic Dentistry -->
           <div
-            class="group relative bg-white/70 backdrop-blur-sm p-6 sm:p-8 rounded-3xl shadow-2xl hover:shadow-green-300/50 border border-transparent hover:border-green-300 transition-all duration-500 hover:-translate-y-3 hover:scale-105 hover:bg-white cursor-pointer overflow-hidden"
+            class="service-card w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-4"
           >
             <div
-              class="absolute inset-0 bg-gradient-to-br from-green-500/10 to-teal-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-            ></div>
-            <div class="relative z-10">
-              <div
-                class="w-14 sm:w-16 h-14 sm:h-16 bg-gradient-to-r from-green-500 to-teal-500 rounded-2xl flex items-center justify-center mb-4 sm:mb-6 mx-auto"
-              >
+              class="bg-white  transition-all duration-300 p-6 h-full flex flex-col items-center text-center"
+            >
+              <div class="service-icon mb-4">
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 sm:h-8 w-6 sm:w-8 text-white"
+                  class="icon-image w-20 h-20"
+                  viewBox="0 0 100 100"
                   fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  <!-- Dental prosthetics -->
+                  <ellipse cx="50" cy="45" rx="25" ry="15" fill="#fca5a5" />
+                  <!-- Upper teeth -->
+                  <rect
+                    x="30"
+                    y="35"
+                    width="4"
+                    height="8"
+                    rx="2"
+                    fill="#ffffff"
+                  />
+                  <rect
+                    x="36"
+                    y="33"
+                    width="4"
+                    height="10"
+                    rx="2"
+                    fill="#ffffff"
+                  />
+                  <rect
+                    x="42"
+                    y="32"
+                    width="4"
+                    height="11"
+                    rx="2"
+                    fill="#ffffff"
+                  />
+                  <rect
+                    x="48"
+                    y="31"
+                    width="4"
+                    height="12"
+                    rx="2"
+                    fill="#ffffff"
+                  />
+                  <rect
+                    x="54"
+                    y="32"
+                    width="4"
+                    height="11"
+                    rx="2"
+                    fill="#ffffff"
+                  />
+                  <rect
+                    x="60"
+                    y="33"
+                    width="4"
+                    height="10"
+                    rx="2"
+                    fill="#ffffff"
+                  />
+                  <rect
+                    x="66"
+                    y="35"
+                    width="4"
+                    height="8"
+                    rx="2"
+                    fill="#ffffff"
+                  />
+                  <!-- Lower teeth -->
+                  <rect
+                    x="30"
+                    y="50"
+                    width="4"
+                    height="8"
+                    rx="2"
+                    fill="#ffffff"
+                  />
+                  <rect
+                    x="36"
+                    y="48"
+                    width="4"
+                    height="10"
+                    rx="2"
+                    fill="#ffffff"
+                  />
+                  <rect
+                    x="42"
+                    y="47"
+                    width="4"
+                    height="11"
+                    rx="2"
+                    fill="#ffffff"
+                  />
+                  <rect
+                    x="48"
+                    y="46"
+                    width="4"
+                    height="12"
+                    rx="2"
+                    fill="#ffffff"
+                  />
+                  <rect
+                    x="54"
+                    y="47"
+                    width="4"
+                    height="11"
+                    rx="2"
+                    fill="#ffffff"
+                  />
+                  <rect
+                    x="60"
+                    y="48"
+                    width="4"
+                    height="10"
+                    rx="2"
+                    fill="#ffffff"
+                  />
+                  <rect
+                    x="66"
+                    y="50"
+                    width="4"
+                    height="8"
+                    rx="2"
+                    fill="#ffffff"
                   />
                 </svg>
               </div>
-              <h3
-                class="text-lg sm:text-xl font-bold mb-2 sm:mb-3 bg-gradient-to-r from-green-600 to-teal-600 bg-clip-text text-transparent group-hover:from-green-500 group-hover:to-teal-500 transition-all"
-              >
-                Braces & Aligners
+              <h3 class="service-title text-xl font-bold text-gray-800 mb-2">
+                Cosmetic Dentistry
               </h3>
-              <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
-                Straighten your teeth comfortably and discreetly with modern
-                orthodontic solutions.
+            </div>
+          </div>
+        </div>
+        <!-- ✅ Flex Container End -->
+      </div>
+    </section>
+
+    <!-- Before & After Gallery Section -->
+    <section
+      class="relative py-40 bg-gradient-to-br from-gray-50 via-pink-50 to-purple-50 overflow-hidden"
+    >
+      <div class="container mx-auto px-6 max-w-7xl relative z-10">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <!-- Before/After Images -->
+          <div class="space-y-8">
+            <!-- Before/After Comparison 1 -->
+            <div
+              class="group relative bg-white rounded-3xl shadow-2xl overflow-hidden hover:shadow-purple-300/30 transition-all duration-500 before-after-container"
+              data-slider="1"
+            >
+              <!-- Before Image -->
+              <img
+                src="images/before1.jpg"
+                alt="Before Treatment"
+                class="w-full h-80 object-cover"
+              />
+
+              <!-- After Image -->
+              <div class="after-image">
+                <img
+                  src="images/after1.jpg"
+                  alt="After Treatment"
+                  class="w-full h-80 object-cover"
+                />
+              </div>
+
+              <!-- Vertical Line -->
+              <div class="slider-line"></div>
+
+              <!-- Labels -->
+              <div
+                class="absolute top-4 left-4 bg-gray-800/80 text-white px-3 py-1 rounded-full text-sm font-medium z-10"
+              >
+                BEFORE
+              </div>
+              <div
+                class="absolute top-4 right-4 bg-sky-500/90 text-white px-3 py-1 rounded-full text-sm font-medium z-10"
+              >
+                AFTER
+              </div>
+
+              <!-- Drag Handle -->
+              <div class="slider-handle">
+                <div
+                  class="w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center border-2 border-gray-200 hover:border-pink-400 transition-colors"
+                >
+                  <svg
+                    class="w-6 h-6 text-gray-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 9l4-4 4 4m0 6l-4 4-4-4"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Before/After Comparison 2 -->
+            <div
+              class="group relative bg-white rounded-3xl shadow-2xl overflow-hidden hover:shadow-pink-300/30 transition-all duration-500 before-after-container"
+              data-slider="2"
+            >
+              <!-- Before Image -->
+              <img
+                src="images/before2.jpg"
+                alt="Before Treatment"
+                class="w-full h-80 object-cover"
+              />
+
+              <!-- After Image -->
+              <div class="after-image">
+                <img
+                  src="images/after2.jpg"
+                  alt="After Treatment"
+                  class="w-full h-80 object-cover"
+                />
+              </div>
+
+              <!-- Vertical Line -->
+              <div class="slider-line"></div>
+
+              <!-- Labels -->
+              <div
+                class="absolute top-4 left-4 bg-gray-800/80 text-white px-3 py-1 rounded-full text-sm font-medium z-10"
+              >
+                BEFORE
+              </div>
+              <div
+                class="absolute top-4 right-4 bg-sky-500/90 text-white px-3 py-1 rounded-full text-sm font-medium z-10"
+              >
+                AFTER
+              </div>
+
+              <!-- Drag Handle -->
+              <div class="slider-handle">
+                <div
+                  class="w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center border-2 border-gray-200 hover:border-pink-400 transition-colors"
+                >
+                  <svg
+                    class="w-6 h-6 text-gray-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 9l4-4 4 4m0 6l-4 4-4-4"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Content -->
+          <div class="space-y-8">
+            <div class="space-y-4">
+              <h2
+                class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight"
+              >
+                BEFORE & AFTER GALLERY
+              </h2>
+              <div class="space-y-4 text-gray-600 leading-relaxed">
+                <p>
+                  Witness the incredible transformations achieved through our
+                  advanced dental treatments. Each case represents our
+                  commitment to excellence and patient satisfaction.
+                </p>
+                <p>
+                  Our comprehensive approach combines the latest technology with
+                  artistic vision to create natural-looking, long-lasting
+                  results that enhance both function and aesthetics.
+                </p>
+              </div>
+            </div>
+
+            <a
+              href="Booking.html"
+              class="px-6 py-3 border border-gray-400 shadow-lg text-white font-semibold bg-sky-600 hover:bg-sky-800 transition-colors duration-300 rounded-lg text-center"
+            >
+              Book Appointment
+            </a>
+
+            <div class="pt-8 border-t border-gray-200">
+              <p class="text-gray-600">
+                <span class="font-semibold text-gray-900">No Insurance?</span>
+                Get your preventive care for a low monthly fee
               </p>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Decorative Elements -->
+      <div
+        class="absolute top-10 right-10 w-40 h-40 border-2 border-pink-200 rounded-full opacity-20"
+      ></div>
+      <div
+        class="absolute bottom-20 left-20 w-60 h-60 border-2 border-purple-200 rounded-full opacity-15"
+      ></div>
     </section>
 
-    <!-- ✅ Videos -->
-    <section
-      id="videos"
-      class="relative py-24 bg-gradient-to-tr from-purple-50 via-pink-50 to-indigo-50 overflow-hidden"
-    >
-      <div class="container mx-auto px-6 max-w-7xl relative z-10 text-center">
-        <h2
-          class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent"
-        >
-          Watch Our Patient Stories
-        </h2>
-        <p class="text-gray-600 mb-12 max-w-2xl mx-auto text-sm sm:text-base">
-          Real transformations. Real smiles. Hear from patients who trusted us
-          with their dental journey.
-        </p>
-
-        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <!-- Video 1 -->
-          <a
-            href="#"
-            class="group relative rounded-3xl overflow-hidden shadow-2xl hover:shadow-pink-300/50 transition-all duration-500 hover:-translate-y-3 hover:scale-105 block"
-          >
-            <div class="relative">
-              <img
-                src="images/video1.jpg"
-                alt="Patient Story 1"
-                class="w-full h-64 sm:h-72 object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-              <div
-                class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
-              >
-                <div
-                  class="w-12 sm:w-16 h-12 sm:h-16 bg-pink-600 rounded-full flex items-center justify-center animate-pulse"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 sm:h-8 w-5 sm:w-8 text-white"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="p-4 sm:p-6 bg-white">
-              <h3
-                class="text-lg sm:text-xl font-bold text-gray-800 group-hover:text-pink-600 transition-colors"
-              >
-                Patient Story 1
-              </h3>
-              <p class="text-gray-600 mt-2 text-sm">
-                From pain to perfect smile in 3 months.
-              </p>
-            </div>
-          </a>
-
-          <!-- Video 2 -->
-          <a
-            href="#"
-            class="group relative rounded-3xl overflow-hidden shadow-2xl hover:shadow-purple-300/50 transition-all duration-500 hover:-translate-y-3 hover:scale-105 block"
-          >
-            <div class="relative">
-              <img
-                src="images/video2.jpg"
-                alt="Patient Story 2"
-                class="w-full h-64 sm:h-72 object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-              <div
-                class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
-              >
-                <div
-                  class="w-12 sm:w-16 h-12 sm:h-16 bg-purple-600 rounded-full flex items-center justify-center animate-pulse"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 sm:h-8 w-5 sm:w-8 text-white"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="p-4 sm:p-6 bg-white">
-              <h3
-                class="text-lg sm:text-xl font-bold text-gray-800 group-hover:text-purple-600 transition-colors"
-              >
-                Patient Story 2
-              </h3>
-              <p class="text-gray-600 mt-2 text-sm">
-                Implants that feel like real teeth.
-              </p>
-            </div>
-          </a>
-
-          <!-- Video 3 -->
-          <a
-            href="#"
-            class="group relative rounded-3xl overflow-hidden shadow-2xl hover:shadow-indigo-300/50 transition-all duration-500 hover:-translate-y-3 hover:scale-105 block"
-          >
-            <div class="relative">
-              <img
-                src="images/video3.jpg"
-                alt="Patient Story 3"
-                class="w-full h-64 sm:h-72 object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-              <div
-                class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
-              >
-                <div
-                  class="w-12 sm:w-16 h-12 sm:h-16 bg-indigo-600 rounded-full flex items-center justify-center animate-pulse"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 sm:h-8 w-5 sm:w-8 text-white"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="p-4 sm:p-6 bg-white">
-              <h3
-                class="text-lg sm:text-xl font-bold text-gray-800 group-hover:text-indigo-600 transition-colors"
-              >
-                Patient Story 3
-              </h3>
-              <p class="text-gray-600 mt-2 text-sm">
-                Invisible aligners changed my life.
-              </p>
-            </div>
-          </a>
-        </div>
+    <!-- Professional Profile Section -->
+    <section class="relative py-24 bg-white overflow-hidden">
+      <!-- Background Image -->
+      <div class="absolute inset-0">
+        <img
+          src="/images/Maha-ElHakim.png"
+          alt="Dr. Maha El-Hakim"
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-white"></div>
       </div>
-    </section>
 
-    <!-- ✅ Reels -->
-    <section
-      class="relative py-24 bg-gradient-to-l from-yellow-50 via-orange-50 to-red-50 overflow-hidden"
-    >
-      <div class="container mx-auto px-6 max-w-7xl relative z-10 text-center">
-        <h2
-          class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent"
-        >
-          Instagram Reels
-        </h2>
-        <p class="text-gray-600 mb-12 max-w-2xl mx-auto text-sm sm:text-base">
-          Follow us on Instagram for tips, transformations, and
-          behind-the-scenes fun!
-        </p>
+      <!-- Decorative Elements -->
+      <div
+        class="absolute top-20 left-20 w-80 h-80 border-2 border-pink-200 rounded-full opacity-20"
+      ></div>
+      <div
+        class="absolute bottom-20 right-20 w-60 h-60 border-2 border-purple-200 rounded-full opacity-15"
+      ></div>
 
-        <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          <!-- Reel 1 -->
-          <div
-            class="group relative bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-orange-300/50 transition-all duration-500 hover:-translate-y-3 hover:scale-105"
-          >
-            <div class="relative">
-              <img
-                src="images/reel1.png"
-                alt="Reel 1"
-                class="w-full h-80 sm:h-96 md:h-[28rem] object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-3 sm:p-4"
-              >
-                <h3 class="text-white font-bold text-base sm:text-lg">
-                  Smile Transformation
-                </h3>
-                <span class="text-pink-300 text-xs sm:text-sm"
-                  >@dr.maha.clinic</span
-                >
-              </div>
-            </div>
+      <div class="container mx-auto px-6 max-w-7xl relative z-10">
+        <!-- ✅ Grid with custom alignment -->
+        <div class="grid lg:grid-cols-2 gap-32 items-center">
+          <!-- Doctor Image Container -->
+          <div class="relative flex justify-start lg:justify-end">
             <div
-              class="absolute top-2 right-2 bg-white/90 backdrop-blur-sm rounded-full p-1.5 sm:p-2 opacity-0 group-hover:opacity-100 transition-opacity"
+              class="relative w-full max-w-lg mx-auto lg:translate-x-[-80px]"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-4 sm:h-5 w-4 sm:w-5 text-pink-600"
-                fill="currentColor"
-                viewBox="0 0 24 24"
+              <div
+                class="absolute -bottom-80 -left-8 bg-white/95 backdrop-blur-sm p-6 rounded-2xl shadow-xl max-w-sm"
               >
-                <path
-                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
-                />
-              </svg>
+                <p class="text-gray-700 text-sm leading-relaxed mb-2">
+                  "Dr. Maha El-Hakim provides exceptional dental care using the
+                  latest techniques and technologies."
+                </p>
+                <p class="text-gray-500 text-xs">— Patient Testimonial</p>
+              </div>
             </div>
           </div>
 
-          <!-- Reel 2 -->
-          <div
-            class="group relative bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-red-300/50 transition-all duration-500 hover:-translate-y-3 hover:scale-105"
-          >
-            <div class="relative">
-              <img
-                src="images/reel2.jpg"
-                alt="Reel 2"
-                class="w-full h-80 sm:h-96 md:h-[28rem] object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-3 sm:p-4"
+          <!-- Content - نخليه في منتصف الشاشة -->
+          <div class="space-y-8 justify-self-end max-w-2xl mx-auto lg:mx-0">
+            <!-- ✅ mx-auto للتوسيط على الموبايل، justify-self-end للديسكتوب -->
+            <div class="space-y-4">
+              <p
+                class="text-sky-400 uppercase tracking-wider text-sm font-medium"
               >
-                <h3 class="text-white font-bold text-base sm:text-lg">
-                  Whitening Magic
-                </h3>
-                <span class="text-pink-300 text-xs sm:text-sm"
-                  >@dr.maha.clinic</span
+                DENTAL SPECIALIST
+              </p>
+              <h2
+                class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight"
+              >
+                <span class="text-black">DR. MAHA</span>
+                <span class="text-sky-300">EL-HAKIM</span>
+                <span
+                  class="block text-2xl md:text-3xl text-gray-600 font-medium mt-2"
+                  >— PHD</span
                 >
-              </div>
-            </div>
-            <div
-              class="absolute top-2 right-2 bg-white/90 backdrop-blur-sm rounded-full p-1.5 sm:p-2 opacity-0 group-hover:opacity-100 transition-opacity"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-4 sm:h-5 w-4 sm:w-5 text-pink-600"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
-                />
-              </svg>
-            </div>
-          </div>
+              </h2>
 
-          <!-- Reel 3 -->
-          <div
-            class="group relative bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-yellow-300/50 transition-all duration-500 hover:-translate-y-3 hover:scale-105"
-          >
-            <div class="relative">
-              <img
-                src="images/reel3.jpg"
-                alt="Reel 3"
-                class="w-full h-80 sm:h-96 md:h-[28rem] object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-3 sm:p-4"
-              >
-                <h3 class="text-white font-bold text-base sm:text-lg">
-                  Braces Journey
-                </h3>
-                <span class="text-pink-300 text-xs sm:text-sm"
-                  >@dr.maha.clinic</span
-                >
+              <div class="space-y-4 text-gray-600 leading-relaxed">
+                <p>
+                  Dr. Maha El-Hakim is a highly experienced consultant in
+                  dentistry and oral health, dedicated to providing advanced
+                  dental care using the latest global techniques and
+                  technologies.
+                </p>
+                <p>
+                  With over 15 years of expertise in cosmetic and restorative
+                  dentistry, she combines precision and artistry to create
+                  healthy, beautiful smiles.
+                </p>
               </div>
             </div>
-            <div
-              class="absolute top-2 right-2 bg-white/90 backdrop-blur-sm rounded-full p-1.5 sm:p-2 opacity-0 group-hover:opacity-100 transition-opacity"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-4 sm:h-5 w-4 sm:w-5 text-pink-600"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
-                />
-              </svg>
-            </div>
-          </div>
 
-          <!-- Reel 4 -->
-          <div
-            class="group relative bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-pink-300/50 transition-all duration-500 hover:-translate-y-3 hover:scale-105"
-          >
-            <div class="relative">
-              <img
-                src="images/reel4.png"
-                alt="Reel 4"
-                class="w-full h-80 sm:h-96 md:h-[28rem] object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-3 sm:p-4"
-              >
-                <h3 class="text-white font-bold text-base sm:text-lg">
-                  Implant Day
+            <!-- Specialties -->
+            <div class="space-y-4">
+              <div class="flex items-center space-x-4">
+                <div class="w-8 h-0.5 bg-gray-800"></div>
+                <h3 class="text-lg font-semibold text-gray-800 tracking-wider">
+                  COSMETIC DENTISTRY
                 </h3>
-                <span class="text-pink-300 text-xs sm:text-sm"
-                  >@dr.maha.clinic</span
-                >
+              </div>
+              <div class="flex items-center space-x-4">
+                <div class="w-8 h-0.5 bg-gray-800"></div>
+                <h3 class="text-lg font-semibold text-gray-800 tracking-wider">
+                  RESTORATIVE SURGERY
+                </h3>
               </div>
             </div>
-            <div
-              class="absolute top-2 right-2 bg-white/90 backdrop-blur-sm rounded-full p-1.5 sm:p-2 opacity-0 group-hover:opacity-100 transition-opacity"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-4 sm:h-5 w-4 sm:w-5 text-pink-600"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
-                />
-              </svg>
+
+            <!-- Universities -->
+            <div class="flex items-center space-x-8 pt-4">
+              <div class="flex items-center space-x-3">
+                <div
+                  class="w-12 h-12 bg-red-600 rounded flex items-center justify-center"
+                >
+                  <span class="text-white font-bold text-xs">CAIRO</span>
+                </div>
+                <div>
+                  <p class="font-semibold text-gray-800">UNIVERSITY OF</p>
+                  <p class="font-semibold text-gray-800">CAIRO</p>
+                </div>
+              </div>
+              <div class="flex items-center space-x-3">
+                <div
+                  class="w-12 h-12 bg-blue-900 rounded flex items-center justify-center"
+                >
+                  <span class="text-white font-bold text-xs">AUC</span>
+                </div>
+                <div>
+                  <p class="font-semibold text-gray-800">AMERICAN</p>
+                  <p class="font-semibold text-gray-800">UNIVERSITY</p>
+                </div>
+              </div>
             </div>
+
+            <a
+              href="ContactUs.html"
+              class="px-6 py-3 border border-gray-400 shadow-lg text-white font-semibold bg-sky-600 hover:bg-sky-800 transition-colors duration-300 rounded-lg text-center"
+            >
+              Book Appointment
+            </a>
           </div>
         </div>
-
-        <button
-          class="mt-10 sm:mt-12 px-8 sm:px-10 py-3 sm:py-4 bg-gradient-to-r from-pink-600 to-purple-600 text-white rounded-full shadow-xl hover:shadow-pink-500/50 font-bold text-sm sm:text-lg hover:scale-105 transform transition duration-300 animate-pulse"
-        >
-          View All Reels →
-        </button>
       </div>
     </section>
 
     <!-- ✅ Gallery -->
     <section
-      class="relative py-24 bg-gradient-to-tr from-green-50 via-blue-50 to-purple-50 overflow-hidden"
+      class="relative py-40 bg-gradient-to-tr from-green-50 via-blue-50 to-purple-50 overflow-hidden"
     >
       <div class="container mx-auto px-6 max-w-7xl relative z-10 text-center">
         <h2
@@ -1014,18 +1323,136 @@
     </script>
 
     <script>
-      window.addEventListener("scroll", () => {
-        const header = document.querySelector("header");
-        if (window.scrollY > 50) {
-          header.classList.add("bg-white/95", "backdrop-blur-md", "shadow-lg");
+      // Mobile menu toggle functionality
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const menuIcon = document.getElementById("menu-icon");
+
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+
+        // Toggle icon between hamburger and X
+        if (mobileMenu.classList.contains("hidden")) {
+          menuIcon.innerHTML =
+            '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />';
         } else {
-          header.classList.remove(
-            "bg-white/95",
-            "backdrop-blur-md",
-            "shadow-lg"
-          );
+          menuIcon.innerHTML =
+            '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />';
         }
       });
+
+      // Add active state functionality
+      const menuLinks = document.querySelectorAll(".menu-link");
+
+      menuLinks.forEach((link) => {
+        link.addEventListener("click", (e) => {
+          // Remove active class from all links
+          menuLinks.forEach((l) => l.classList.remove("active"));
+          // Add active class to clicked link
+          e.target.classList.add("active");
+        });
+      });
+
+      // Close mobile menu when clicking on a link
+      const mobileLinks = document.querySelectorAll("#mobile-menu a");
+      mobileLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+          menuIcon.innerHTML =
+            '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />';
+        });
+      });
+
+      // Keep header transparent on scroll - removed the problematic scroll event
+      // The header will stay transparent as defined in CSS
+
+      // Before/After Slider Functionality
+      function initBeforeAfterSliders() {
+        const sliders = document.querySelectorAll(".before-after-container");
+
+        sliders.forEach((container) => {
+          const handle = container.querySelector(".slider-handle");
+          const afterImage = container.querySelector(".after-image");
+          const sliderLine = container.querySelector(".slider-line");
+          let isDragging = false;
+
+          function updateSlider(percentage) {
+            // Clamp percentage between 0 and 100
+            percentage = Math.max(0, Math.min(100, percentage));
+
+            // Update after image clip-path
+            afterImage.style.clipPath = `inset(0 0 0 ${percentage}%)`;
+
+            // Update handle and line position
+            handle.style.left = `${percentage}%`;
+            sliderLine.style.left = `${percentage}%`;
+          }
+
+          function handleMouseDown(e) {
+            isDragging = true;
+            document.body.style.cursor = "ew-resize";
+            e.preventDefault();
+          }
+
+          function handleMouseMove(e) {
+            if (!isDragging) return;
+
+            const rect = container.getBoundingClientRect();
+            const percentage = ((e.clientX - rect.left) / rect.width) * 100;
+            updateSlider(percentage);
+          }
+
+          function handleMouseUp() {
+            isDragging = false;
+            document.body.style.cursor = "default";
+          }
+
+          // Touch events for mobile
+          function handleTouchStart(e) {
+            isDragging = true;
+            e.preventDefault();
+          }
+
+          function handleTouchMove(e) {
+            if (!isDragging) return;
+
+            const rect = container.getBoundingClientRect();
+            const touch = e.touches[0];
+            const percentage = ((touch.clientX - rect.left) / rect.width) * 100;
+            updateSlider(percentage);
+            e.preventDefault();
+          }
+
+          function handleTouchEnd() {
+            isDragging = false;
+          }
+
+          // Event listeners
+          handle.addEventListener("mousedown", handleMouseDown);
+          document.addEventListener("mousemove", handleMouseMove);
+          document.addEventListener("mouseup", handleMouseUp);
+
+          // Touch events
+          handle.addEventListener("touchstart", handleTouchStart);
+          document.addEventListener("touchmove", handleTouchMove);
+          document.addEventListener("touchend", handleTouchEnd);
+
+          // Click anywhere on container to move slider
+          container.addEventListener("click", (e) => {
+            if (e.target === handle || handle.contains(e.target)) return;
+
+            const rect = container.getBoundingClientRect();
+            const percentage = ((e.clientX - rect.left) / rect.width) * 100;
+            updateSlider(percentage);
+          });
+
+          // Initialize at 50%
+          updateSlider(50);
+        });
+      }
+
+      // Initialize sliders when DOM is loaded
+      document.addEventListener("DOMContentLoaded", initBeforeAfterSliders);
     </script>
   </body>
 </html>
