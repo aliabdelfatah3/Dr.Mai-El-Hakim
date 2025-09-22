@@ -8,37 +8,40 @@
   </head>
 
   <body class="font-sans min-h-screen text-darkText">
-    <!-- Fixed Background Image -->
-    <div class="fixed inset-0 -z-10">
+    <!-- ✅ Background Image - Responsive (Fixed on desktop, Absolute on mobile) -->
+    <div class="inset-0 -z-10 lg:fixed lg:inset-0 absolute">
       <div
         class="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style="background-image: url('/images/Maha-ElHakim.png')"
       ></div>
-      <div class="absolute inset-0 bg-black/30"></div>
+      <!-- ✅ Overlay: أخف على الموبايل -->
+      <div
+        class="absolute inset-0 bg-black/40 sm:bg-black/30 md:bg-black/25 lg:bg-black/20"
+      ></div>
     </div>
 
-    <!-- Transparent Header -->
+    <!-- Transparent Header - Fully Responsive -->
     <header
       class="absolute top-0 w-full z-50 bg-transparent border-b border-white/10"
     >
       <nav
-        class="flex items-center justify-between py-10 px-6 md:px-12 max-w-[1200px] mx-auto"
+        class="flex items-center justify-between py-4 sm:py-6 md:py-8 lg:py-10 px-4 sm:px-6 md:px-8 lg:px-12 max-w-[1200px] mx-auto"
       >
-        <!-- Logo -->
+        <!-- Logo - Responsive Sizing -->
         <a
           href="index.html"
-          class="text-xl lg:text-2xl xl:text-3xl font-extrabold hover:scale-105 transition-transform duration-300"
+          class="text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl font-extrabold hover:scale-105 transition-transform duration-300"
         >
           <span class="text-white">Maha</span>
           <span class="text-sky-300">El-Hakim</span>
         </a>
 
-        <!-- Desktop Menu -->
-        <ul class="hidden lg:flex items-center gap-6">
+        <!-- Desktop Menu - Hidden on mobile/tablet -->
+        <ul class="hidden lg:flex items-center gap-4 xl:gap-6">
           <li>
             <a
               href="index.html"
-              class="menu-link active px-4 py-2 text-white font-medium rounded-full hover:bg-white/10 hover:text-white transform hover:-translate-y-1 transition-all duration-300"
+              class="menu-link active px-3 py-2 xl:px-4 xl:py-2 text-sm xl:text-base text-white font-medium rounded-full hover:bg-white/10 hover:text-white transform hover:-translate-y-1 transition-all duration-300"
             >
               Home
             </a>
@@ -46,7 +49,7 @@
           <li>
             <a
               href="AboutUs.html"
-              class="menu-link px-4 py-2 text-white font-medium rounded-full hover:bg-white/10 hover:text-white transform hover:-translate-y-1 transition-all duration-300"
+              class="menu-link px-3 py-2 xl:px-4 xl:py-2 text-sm xl:text-base text-white font-medium rounded-full hover:bg-white/10 hover:text-white transform hover:-translate-y-1 transition-all duration-300"
             >
               About
             </a>
@@ -54,7 +57,7 @@
           <li>
             <a
               href="Services.html"
-              class="menu-link px-4 py-2 text-white font-medium rounded-full hover:bg-white/10 hover:text-white transform hover:-translate-y-1 transition-all duration-300"
+              class="menu-link px-3 py-2 xl:px-4 xl:py-2 text-sm xl:text-base text-white font-medium rounded-full hover:bg-white/10 hover:text-white transform hover:-translate-y-1 transition-all duration-300"
             >
               Services
             </a>
@@ -62,7 +65,7 @@
           <li>
             <a
               href="Reviews.html"
-              class="menu-link px-4 py-2 text-white font-medium rounded-full hover:bg-white/10 hover:text-white transform hover:-translate-y-1 transition-all duration-300"
+              class="menu-link px-3 py-2 xl:px-4 xl:py-2 text-sm xl:text-base text-white font-medium rounded-full hover:bg-white/10 hover:text-white transform hover:-translate-y-1 transition-all duration-300"
             >
               Patient Stories
             </a>
@@ -70,30 +73,33 @@
           <li>
             <a
               href="ContactUs.html"
-              class="menu-link px-4 py-2 text-white font-medium rounded-full hover:bg-white/10 hover:text-white transform hover:-translate-y-1 transition-all duration-300"
+              class="menu-link px-3 py-2 xl:px-4 xl:py-2 text-sm xl:text-base text-white font-medium rounded-full hover:bg-white/10 hover:text-white transform hover:-translate-y-1 transition-all duration-300"
             >
               Contact
             </a>
           </li>
         </ul>
 
-        <!-- Desktop CTA Button -->
+        <!-- Desktop CTA Button - Responsive sizing -->
         <a
           href="Booking.html"
-          class="hidden lg:inline-block px-6 py-3 border border-gray-300 text-white font-semibold bg-transparent hover:bg-sky-600 hover:text-white transition-colors duration-300"
+          class="hidden lg:inline-block px-4 py-2 xl:px-6 xl:py-3 text-sm xl:text-base border border-gray-300 text-white font-semibold bg-transparent hover:bg-sky-600 hover:text-white transition-colors duration-300 rounded-lg"
+          aria-label="Toggle menu"
+          aria-expanded="false"
         >
-          Book Appointment
+          <span class="hidden xl:inline">Book Appointment</span>
+          <span class="xl:hidden">Book</span>
         </a>
 
-        <!-- Mobile Hamburger Button -->
+        <!-- Mobile Hamburger Button - Enhanced for touch -->
         <button
           id="mobile-menu-button"
-          class="lg:hidden p-3 rounded-full text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/30 transition-all duration-300 group"
+          class="lg:hidden p-2 sm:p-3 rounded-full text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/30 transition-all duration-300 group touch-manipulation"
           aria-label="Toggle menu"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 transition-transform duration-300 group-hover:rotate-90"
+            class="h-5 w-5 sm:h-6 sm:w-6 transition-transform duration-300 group-hover:rotate-90"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -109,44 +115,44 @@
         </button>
       </nav>
 
-      <!-- Mobile Menu Dropdown -->
+      <!-- Mobile Menu Dropdown - Enhanced responsive design -->
       <div
         id="mobile-menu"
-        class="hidden lg:hidden bg-black/20 backdrop-blur-sm border-t border-white/10 px-6 py-6 space-y-4 animate-fade-in"
+        class="hidden lg:hidden bg-black/20 backdrop-blur-sm border-t border-white/10 px-4 sm:px-6 py-4 sm:py-6 space-y-3 sm:space-y-4 animate-fade-in"
       >
         <a
           href="index.html"
-          class="block py-3 px-4 text-lg font-medium text-white hover:bg-white/10 hover:text-white rounded-xl transition-all duration-300 hover:scale-105"
+          class="block py-2 sm:py-3 px-3 sm:px-4 text-base sm:text-lg font-medium text-white hover:bg-white/10 hover:text-white rounded-lg sm:rounded-xl transition-all duration-300 hover:scale-105 touch-manipulation"
         >
           Home
         </a>
         <a
           href="AboutUs.html"
-          class="block py-3 px-4 text-lg font-medium text-white hover:bg-white/10 hover:text-white rounded-xl transition-all duration-300 hover:scale-105"
+          class="block py-2 sm:py-3 px-3 sm:px-4 text-base sm:text-lg font-medium text-white hover:bg-white/10 hover:text-white rounded-lg sm:rounded-xl transition-all duration-300 hover:scale-105 touch-manipulation"
         >
           About
         </a>
         <a
           href="Services.html"
-          class="block py-3 px-4 text-lg font-medium text-white hover:bg-white/10 hover:text-white rounded-xl transition-all duration-300 hover:scale-105"
+          class="block py-2 sm:py-3 px-3 sm:px-4 text-base sm:text-lg font-medium text-white hover:bg-white/10 hover:text-white rounded-lg sm:rounded-xl transition-all duration-300 hover:scale-105 touch-manipulation"
         >
           Services
         </a>
         <a
           href="Reviews.html"
-          class="block py-3 px-4 text-lg font-medium text-white hover:bg-white/10 hover:text-white rounded-xl transition-all duration-300 hover:scale-105"
+          class="block py-2 sm:py-3 px-3 sm:px-4 text-base sm:text-lg font-medium text-white hover:bg-white/10 hover:text-white rounded-lg sm:rounded-xl transition-all duration-300 hover:scale-105 touch-manipulation"
         >
           Patient Stories
         </a>
         <a
           href="ContactUs.html"
-          class="block py-3 px-4 text-lg font-medium text-white hover:bg-white/10 hover:text-white rounded-xl transition-all duration-300 hover:scale-105"
+          class="block py-2 sm:py-3 px-3 sm:px-4 text-base sm:text-lg font-medium text-white hover:bg-white/10 hover:text-white rounded-lg sm:rounded-xl transition-all duration-300 hover:scale-105 touch-manipulation"
         >
           Contact
         </a>
         <a
           href="Booking.html"
-          class="block w-full mt-4 px-6 py-4 bg-gradient-to-r from-pink-600 to-purple-600 text-white text-center font-bold rounded-xl shadow-lg hover:shadow-pink-400/50 hover:scale-105 transform transition-all duration-300"
+          class="block w-full mt-3 sm:mt-4 px-4 sm:px-6 py-3 text-white text-center font-semibold text-sm sm:text-base bg-sky-600 border border-gray-400 rounded-lg sm:rounded-xl shadow-lg transition-colors duration-300 touch-manipulation"
         >
           Book Appointment
         </a>
@@ -155,74 +161,76 @@
 
     <!-- Hero Section -->
     <section
-      class="flex flex-col w-full justify-between px-6 overflow-x-hidden pt-24"
-      style="min-height: 125vh"
+      class="flex flex-col w-full justify-between px-4 sm:px-6 lg:px-8 overflow-x-hidden pt-20 sm:pt-24 min-h-screen lg:min-h-[125vh]"
     >
       <!-- Hero Content Container -->
       <div
-        class="w-full flex-1 flex items-center justify-end pr-6 md:pr-12 lg:pr-24"
+        class="w-full flex-1 flex items-center justify-center lg:justify-end px-0 lg:pr-6 xl:pr-12 2xl:pr-24"
       >
-        <!-- ✅ ده اللي بيحدد المحاذاة -->
-        <!-- Hero Content - لصق اليمين -->
-        <div class="hero-content max-w-lg lg:max-w-xl">
-          <!-- ✅ padding right + عرض محدود -->
-          <div class="text-right">
-            <!-- ✅ نص محاذاة لليمين -->
-            <h1
-              class="text-5xl md:text-6xl font-bold text-left text-white mb-6 opacity-95"
+        <!-- Hero Content -->
+        <div
+          class="hero-content w-full max-w-md sm:max-w-lg lg:max-w-xl xl:max-w-2xl text-center lg:text-left"
+        >
+          <h1
+            class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 opacity-95 leading-tight"
+          >
+            Dr. Maha El-Hakim
+          </h1>
+          <p
+            class="text-base sm:text-lg md:text-xl lg:text-xl text-white/80 leading-relaxed mb-6 sm:mb-8 px-2 sm:px-0"
+          >
+            An expert in dentistry and oral treatment, with years of experience
+            in providing comprehensive care for smiles and dental health,
+            helping patients maintain healthy and beautiful teeth with
+            confidence.
+          </p>
+
+          <!-- Buttons Container -->
+          <div
+            class="hidden lg:flex flex-col lg:flex-row justify-center lg:justify-start gap-3 sm:gap-4 lg:gap-6 w-full"
+          >
+            <!-- Button 1 -->
+            <a
+              href="Services.html"
+              class="w-full sm:w-auto px-4 sm:px-6 py-3 border border-gray-500 shadow-lg text-gray-300 font-semibold bg-transparent hover:bg-white hover:text-gray-700 transition-colors duration-300 text-center text-sm sm:text-base"
             >
-              Dr. Maha El-Hakim
-            </h1>
-            <p
-              class="text-xl md:text-xl text-left text-white/80 leading-relaxed"
+              Discover Our Services
+            </a>
+            <!-- Button 2 -->
+            <a
+              href="Booking.html"
+              class="w-full sm:w-auto px-4 sm:px-6 py-3 border border-gray-400 shadow-lg text-white font-semibold bg-sky-600 hover:bg-sky-800 transition-colors duration-300 text-center text-sm sm:text-base"
             >
-              An expert in dentistry and oral treatment, with years of
-              experience in providing comprehensive care for smiles and dental
-              health, helping patients maintain healthy and beautiful teeth with
-              confidence.
-            </p>
-            <div
-              class="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 mt-8 mx-auto w-fit"
-            >
-              <!-- Button 1 -->
-              <a
-                href="Services.html"
-                class="px-6 py-3 border border-gray-500 shadow-lg text-gray-300 font-semibold bg-transparent hover:bg-white hover:text-gray-700 transition-colors duration-300 text-center"
-              >
-                Discover Our Services
-              </a>
-              <!-- Button 2 -->
-              <a
-                href="Booking.html"
-                class="px-6 py-3 border border-gray-400 shadow-lg text-white font-semibold bg-sky-600 hover:bg-sky-800 transition-colors duration-300 text-center"
-              >
-                Book An Appointment
-              </a>
-            </div>
+              Book An Appointment
+            </a>
           </div>
         </div>
       </div>
 
       <!-- Cards Section -->
-      <div class="w-full flex justify-center px-4 lg:px-6">
+      <div
+        class="w-full hidden lg:flex justify-center px-2 sm:px-4 lg:px-6 mb-6 sm:mb-10"
+      >
         <div
-          class="flex flex-col lg:flex-row gap-0 mb-10 justify-center lg:justify-end items-center"
+          class="flex flex-col lg:flex-row gap-0 justify-center lg:justify-end items-stretch w-full max-w-7xl"
         >
           <!-- Working Hours Card -->
           <a
             href="ContactUs.html"
-            class="card-hover-effect block bg-black/30 backdrop-blur-md border-r border-white/20 p-8 group relative w-full lg:w-auto"
+            class="card-hover-effect block bg-black/30 backdrop-blur-md border-r-0 lg:border-r border-white/20 border-b lg:border-b-0 p-4 sm:p-6 lg:p-8 group relative"
           >
-            <div class="flex justify-between items-start mb-8">
+            <div class="flex justify-between items-start mb-4 sm:mb-6 lg:mb-8">
               <div class="text-left">
-                <h3 class="text-2xl font-bold text-white mb-2">
+                <h3
+                  class="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-2"
+                >
                   Working Hours
                 </h3>
                 <div class="heading-underline"></div>
               </div>
-              <div class="arrow-animate bg-gray-600/70 rounded-full p-3">
+              <div class="arrow-animate bg-gray-600/70 rounded-full p-2 sm:p-3">
                 <svg
-                  class="w-6 h-6 text-white"
+                  class="w-4 sm:w-5 lg:w-6 h-4 sm:h-5 lg:h-6 text-white"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -237,9 +245,9 @@
               </div>
             </div>
             <div class="flex items-center text-left">
-              <div class="mr-4">
+              <div class="mr-3 sm:mr-4">
                 <svg
-                  class="w-12 h-12 text-cyan-400"
+                  class="w-8 sm:w-10 lg:w-12 h-8 sm:h-10 lg:h-12 text-cyan-400"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -260,8 +268,10 @@
                 </svg>
               </div>
               <div>
-                <p class="text-white font-semibold text-sm mb-1">MON - SAT</p>
-                <p class="text-white text-xl font-bold">9Am - 8Pm</p>
+                <p class="text-white font-semibold text-xs sm:text-sm mb-1">
+                  MON - SAT
+                </p>
+                <p class="text-white text-lg sm:text-xl font-bold">9Am - 8Pm</p>
               </div>
             </div>
           </a>
@@ -269,18 +279,20 @@
           <!-- Book Appointment Card -->
           <a
             href="Booking.html"
-            class="card-hover-effect block bg-black/30 backdrop-blur-md border-r border-white/20 p-8 group relative w-full lg:w-auto"
+            class="card-hover-effect block bg-black/30 backdrop-blur-md border-r-0 lg:border-r border-white/20 border-b lg:border-b-0 p-4 sm:p-6 lg:p-8 group relative"
           >
-            <div class="flex justify-between items-start mb-8">
+            <div class="flex justify-between items-start mb-4 sm:mb-6 lg:mb-8">
               <div class="text-left">
-                <h3 class="text-2xl font-bold text-white mb-2">
+                <h3
+                  class="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-2"
+                >
                   Book an Appointment
                 </h3>
                 <div class="heading-underline"></div>
               </div>
-              <div class="arrow-animate bg-gray-600/70 rounded-full p-3">
+              <div class="arrow-animate bg-gray-600/70 rounded-full p-2 sm:p-3">
                 <svg
-                  class="w-6 h-6 text-white"
+                  class="w-4 sm:w-5 lg:w-6 h-4 sm:h-5 lg:h-6 text-white"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -295,9 +307,9 @@
               </div>
             </div>
             <div class="flex items-center text-left">
-              <div class="mr-4">
+              <div class="mr-3 sm:mr-4">
                 <svg
-                  class="w-12 h-12 text-cyan-400"
+                  class="w-8 sm:w-10 lg:w-12 h-8 sm:h-10 lg:h-12 text-cyan-400"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -307,10 +319,12 @@
                 </svg>
               </div>
               <div>
-                <p class="text-white font-semibold text-sm mb-1">
+                <p class="text-white font-semibold text-xs sm:text-sm mb-1">
                   SCHEDULE NOW
                 </p>
-                <p class="text-white text-xl font-bold">Quick & Easy</p>
+                <p class="text-white text-lg sm:text-xl font-bold">
+                  Quick & Easy
+                </p>
               </div>
             </div>
           </a>
@@ -318,16 +332,20 @@
           <!-- Contact Us Card -->
           <a
             href="ContactUs.html"
-            class="card-hover-effect block bg-black/30 backdrop-blur-md p-8 group relative w-full lg:w-auto"
+            class="card-hover-effect block bg-black/30 backdrop-blur-md p-4 sm:p-6 lg:p-8 group relative"
           >
-            <div class="flex justify-between items-start mb-8">
+            <div class="flex justify-between items-start mb-4 sm:mb-6 lg:mb-8">
               <div class="text-left">
-                <h3 class="text-2xl font-bold text-white mb-2">Contact Us</h3>
+                <h3
+                  class="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-2"
+                >
+                  Contact Us
+                </h3>
                 <div class="heading-underline"></div>
               </div>
-              <div class="arrow-animate bg-gray-600/70 rounded-full p-3">
+              <div class="arrow-animate bg-gray-600/70 rounded-full p-2 sm:p-3">
                 <svg
-                  class="w-6 h-6 text-white"
+                  class="w-4 sm:w-5 lg:w-6 h-4 sm:h-5 lg:h-6 text-white"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -342,9 +360,9 @@
               </div>
             </div>
             <div class="flex items-center text-left">
-              <div class="mr-4">
+              <div class="mr-3 sm:mr-4">
                 <svg
-                  class="w-12 h-12 text-cyan-400"
+                  class="w-8 sm:w-10 lg:w-12 h-8 sm:h-10 lg:h-12 text-cyan-400"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -354,10 +372,12 @@
                 </svg>
               </div>
               <div>
-                <p class="text-white font-semibold text-sm mb-1">
+                <p class="text-white font-semibold text-xs sm:text-sm mb-1">
                   GET IN TOUCH
                 </p>
-                <p class="text-white text-xl font-bold">24/7 Support</p>
+                <p class="text-white text-lg sm:text-xl font-bold">
+                  24/7 Support
+                </p>
               </div>
             </div>
           </a>
@@ -365,68 +385,92 @@
       </div>
     </section>
 
-    <!-- ✅ About -->
-    <section id="about" class="relative py-40 dental-gradient overflow-hidden">
+    <!-- About Section -->
+    <section
+      id="about"
+      class="relative py-16 sm:py-24 lg:py-40 dental-gradient overflow-hidden"
+    >
+      <!-- Decorative Blobs -->
       <div
-        class="absolute top-0 -left-16 w-72 h-72 bg-pink-200 rounded-full blur-3xl opacity-40 animate-blob"
+        class="absolute top-0 -left-8 sm:-left-16 w-48 sm:w-72 h-48 sm:h-72 bg-pink-200 rounded-full blur-3xl opacity-40 animate-blob"
       ></div>
       <div
-        class="absolute top-1/2 -right-20 w-96 h-96 bg-purple-200 rounded-full blur-3xl opacity-30 animate-blob animation-delay-2000"
+        class="absolute top-1/2 -right-10 sm:-right-20 w-64 sm:w-96 h-64 sm:h-96 bg-purple-200 rounded-full blur-3xl opacity-30 animate-blob animation-delay-2000"
       ></div>
       <div
-        class="absolute -bottom-16 left-1/3 w-80 h-80 bg-yellow-200 rounded-full blur-3xl opacity-40 animate-blob animation-delay-4000"
+        class="absolute -bottom-8 sm:-bottom-16 left-1/4 sm:left-1/3 w-56 sm:w-80 h-56 sm:h-80 bg-yellow-200 rounded-full blur-3xl opacity-40 animate-blob animation-delay-4000"
       ></div>
 
       <div
-        class="container mx-auto px-6 max-w-7xl grid md:grid-cols-2 gap-10 items-center relative z-10"
+        class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10"
       >
-        <div class="space-y-6 animate-fade-in-left text-center md:text-left">
-          <h2
-            class="text-3xl flex sm:text-4xl md:text-5xl font-extrabold text-gray-800"
-          >
-            Meet &nbsp;
-            <span
-              class="relative before:absolute before:-bottom-2 before:left-0 before:w-full before:h-1 before:bg-pink-300 before:animate-pulse-underline"
-            >
-              <span class="text-black">Dr. Maha</span>
-              <span class="text-sky-300">El-Hakim</span>
-            </span>
-          </h2>
-
-          <h3 class="mt-2 text-4xl font-bold text-gray-600">
-            Consultant Dentist
-          </h3>
-
-          <p class="text-gray-700 leading-relaxed text-base sm:text-lg">
-            Dr. Maha El-Hakim, a highly experienced consultant in dentistry and
-            oral health, is dedicated to providing advanced dental care using
-            the latest global techniques and technologies. With over 15 years of
-            expertise in cosmetic and restorative dentistry, she combines
-            precision and artistry to create healthy, beautiful smiles while
-            preserving the natural look and comfort of every patient.
-          </p>
-          <!-- <a
-            href="ContactUs.html"
-            class="inline-block md:inline-block px-6 sm:px-8 py-3 text-white bg-sky-300 rounded-full shadow-lg hover:bg-white hover:text-black transform hover:scale-105 transition duration-500 mt-4"
-          >
-            Learn More
-          </a> -->
-
-          <a
-            href="ContactUs.html"
-            class="inline-block px-6 py-3 border border-gray-400 shadow-lg text-black font-semibold bg-transparent hover:bg-sky-600 hover:text-white transition-colors duration-300"
-          >
-            Learn More
-          </a>
-        </div>
         <div
-          class="w-full h-80 sm:h-96 md:h-[500px] rounded-3xl shadow-2xl overflow-hidden transform hover:scale-105 transition duration-700 animate-fade-in-right mx-auto md:mx-0"
+          class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-16 items-center"
         >
-          <img
-            src="images/Maha-El-Hakim.jpg"
-            alt="Dr. Maha El-Hakim"
-            class="w-full h-full object-cover"
-          />
+          <!-- Text Content -->
+          <div
+            class="space-y-4 sm:space-y-6 animate-fade-in-left text-center lg:text-left order-2 lg:order-1"
+          >
+            <!-- Title -->
+            <h2
+              class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-800 leading-tight"
+            >
+              <span class="block sm:inline">Meet</span>
+              <span class="block sm:inline ml-0 sm:ml-2">
+                <span
+                  class="relative before:absolute before:-bottom-1 sm:before:-bottom-2 before:left-0 before:w-full before:h-0.5 sm:before:h-1 before:bg-sky-300 before:animate-pulse-underline"
+                >
+                  <span class="text-black">Dr. Maha</span>
+                  <span class="text-sky-300 ml-1">El-Hakim</span>
+                </span>
+              </span>
+            </h2>
+
+            <!-- Subtitle -->
+            <h3
+              class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-600"
+            >
+              Consultant Dentist
+            </h3>
+
+            <!-- Description -->
+            <p
+              class="text-gray-700 leading-relaxed text-sm sm:text-base lg:text-lg max-w-none lg:max-w-2xl mx-auto lg:mx-0"
+            >
+              Dr. Maha El-Hakim, a highly experienced consultant in dentistry
+              and oral health, is dedicated to providing advanced dental care
+              using the latest global techniques and technologies. With over 15
+              years of expertise in cosmetic and restorative dentistry, she
+              combines precision and artistry to create healthy, beautiful
+              smiles while preserving the natural look and comfort of every
+              patient.
+            </p>
+
+            <!-- CTA Button -->
+            <div class="pt-2 sm:pt-4">
+              <a
+                href="ContactUs.html"
+                class="inline-block w-full sm:w-auto px-4 sm:px-6 py-3 border border-gray-400 shadow-lg text-black font-semibold bg-transparent hover:bg-sky-600 hover:text-white transition-colors duration-300 text-center text-sm sm:text-base"
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
+
+          <!-- Image -->
+          <div class="order-1 lg:order-2 animate-fade-in-right">
+            <div class="w-full max-w-sm sm:max-w-md lg:max-w-lg mx-auto">
+              <div
+                class="w-full h-64 sm:h-80 md:h-96 lg:h-[500px] shadow-2xl overflow-hidden transform hover:scale-105 transition duration-700 rounded-lg sm:rounded-xl lg:rounded-2xl"
+              >
+                <img
+                  src="images/Maha-El-Hakim.jpg"
+                  alt="Dr. Maha El-Hakim"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -452,7 +496,7 @@
             class="service-card w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-4"
           >
             <div
-              class="bg-white  transition-all duration-300 p-6 h-full flex flex-col items-center text-center"
+              class="bg-white transition-all duration-500 p-6 h-full flex flex-col items-center text-center"
             >
               <div class="service-icon mb-4">
                 <svg
@@ -523,7 +567,7 @@
             class="service-card w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-4"
           >
             <div
-              class="bg-white  transition-all duration-300 p-6 h-full flex flex-col items-center text-center"
+              class="bg-white transition-all duration-300 p-6 h-full flex flex-col items-center text-center"
             >
               <div class="service-icon mb-4">
                 <svg
@@ -567,7 +611,7 @@
             class="service-card w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-4"
           >
             <div
-              class="bg-white  transition-all duration-300 p-6 h-full flex flex-col items-center text-center"
+              class="bg-white transition-all duration-300 p-6 h-full flex flex-col items-center text-center"
             >
               <div class="service-icon mb-4">
                 <svg
@@ -648,7 +692,7 @@
             class="service-card w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-4"
           >
             <div
-              class="bg-white  transition-all duration-300 p-6 h-full flex flex-col items-center text-center"
+              class="bg-white transition-all duration-300 p-6 h-full flex flex-col items-center text-center"
             >
               <div class="service-icon mb-4">
                 <svg
@@ -722,7 +766,7 @@
             class="service-card w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-4"
           >
             <div
-              class="bg-white  transition-all duration-300 p-6 h-full flex flex-col items-center text-center"
+              class="bg-white transition-all duration-300 p-6 h-full flex flex-col items-center text-center"
             >
               <div class="service-icon mb-4">
                 <svg
@@ -1284,63 +1328,55 @@
       </div>
     </footer>
 
-    <!-- ✅ FAQ Toggle Script -->
-    <script>
-      document.querySelectorAll(".faq-item").forEach((item) => {
-        item.addEventListener("click", () => {
-          const p = item.querySelector("p");
-          const icon = item.querySelector("span");
-          p.classList.toggle("hidden");
-          icon.textContent = p.classList.contains("hidden") ? "+" : "-";
-        });
-      });
-    </script>
-
-    <!-- ✅ Mobile Menu Toggle Script -->
+    <!-- ✅ Mobile Menu Toggle Script (Clean & Enhanced) -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const mobileMenuButton = document.getElementById("mobile-menu-button");
         const mobileMenu = document.getElementById("mobile-menu");
         const menuIcon = document.getElementById("menu-icon");
 
-        if (mobileMenuButton && mobileMenu) {
-          mobileMenuButton.addEventListener("click", () => {
-            const isVisible = !mobileMenu.classList.contains("hidden");
-
-            if (isVisible) {
-              // Close menu
-              mobileMenu.classList.add("hidden");
-              menuIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />`;
-            } else {
-              // Open menu
-              mobileMenu.classList.remove("hidden");
-              mobileMenu.classList.add("animate-fade-in");
-              menuIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />`;
-            }
-          });
+        if (!mobileMenuButton || !mobileMenu || !menuIcon) {
+          console.warn("Mobile menu elements not found");
+          return;
         }
+
+        function toggleMenu() {
+          const isVisible = !mobileMenu.classList.contains("hidden");
+          if (isVisible) {
+            // Close menu
+            mobileMenu.classList.add("hidden");
+            menuIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />`;
+          } else {
+            // Open menu
+            mobileMenu.classList.remove("hidden");
+            mobileMenu.classList.add("animate-fade-in");
+            menuIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />`;
+          }
+        }
+
+        // Toggle on button click
+        mobileMenuButton.addEventListener("click", toggleMenu);
+
+        // Close menu when clicking outside
+        document.addEventListener("click", function (e) {
+          if (
+            !mobileMenu.contains(e.target) &&
+            !mobileMenuButton.contains(e.target) &&
+            !mobileMenu.classList.contains("hidden")
+          ) {
+            toggleMenu();
+          }
+        });
+
+        // Close menu when clicking on a link inside it
+        const mobileLinks = mobileMenu.querySelectorAll("a");
+        mobileLinks.forEach((link) => {
+          link.addEventListener("click", toggleMenu);
+        });
       });
     </script>
 
     <script>
-      // Mobile menu toggle functionality
-      const mobileMenuButton = document.getElementById("mobile-menu-button");
-      const mobileMenu = document.getElementById("mobile-menu");
-      const menuIcon = document.getElementById("menu-icon");
-
-      mobileMenuButton.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-
-        // Toggle icon between hamburger and X
-        if (mobileMenu.classList.contains("hidden")) {
-          menuIcon.innerHTML =
-            '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />';
-        } else {
-          menuIcon.innerHTML =
-            '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />';
-        }
-      });
-
       // Add active state functionality
       const menuLinks = document.querySelectorAll(".menu-link");
 
