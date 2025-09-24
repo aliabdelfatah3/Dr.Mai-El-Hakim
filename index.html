@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dr. Maha El-Hakim</title>
     <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
 
   <body class="min-h-screen font-sans text-darkText">
@@ -1462,11 +1467,11 @@
       </style>
     </section>
 
-    <!-- ✅ Testimonials Section -->
+    <!-- ✅ Testimonials Slider Section -->
     <section
       class="relative py-24 overflow-hidden bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50"
     >
-      <!-- Decorative Elements -->
+      <!-- Decorative Circles -->
       <div
         class="absolute border-2 rounded-full border-sky-200 top-20 left-20 w-80 h-80 opacity-20"
       ></div>
@@ -1486,562 +1491,210 @@
           </p>
         </div>
 
-        <!-- Testimonials Grid -->
-        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <!-- Testimonial Card 1 -->
-          <div
-            class="relative overflow-hidden transition-all duration-500 bg-white shadow-xl cursor-pointer group rounded-2xl hover:shadow-2xl hover:-translate-y-2"
-          >
-            <div class="p-6 sm:p-8">
-              <!-- Stars Rating -->
-              <div class="flex items-center mb-4 space-x-1">
-                <svg
-                  class="w-5 h-5 text-yellow-400"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                  />
-                </svg>
-                <svg
-                  class="w-5 h-5 text-yellow-400"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                  />
-                </svg>
-                <svg
-                  class="w-5 h-5 text-yellow-400"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                  />
-                </svg>
-                <svg
-                  class="w-5 h-5 text-yellow-400"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                  />
-                </svg>
-                <svg
-                  class="w-5 h-5 text-yellow-400"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                  />
-                </svg>
-              </div>
-
-              <!-- Quote Icon -->
-              <div class="mb-4">
-                <svg
-                  class="w-8 h-8 text-sky-300"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"
-                  />
-                </svg>
-              </div>
-
-              <!-- Testimonial Text -->
-              <p
-                class="mb-6 text-sm leading-relaxed text-gray-700 sm:text-base"
+        <!-- ✅ Swiper Slider -->
+        <div class="relative swiper testimonials-swiper">
+          <div class="swiper-wrapper">
+            <!-- ===== Slide 1 ===== -->
+            <div class="swiper-slide">
+              <div
+                class="relative p-6 overflow-hidden transition-all duration-500 bg-white shadow-xl group rounded-2xl hover:shadow-2xl hover:-translate-y-2 sm:p-8"
               >
-                "Dr. Maha transformed my smile completely! The teeth whitening
-                procedure was painless and the results exceeded my expectations.
-                Her attention to detail and caring approach made all the
-                difference."
-              </p>
-
-              <!-- Patient Info -->
-              <div class="flex items-center">
-                <div
-                  class="flex items-center justify-center w-12 h-12 mr-4 text-white rounded-full bg-sky-500"
-                >
-                  <span class="text-lg font-bold">S</span>
+                <div class="flex items-center mb-4 space-x-1 text-yellow-400">
+                  ★★★★★
                 </div>
-                <div>
-                  <h4 class="text-lg font-bold text-gray-900">Sarah Ahmed</h4>
-                  <p class="text-sm text-gray-600">Teeth Whitening Patient</p>
+                <p
+                  class="mb-6 text-sm leading-relaxed text-gray-700 sm:text-base"
+                >
+                  "Dr. Maha transformed my smile completely! The teeth whitening
+                  procedure was painless and the results exceeded my
+                  expectations."
+                </p>
+                <div class="flex items-center">
+                  <div
+                    class="flex items-center justify-center w-12 h-12 mr-4 text-white rounded-full bg-sky-500"
+                  >
+                    <span class="text-lg font-bold">S</span>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-bold text-gray-900">Sarah Ahmed</h4>
+                    <p class="text-sm text-gray-600">Teeth Whitening Patient</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Testimonial Card 2 -->
-          <div
-            class="relative overflow-hidden transition-all duration-500 bg-white shadow-xl cursor-pointer group rounded-2xl hover:shadow-2xl hover:-translate-y-2"
-          >
-            <div class="p-6 sm:p-8">
-              <!-- Stars Rating -->
-              <div class="flex items-center mb-4 space-x-1">
-                <svg
-                  class="w-5 h-5 text-yellow-400"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                  />
-                </svg>
-                <svg
-                  class="w-5 h-5 text-yellow-400"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                  />
-                </svg>
-                <svg
-                  class="w-5 h-5 text-yellow-400"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                  />
-                </svg>
-                <svg
-                  class="w-5 h-5 text-yellow-400"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                  />
-                </svg>
-                <svg
-                  class="w-5 h-5 text-yellow-400"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                  />
-                </svg>
-              </div>
-
-              <!-- Quote Icon -->
-              <div class="mb-4">
-                <svg
-                  class="w-8 h-8 text-sky-300"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"
-                  />
-                </svg>
-              </div>
-
-              <!-- Testimonial Text -->
-              <p
-                class="mb-6 text-sm leading-relaxed text-gray-700 sm:text-base"
+            <!-- ===== Slide 2 ===== -->
+            <div class="swiper-slide">
+              <div
+                class="relative p-6 overflow-hidden transition-all duration-500 bg-white shadow-xl group rounded-2xl hover:shadow-2xl hover:-translate-y-2 sm:p-8"
               >
-                "The dental implant procedure was handled with such
-                professionalism. Dr. Maha explained every step and made sure I
-                was comfortable throughout. My new smile looks completely
-                natural!"
-              </p>
-
-              <!-- Patient Info -->
-              <div class="flex items-center">
-                <div
-                  class="flex items-center justify-center w-12 h-12 mr-4 text-white rounded-full bg-sky-500"
-                >
-                  <span class="text-lg font-bold">M</span>
+                <div class="flex items-center mb-4 space-x-1 text-yellow-400">
+                  ★★★★★
                 </div>
-                <div>
-                  <h4 class="text-lg font-bold text-gray-900">
-                    Mohamed Hassan
-                  </h4>
-                  <p class="text-sm text-gray-600">Dental Implant Patient</p>
+                <p
+                  class="mb-6 text-sm leading-relaxed text-gray-700 sm:text-base"
+                >
+                  "The dental implant procedure was handled with such
+                  professionalism. My new smile looks completely natural!"
+                </p>
+                <div class="flex items-center">
+                  <div
+                    class="flex items-center justify-center w-12 h-12 mr-4 text-white rounded-full bg-sky-500"
+                  >
+                    <span class="text-lg font-bold">M</span>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-bold text-gray-900">
+                      Mohamed Hassan
+                    </h4>
+                    <p class="text-sm text-gray-600">Dental Implant Patient</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Testimonial Card 3 -->
-          <div
-            class="relative overflow-hidden transition-all duration-500 bg-white shadow-xl cursor-pointer group rounded-2xl hover:shadow-2xl hover:-translate-y-2"
-          >
-            <div class="p-6 sm:p-8">
-              <!-- Stars Rating -->
-              <div class="flex items-center mb-4 space-x-1">
-                <svg
-                  class="w-5 h-5 text-yellow-400"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                  />
-                </svg>
-                <svg
-                  class="w-5 h-5 text-yellow-400"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                  />
-                </svg>
-                <svg
-                  class="w-5 h-5 text-yellow-400"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                  />
-                </svg>
-                <svg
-                  class="w-5 h-5 text-yellow-400"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                  />
-                </svg>
-                <svg
-                  class="w-5 h-5 text-yellow-400"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                  />
-                </svg>
-              </div>
-
-              <!-- Quote Icon -->
-              <div class="mb-4">
-                <svg
-                  class="w-8 h-8 text-sky-300"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"
-                  />
-                </svg>
-              </div>
-
-              <!-- Testimonial Text -->
-              <p
-                class="mb-6 text-sm leading-relaxed text-gray-700 sm:text-base"
+            <!-- ===== Slide 3 ===== -->
+            <div class="swiper-slide">
+              <div
+                class="relative p-6 overflow-hidden transition-all duration-500 bg-white shadow-xl group rounded-2xl hover:shadow-2xl hover:-translate-y-2 sm:p-8"
               >
-                "Amazing experience with the cosmetic dentistry treatment. Dr.
-                Maha's expertise and gentle approach made the entire process
-                comfortable. I finally have the confidence to smile freely!"
-              </p>
-
-              <!-- Patient Info -->
-              <div class="flex items-center">
-                <div
-                  class="flex items-center justify-center w-12 h-12 mr-4 text-white rounded-full bg-sky-500"
-                >
-                  <span class="text-lg font-bold">L</span>
+                <div class="flex items-center mb-4 space-x-1 text-yellow-400">
+                  ★★★★★
                 </div>
-                <div>
-                  <h4 class="text-lg font-bold text-gray-900">Layla Mahmoud</h4>
-                  <p class="text-sm text-gray-600">
-                    Cosmetic Dentistry Patient
-                  </p>
+                <p
+                  class="mb-6 text-sm leading-relaxed text-gray-700 sm:text-base"
+                >
+                  "I used to fear dental visits, but Dr. Maha’s gentle approach
+                  made me completely comfortable throughout my braces journey."
+                </p>
+                <div class="flex items-center">
+                  <div
+                    class="flex items-center justify-center w-12 h-12 mr-4 text-white rounded-full bg-sky-500"
+                  >
+                    <span class="text-lg font-bold">L</span>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-bold text-gray-900">Layla Karim</h4>
+                    <p class="text-sm text-gray-600">Braces Patient</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Testimonial Card 4 -->
-          <div
-            class="relative overflow-hidden transition-all duration-500 bg-white shadow-xl cursor-pointer group rounded-2xl hover:shadow-2xl hover:-translate-y-2"
-          >
-            <div class="p-6 sm:p-8">
-              <!-- Stars Rating -->
-              <div class="flex items-center mb-4 space-x-1">
-                <svg
-                  class="w-5 h-5 text-yellow-400"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                  />
-                </svg>
-                <svg
-                  class="w-5 h-5 text-yellow-400"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                  />
-                </svg>
-                <svg
-                  class="w-5 h-5 text-yellow-400"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                  />
-                </svg>
-                <svg
-                  class="w-5 h-5 text-yellow-400"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                  />
-                </svg>
-                <svg
-                  class="w-5 h-5 text-yellow-400"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                  />
-                </svg>
-              </div>
-
-              <!-- Quote Icon -->
-              <div class="mb-4">
-                <svg
-                  class="w-8 h-8 text-sky-300"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"
-                  />
-                </svg>
-              </div>
-
-              <!-- Testimonial Text -->
-              <p
-                class="mb-6 text-sm leading-relaxed text-gray-700 sm:text-base"
+            <!-- ===== Slide 4 ===== -->
+            <div class="swiper-slide">
+              <div
+                class="relative p-6 overflow-hidden transition-all duration-500 bg-white shadow-xl group rounded-2xl hover:shadow-2xl hover:-translate-y-2 sm:p-8"
               >
-                "The root canal treatment was much easier than I expected. Dr.
-                Maha's skill and compassionate care made what I thought would be
-                painful into a comfortable experience. Highly recommended!"
-              </p>
-
-              <!-- Patient Info -->
-              <div class="flex items-center">
-                <div
-                  class="flex items-center justify-center w-12 h-12 mr-4 text-white rounded-full bg-sky-500"
-                >
-                  <span class="text-lg font-bold">A</span>
+                <div class="flex items-center mb-4 space-x-1 text-yellow-400">
+                  ★★★★★
                 </div>
-                <div>
-                  <h4 class="text-lg font-bold text-gray-900">Ahmed Ali</h4>
-                  <p class="text-sm text-gray-600">Root Canal Patient</p>
+                <p
+                  class="mb-6 text-sm leading-relaxed text-gray-700 sm:text-base"
+                >
+                  "From the first consultation to the final check-up, the team
+                  provided outstanding service. I couldn’t be happier!"
+                </p>
+                <div class="flex items-center">
+                  <div
+                    class="flex items-center justify-center w-12 h-12 mr-4 text-white rounded-full bg-sky-500"
+                  >
+                    <span class="text-lg font-bold">A</span>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-bold text-gray-900">
+                      Ahmed Nasser
+                    </h4>
+                    <p class="text-sm text-gray-600">Routine Checkup</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Testimonial Card 5 -->
-          <div
-            class="relative overflow-hidden transition-all duration-500 bg-white shadow-xl cursor-pointer group rounded-2xl hover:shadow-2xl hover:-translate-y-2"
-          >
-            <div class="p-6 sm:p-8">
-              <!-- Stars Rating -->
-              <div class="flex items-center mb-4 space-x-1">
-                <svg
-                  class="w-5 h-5 text-yellow-400"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                  />
-                </svg>
-                <svg
-                  class="w-5 h-5 text-yellow-400"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                  />
-                </svg>
-                <svg
-                  class="w-5 h-5 text-yellow-400"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                  />
-                </svg>
-                <svg
-                  class="w-5 h-5 text-yellow-400"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                  />
-                </svg>
-                <svg
-                  class="w-5 h-5 text-yellow-400"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                  />
-                </svg>
-              </div>
-
-              <!-- Quote Icon -->
-              <div class="mb-4">
-                <svg
-                  class="w-8 h-8 text-sky-300"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"
-                  />
-                </svg>
-              </div>
-
-              <!-- Testimonial Text -->
-              <p
-                class="mb-6 text-sm leading-relaxed text-gray-700 sm:text-base"
+            <!-- ===== Slide 5 ===== -->
+            <div class="swiper-slide">
+              <div
+                class="relative p-6 overflow-hidden transition-all duration-500 bg-white shadow-xl group rounded-2xl hover:shadow-2xl hover:-translate-y-2 sm:p-8"
               >
-                "My orthodontic treatment with clear aligners was exceptional.
-                Dr. Maha monitored my progress closely and the results are
-                perfect. My teeth are now beautifully aligned!"
-              </p>
-
-              <!-- Patient Info -->
-              <div class="flex items-center">
-                <div
-                  class="flex items-center justify-center w-12 h-12 mr-4 text-white rounded-full bg-sky-500"
-                >
-                  <span class="text-lg font-bold">N</span>
+                <div class="flex items-center mb-4 space-x-1 text-yellow-400">
+                  ★★★★★
                 </div>
-                <div>
-                  <h4 class="text-lg font-bold text-gray-900">Nour Khaled</h4>
-                  <p class="text-sm text-gray-600">Orthodontic Patient</p>
+                <p
+                  class="mb-6 text-sm leading-relaxed text-gray-700 sm:text-base"
+                >
+                  "The Invisalign treatment was quick and the results were
+                  amazing. I now smile with confidence every day!"
+                </p>
+                <div class="flex items-center">
+                  <div
+                    class="flex items-center justify-center w-12 h-12 mr-4 text-white rounded-full bg-sky-500"
+                  >
+                    <span class="text-lg font-bold">O</span>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-bold text-gray-900">Omar Farid</h4>
+                    <p class="text-sm text-gray-600">Invisalign Patient</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Testimonial Card 6 -->
-          <div
-            class="relative overflow-hidden transition-all duration-500 bg-white shadow-xl cursor-pointer group rounded-2xl hover:shadow-2xl hover:-translate-y-2"
-          >
-            <div class="p-6 sm:p-8">
-              <!-- Stars Rating -->
-              <div class="flex items-center mb-4 space-x-1">
-                <svg
-                  class="w-5 h-5 text-yellow-400"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                  />
-                </svg>
-                <svg
-                  class="w-5 h-5 text-yellow-400"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                  />
-                </svg>
-                <svg
-                  class="w-5 h-5 text-yellow-400"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                  />
-                </svg>
-                <svg
-                  class="w-5 h-5 text-yellow-400"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                  />
-                </svg>
-                <svg
-                  class="w-5 h-5 text-yellow-400"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                  />
-                </svg>
-              </div>
-
-              <!-- Quote Icon -->
-              <div class="mb-4">
-                <svg
-                  class="w-8 h-8 text-sky-300"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"
-                  />
-                </svg>
-              </div>
-
-              <!-- Testimonial Text -->
-              <p
-                class="mb-6 text-sm leading-relaxed text-gray-700 sm:text-base"
+            <!-- ===== Slide 6 ===== -->
+            <div class="swiper-slide">
+              <div
+                class="relative p-6 overflow-hidden transition-all duration-500 bg-white shadow-xl group rounded-2xl hover:shadow-2xl hover:-translate-y-2 sm:p-8"
               >
-                "From the moment I walked in, I felt welcomed and cared for. The
-                dental cleaning was thorough and gentle. Dr. Maha's clinic is
-                truly a five-star experience!"
-              </p>
-
-              <!-- Patient Info -->
-              <div class="flex items-center">
-                <div
-                  class="flex items-center justify-center w-12 h-12 mr-4 text-white rounded-full bg-sky-500"
-                >
-                  <span class="text-lg font-bold">R</span>
+                <div class="flex items-center mb-4 space-x-1 text-yellow-400">
+                  ★★★★★
                 </div>
-                <div>
-                  <h4 class="text-lg font-bold text-gray-900">Rania Samir</h4>
-                  <p class="text-sm text-gray-600">Dental Cleaning Patient</p>
+                <p
+                  class="mb-6 text-sm leading-relaxed text-gray-700 sm:text-base"
+                >
+                  "Exceptional pediatric care! My kids love coming here and
+                  always leave with big smiles."
+                </p>
+                <div class="flex items-center">
+                  <div
+                    class="flex items-center justify-center w-12 h-12 mr-4 text-white rounded-full bg-sky-500"
+                  >
+                    <span class="text-lg font-bold">H</span>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-bold text-gray-900">Huda Salem</h4>
+                    <p class="text-sm text-gray-600">Pediatric Dentistry</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <!-- Navigation -->
+        <div class="swiper-button-prev custom-nav"></div>
+        <div class="swiper-button-next custom-nav"></div>
       </div>
+      <!-- ✅ Pagination  -->
+      <div class="mt-8 swiper-pagination"></div>
     </section>
+
+    <!-- ✅ Slider Init -->
+    <script>
+      new Swiper(".testimonials-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: { delay: 3000 },
+        pagination: { el: ".swiper-pagination", clickable: true },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        },
+      });
+    </script>
 
     <!-- ✅ Creative Booking Form Section -->
     <section class="relative py-24 overflow-hidden bg-white">
