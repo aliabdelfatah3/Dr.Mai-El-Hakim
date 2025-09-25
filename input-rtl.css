@@ -32,7 +32,7 @@ body {
 @keyframes fadeInRight {
   from {
     opacity: 0;
-    transform: translateX(60px);
+    transform: translateX(-60px);
   }
   to {
     opacity: 1;
@@ -43,7 +43,7 @@ body {
 @keyframes slideIn {
   from {
     opacity: 0;
-    transform: translateX(-30px);
+    transform: translateX(30px);
   }
   to {
     opacity: 1;
@@ -78,7 +78,7 @@ body {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(-360deg);
   }
 }
 
@@ -112,7 +112,7 @@ article:hover .backdrop-blur-sm {
 
 .dental-gradient {
   background: linear-gradient(
-    135deg,
+    -135deg,
     #ffffff 0%,
     #f0f9ff 30%,
     #e0f2fe 70%,
@@ -121,7 +121,7 @@ article:hover .backdrop-blur-sm {
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #0ea5e9, #06b6d4);
+  background: linear-gradient(-135deg, #0ea5e9, #06b6d4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -132,7 +132,7 @@ article:hover .backdrop-blur-sm {
 }
 
 .feature-icon {
-  background: linear-gradient(135deg, #0ea5e9, #06b6d4);
+  background: linear-gradient(-135deg, #0ea5e9, #06b6d4);
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -162,13 +162,13 @@ article:hover .backdrop-blur-sm {
   content: "";
   position: absolute;
   bottom: -3rem;
-  left: 50%;
+  right: 50%;
   width: 0;
   height: 0;
-  border-left: 10px solid transparent;
   border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
   border-bottom: 10px solid #ccc;
-  transform: translateX(-50%) scaleY(0);
+  transform: translateX(50%) scaleY(0);
   transform-origin: bottom;
   opacity: 0;
   transition: transform 0.5s ease, opacity 0.5s ease;
@@ -183,7 +183,7 @@ article:hover .backdrop-blur-sm {
 .menu-link:hover::before,
 .menu-link.active::before {
   opacity: 1;
-  transform: translateX(-50%) scaleY(1);
+  transform: translateX(50%) scaleY(1);
 }
 
 .menu-link:not(:hover):not(.active)::before {
@@ -198,7 +198,7 @@ article:hover .backdrop-blur-sm {
 }
 
 .card-hover-effect:hover .arrow-animate {
-  transform: translateX(8px);
+  transform: translateX(-8px);
 }
 
 .card-hover-effect:hover .heading-underline {
@@ -226,9 +226,9 @@ article:hover .backdrop-blur-sm {
 }
 
 .hero-content {
-  text-align: right;
-  margin-right: 0;
-  padding-right: 0;
+  text-align: left;
+  margin-left: 0;
+  padding-left: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -237,7 +237,7 @@ article:hover .backdrop-blur-sm {
 @media (max-width: 768px) {
   .hero-content {
     text-align: center;
-    padding-right: 0;
+    padding-left: 0;
     align-items: center;
   }
 
@@ -301,7 +301,7 @@ article:hover .backdrop-blur-sm {
 .after-image {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   clip-path: inset(0 0 0 50%);
@@ -311,8 +311,8 @@ article:hover .backdrop-blur-sm {
 .slider-handle {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  right: 50%;
+  transform: translate(50%, -50%);
   z-index: 20;
   cursor: ew-resize;
   user-select: none;
@@ -321,7 +321,7 @@ article:hover .backdrop-blur-sm {
 .slider-line {
   position: absolute;
   top: 0;
-  left: 50%;
+  right: 50%;
   width: 2px;
   height: 100%;
   background: white;
@@ -337,12 +337,12 @@ article:hover .backdrop-blur-sm {
 /* شاشات كبيرة (ديسكتوب) */
 @media (min-width: 1024px) {
   .custom-nav.swiper-button-prev {
-    left: -8px !important;
+    right: -8px !important;
     top: 70% !important;
     display: block;
   }
   .custom-nav.swiper-button-next {
-    right: -8px !important;
+    left: -8px !important;
     top: 70% !important;
     display: block;
   }
