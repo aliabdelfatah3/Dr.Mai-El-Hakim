@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>د. مها الحكيم</title>
+    <title>د. مي الحكيم</title>
     <link rel="stylesheet" href="output.css" />
     <link
       rel="stylesheet"
@@ -16,10 +16,10 @@
     <!-- خلفية الصورة -->
     <div class="fixed inset-0 -z-10">
       <div
-        class="absolute inset-0 bg-cover bg-[center_right_45%] sm:bg-[center_right_20%] md:bg-center lg:bg-[center_left_20%] bg-no-repeat"
+        class="absolute inset-0 bg-cover bg-top bg-no-repeat"
         style="background-image: url('/images/Mai-ElHakim.png')"
       ></div>
-      <div class="absolute inset-0 bg-black/40"></div>
+      <div class="absolute inset-0 bg-black/20"></div>
     </div>
 
     <!-- الهيدر الشفاف -->
@@ -31,10 +31,10 @@
       >
         <!-- الشعار -->
         <a
-          href="index.html"
+          href="index-ar.html"
           class="text-lg font-extrabold transition-transform duration-300 sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl"
         >
-          <span class="text-white">مها</span>
+          <span class="text-white">مي</span>
           <span class="text-sky-300">الحكيم</span>
         </a>
 
@@ -42,7 +42,7 @@
         <ul class="items-center hidden gap-4 lg:flex xl:gap-6">
           <li>
             <a
-              href="index.html"
+              href="index-ar.html"
               class="px-3 py-2 text-sm font-medium text-white transition-all duration-300 transform menu-link active xl:px-4 xl:py-2 xl:text-base hover:bg-white/10 hover:text-white hover:-translate-y-1"
             >
               الرئيسية
@@ -178,58 +178,59 @@
     <section
       class="flex flex-col w-full lg:justify-between justify-end px-4 sm:px-6 lg:px-8 overflow-x-hidden pt-20 sm:pt-24 min-h-[90vh] lg:min-h-[125vh]"
     >
-      <!-- محتوى البطل -->
+      <!-- Hero Content Container -->
       <div
         class="flex items-end justify-center w-full px-0 lg:flex-1 lg:items-center md:justify-start lg:pb-10"
       >
+        <!-- Hero Content -->
         <div
-          class="w-full max-w-md text-right lg:hero-content sm:max-w-md xl:max-w-xl"
+          class="w-full max-w-md text-right lg:hero-contente sm:max-w-md xl:max-w-xl"
         >
           <h1
             class="mb-4 text-4xl font-bold leading-tight text-right text-white md:text-5xl xl:text-6xl sm:mb-6 opacity-95"
           >
-            د. مها الحكيم
+            الدكتورة مي الحكيم
           </h1>
           <p
             class="px-2 mb-6 text-base leading-relaxed text-right text-white sm:text-lg md:text-xl lg:text-lg xl:text-2xl sm:mb-8 sm:px-0"
           >
-            خبيرة في طب الأسنان والعلاج الفموي، مع سنوات من الخبرة في تقديم
-            الرعاية الشاملة للابتسامات وصحة الأسنان، مما يساعد المرضى على الحفاظ
-            على أسنان صحية وجميلة بثقة.
+            خبيرة في طب الأمراض الجلدية والطب التجميلي، مع سنوات من الخبرة في
+            تقديم الرعاية الشاملة لصحة الجلد والجمال، لمساعدة المرضى في الحفاظ
+            على بشرة نقية وشابة ومشرقة بثقة.
           </p>
 
-          <!-- حاوية الأزرار -->
+          <!-- Buttons Container -->
           <div
             class="flex-col justify-center hidden w-full gap-3 lg:flex lg:flex-row lg:justify-start sm:gap-4 lg:gap-6"
           >
-            <!-- زر 1 -->
+            <!-- Button 1 -->
             <a
-              href="Services.html"
+              href="#services"
               class="w-full px-4 py-3 text-sm font-semibold text-center text-gray-200 transition-colors duration-300 bg-transparent border border-gray-700 shadow-lg sm:w-auto sm:px-6 hover:bg-white hover:text-gray-700 sm:text-base"
             >
               اكتشف خدماتنا
             </a>
-            <!-- زر 2 -->
+            <!-- Button 2 -->
             <a
-              href="Booking.html"
+              href="#booking"
               class="w-full px-4 py-3 text-sm font-semibold text-center text-white transition-colors duration-300 border border-gray-400 shadow-lg sm:w-auto sm:px-6 bg-sky-600 hover:bg-sky-800 sm:text-base"
             >
-              احجز موعد
+              احجز موعدك
             </a>
           </div>
         </div>
       </div>
 
-      <!-- قسم البطاقات -->
+      <!-- Cards Section -->
       <div
         class="justify-center hidden w-full px-2 mb-6 lg:flex sm:px-4 lg:px-6 sm:mb-10"
       >
         <div
-          class="flex flex-col items-stretch justify-center w-full gap-0 lg:flex-row lg:justify-start max-w-7xl"
+          class="flex flex-col items-stretch justify-center w-full gap-0 lg:flex-row lg:justify-end max-w-7xl"
         >
-          <!-- بطاقة ساعات العمل -->
+          <!-- Working Hours Card -->
           <a
-            href="ContactUs.html"
+            href="#contact"
             class="relative block p-4 border-b border-l-0 card-hover-effect bg-black/30 backdrop-blur-md lg:border-l border-white/20 lg:border-b-0 sm:p-6 lg:p-8 group"
           >
             <div class="flex items-start justify-between mb-4 sm:mb-6 lg:mb-8">
@@ -243,7 +244,7 @@
               </div>
               <div class="p-2 rounded-full arrow-animate bg-gray-600/70 sm:p-3">
                 <svg
-                  class="w-4 h-4 text-white sm:w-5 lg:w-6 sm:h-5 lg:h-6"
+                  class="w-4 h-4 text-white sm:w-5 lg:w-6 sm:h-5 lg:h-6 rotate-180"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -252,7 +253,7 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M15 19l-7-7 7-7"
+                    d="M9 5l7 7-7 7"
                   ></path>
                 </svg>
               </div>
@@ -262,7 +263,9 @@
                 <p class="mb-1 text-xs font-semibold text-white sm:text-sm">
                   الإثنين - السبت
                 </p>
-                <p class="text-lg font-bold text-white sm:text-xl">9ص - 8م</p>
+                <p class="text-lg font-bold text-white sm:text-xl">
+                  9 صباحاً - 8 مساءً
+                </p>
               </div>
               <div class="ml-3 sm:ml-4">
                 <svg
@@ -289,9 +292,9 @@
             </div>
           </a>
 
-          <!-- بطاقة احجز موعد -->
+          <!-- Book Appointment Card -->
           <a
-            href="Booking.html"
+            href="#booking"
             class="relative block p-4 border-b border-l-0 card-hover-effect bg-black/30 backdrop-blur-md lg:border-l border-white/20 lg:border-b-0 sm:p-6 lg:p-8 group"
           >
             <div class="flex items-start justify-between mb-4 sm:mb-6 lg:mb-8">
@@ -299,13 +302,13 @@
                 <h3
                   class="mb-2 text-lg font-bold text-white sm:text-xl lg:text-2xl"
                 >
-                  احجز موعد
+                  احجز موعداً
                 </h3>
                 <div class="heading-underline mr-auto"></div>
               </div>
               <div class="p-2 rounded-full arrow-animate bg-gray-600/70 sm:p-3">
                 <svg
-                  class="w-4 h-4 text-white sm:w-5 lg:w-6 sm:h-5 lg:h-6"
+                  class="w-4 h-4 text-white sm:w-5 lg:w-6 sm:h-5 lg:h-6 rotate-180"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -314,7 +317,7 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M15 19l-7-7 7-7"
+                    d="M9 5l7 7-7 7"
                   ></path>
                 </svg>
               </div>
@@ -324,7 +327,7 @@
                 <p class="mb-1 text-xs font-semibold text-white sm:text-sm">
                   احجز الآن
                 </p>
-                <p class="text-lg font-bold text-white sm:text-xl">سهل وسريع</p>
+                <p class="text-lg font-bold text-white sm:text-xl">سريع وسهل</p>
               </div>
               <div class="ml-3 sm:ml-4">
                 <svg
@@ -340,9 +343,9 @@
             </div>
           </a>
 
-          <!-- بطاقة اتصل بنا -->
+          <!-- Contact Us Card -->
           <a
-            href="ContactUs.html"
+            href="#contact"
             class="relative block p-4 card-hover-effect bg-black/30 backdrop-blur-md sm:p-6 lg:p-8 group"
           >
             <div class="flex items-start justify-between mb-4 sm:mb-6 lg:mb-8">
@@ -350,13 +353,13 @@
                 <h3
                   class="mb-2 text-lg font-bold text-white sm:text-xl lg:text-2xl"
                 >
-                  اتصل بنا
+                  تواصل معنا
                 </h3>
                 <div class="heading-underline mr-auto"></div>
               </div>
               <div class="p-2 rounded-full arrow-animate bg-gray-600/70 sm:p-3">
                 <svg
-                  class="w-4 h-4 text-white sm:w-5 lg:w-6 sm:h-5 lg:h-6"
+                  class="w-4 h-4 text-white sm:w-5 lg:w-6 sm:h-5 lg:h-6 rotate-180"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -365,7 +368,7 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M15 19l-7-7 7-7"
+                    d="M9 5l7 7-7 7"
                   ></path>
                 </svg>
               </div>
@@ -373,9 +376,11 @@
             <div class="flex items-center text-right">
               <div>
                 <p class="mb-1 text-xs font-semibold text-white sm:text-sm">
-                  تواصل معنا
+                  ابق على تواصل
                 </p>
-                <p class="text-lg font-bold text-white sm:text-xl">دعم 24/7</p>
+                <p class="text-lg font-bold text-white sm:text-xl">
+                  دعم على مدار الساعة
+                </p>
               </div>
               <div class="ml-3 sm:ml-4">
                 <svg
@@ -394,7 +399,7 @@
       </div>
     </section>
 
-    <!-- قسم عن الطبيبة -->
+    <!-- About Section -->
     <section
       id="about"
       class="relative py-20 overflow-hidden sm:py-24 lg:py-40 dental-gradient"
@@ -405,190 +410,192 @@
         <div
           class="grid items-center grid-cols-1 gap-8 lg:grid-cols-2 sm:gap-10 lg:gap-16"
         >
-          <!-- النص -->
-          <div
-            class="order-2 space-y-4 text-center sm:space-y-6 animate-fade-in-right lg:text-right lg:order-1"
-          >
-            <!-- العنوان -->
-            <h2
-              class="text-2xl font-extrabold leading-tight text-gray-800 sm:text-3xl md:text-4xl"
-            >
-              <span class="block sm:inline">تعرف على</span>
-              <span class="block mr-0 sm:inline sm:mr-2">
-                <span
-                  class="relative before:absolute before:-bottom-1 sm:before:-bottom-2 before:right-0 before:w-full before:h-0.5 sm:before:h-1 before:bg-sky-300 before:animate-pulse-underline"
-                >
-                  <span class="text-black">د. مها</span>
-                  <span class="mr-1 text-sky-300">الحكيم</span>
-                </span>
-              </span>
-            </h2>
-
-            <!-- العنوان الفرعي -->
-            <h3
-              class="text-2xl font-bold text-gray-600 sm:text-3xl lg:text-4xl"
-            >
-              استشارية طب الأسنان
-            </h3>
-
-            <!-- الوصف -->
-            <p
-              class="mx-auto text-sm leading-relaxed text-gray-700 sm:text-base lg:text-lg max-w-none lg:max-w-2xl lg:mx-0"
-            >
-              د. مها الحكيم، استشارية ذات خبرة عالية في طب الأسنان وصحة الفم،
-              ملتزمة بتقديم رعاية أسنان متقدمة باستخدام أحدث التقنيات
-              والتكنولوجيا العالمية. مع أكثر من 15 عامًا من الخبرة في طب الأسنان
-              التجميلي والترميمي، تجمع بين الدقة والفن لإنشاء ابتسامات صحية
-              وجميلة مع الحفاظ على المظهر الطبيعي والراحة لكل مريض.
-            </p>
-
-            <!-- زر الدعوة للعمل -->
-            <div class="pt-2 sm:pt-4">
-              <a
-                href="ContactUs.html"
-                class="inline-block w-full px-4 py-3 text-sm font-semibold text-center text-white transition-colors duration-300 border border-gray-400 shadow-lg lg:bg-transparent bg-sky-600 lg:text-black sm:w-auto sm:px-6 lg:hover:bg-sky-600 lg:hover:text-white sm:text-base"
-              >
-                اعرف المزيد
-              </a>
-            </div>
-          </div>
-
-          <!-- الصورة -->
-          <div class="order-1 lg:order-2 animate-fade-in-left">
+          <!-- Image -->
+          <div class="order-1 lg:order-1 animate-fade-in-right">
             <div class="w-full max-w-sm mx-auto sm:max-w-md lg:max-w-lg">
               <div
                 class="w-full h-64 sm:h-80 md:h-96 lg:h-[500px] shadow-2xl overflow-hidden transform hover:scale-105 transition duration-700 rounded-lg sm:rounded-xl lg:rounded-2xl"
               >
                 <img
                   src="images/Mai-El-Hakim.jpg"
-                  alt="د. مها الحكيم"
-                  class="object-cover object-top w-full h-full"
+                  alt="Dr. Mai El-Hakim"
+                  class="object-cover object-center w-full h-full"
                 />
               </div>
+            </div>
+          </div>
+
+          <!-- Text Content -->
+          <div
+            class="order-2 space-y-4 text-center sm:space-y-6 animate-fade-in-left lg:text-right lg:order-2"
+          >
+            <!-- Title -->
+            <h2
+              class="text-2xl font-extrabold leading-tight text-gray-800 sm:text-3xl md:text-4xl 5xl"
+            >
+              <span class="block sm:inline">تعرف على</span>
+              <span class="block mr-0 sm:inline sm:mr-2">
+                <span
+                  class="relative before:absolute before:-bottom-1 sm:before:-bottom-2 before:right-0 before:w-full before:h-0.5 sm:before:h-1 before:bg-sky-300 before:animate-pulse-underline"
+                >
+                  <span class="text-black">الدكتورة مي</span>
+                  <span class="mr-1 text-sky-300">الحكيم</span>
+                </span>
+              </span>
+            </h2>
+
+            <!-- Subtitle -->
+            <h3
+              class="text-2xl font-bold text-gray-600 sm:text-3xl lg:text-4xl"
+            >
+              استشارية الأمراض الجلدية والطب التجميلي
+            </h3>
+
+            <!-- Description -->
+            <p
+              class="mx-auto text-sm leading-relaxed text-gray-700 sm:text-base lg:text-lg max-w-none lg:max-w-2xl lg:mx-0"
+            >
+              الدكتورة مي الحكيم، استشارية ماهرة في طب الأمراض الجلدية والطب
+              التجميلي، تكرس جهودها لتقديم علاجات متقدمة للعناية بالبشرة
+              والتجميل باستخدام أحدث التقنيات والأساليب العالمية. مع أكثر من 15
+              عاماً من الخبرة في الأمراض الجلدية والتجميل غير الجراحي، تجمع بين
+              الدقة الطبية والرؤية الفنية لتعزيز الجمال الطبيعي، وعلاج مجموعة
+              واسعة من حالات الجلد، ومساعدة المرضى على تحقيق بشرة صحية ومشرقة
+              وشابة بثقة.
+            </p>
+
+            <!-- CTA Button -->
+            <div class="pt-2 sm:pt-4">
+              <a
+                href="#contact"
+                class="inline-block w-full px-4 py-3 text-sm font-semibold text-center text-white transition-colors duration-300 border border-gray-400 shadow-lg lg:bg-transparent bg-sky-600 lg:text-black sm:w-auto sm:px-6 lg:hover:bg-sky-600 lg:hover:text-white sm:text-base"
+              >
+                اعرف المزيد
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- قسم الخدمات -->
+    <!-- Services Section -->
     <section
       id="services"
       class="relative py-20 overflow-hidden bg-white lg:py-40"
     >
       <div class="container px-6 mx-auto max-w-7xl">
-        <!-- العنوان الرئيسي -->
+        <!-- Header -->
         <div class="mb-12 text-center">
           <h2 class="mb-4 text-3xl font-bold text-gray-800 md:text-4xl">
             خدماتنا عالية الجودة
           </h2>
           <p class="max-w-2xl mx-auto text-lg text-gray-600">
-            نقدم مجموعة شاملة من خدمات العناية بالأسنان باستخدام أحدث التقنيات
-            وأعلى معايير الجودة
+            نقدم مجموعة شاملة من خدمات الأمراض الجلدية والرعاية التجميلية
+            باستخدام أحدث التقنيات وأعلى معايير الجودة.
           </p>
         </div>
 
-        <!-- مجموعة البطاقات - 3 في كل صف -->
+        <!-- Flex Container - 3 per row -->
         <div class="flex flex-wrap justify-between -mx-2">
-          <!-- بطاقة 1 -->
+          <!-- كارت 1 -->
           <div class="w-full mb-8 sm:w-1/2 md:w-1/3">
             <div
               class="flex flex-col h-full p-6 transition-all duration-300 border-2 border-gray-300 border-dotted hover:border-solid hover:border-blue-500"
             >
               <img
                 class="object-cover w-full mb-5 rounded-lg h-60"
-                src="images/General Dentistry.jpg"
-                alt="طب الأسنان العام"
+                src="images/PicoSure Treatment.jpg"
+                alt="علاج بيكو شور"
               />
               <h3 class="text-xl font-bold text-center text-gray-800">
-                طب الأسنان العام
+                علاج بيكو شور
               </h3>
             </div>
           </div>
 
-          <!-- بطاقة 2 -->
+          <!-- كارت 2 -->
           <div class="w-full px-2 mb-8 sm:w-1/2 md:w-1/3">
             <div
               class="flex flex-col h-full p-6 transition-all duration-300 border-2 border-gray-300 border-dotted hover:border-solid hover:border-blue-500"
             >
               <img
                 class="object-cover w-full mb-5 rounded-lg h-60"
-                src="images/Dental Surgery.jpg"
-                alt="جراحة الأسنان"
+                src="images/Botox and Fillers.jpg"
+                alt="حقن البوتكس والفيلر"
               />
               <h3 class="text-xl font-bold text-center text-gray-800">
-                جراحة الأسنان
+                حقن البوتكس والفيلر
               </h3>
             </div>
           </div>
 
-          <!-- بطاقة 3 -->
+          <!-- كارت 3 -->
           <div class="w-full px-2 mb-8 sm:w-1/2 md:w-1/3">
             <div
               class="flex flex-col h-full p-6 transition-all duration-300 border-2 border-gray-300 border-dotted hover:border-solid hover:border-blue-500"
             >
               <img
                 class="object-cover w-full mb-5 rounded-lg h-60"
-                src="images/Tooth Decay.jpg"
-                alt="علاج تسوس الأسنان"
+                src="images/Laser Hair Removal.jpg"
+                alt="إزالة الشعر بالليزر"
               />
               <h3 class="text-xl font-bold text-center text-gray-800">
-                علاج تسوس الأسنان
+                إزالة الشعر بالليزر
               </h3>
             </div>
           </div>
 
-          <!-- بطاقة 4 -->
+          <!-- كارت 4 -->
           <div class="w-full px-2 mb-8 sm:w-1/2 md:w-1/3">
             <div
               class="flex flex-col h-full p-6 transition-all duration-300 border-2 border-gray-300 border-dotted hover:border-solid hover:border-blue-500"
             >
               <img
                 class="object-cover w-full mb-5 rounded-lg h-60"
-                src="images/Teeth Whitening.jpg"
-                alt="تبييض الأسنان"
+                src="images/Skin Rejuvenation.jpg"
+                alt="تجديد البشرة"
               />
               <h3 class="text-xl font-bold text-center text-gray-800">
-                تبييض الأسنان
+                تجديد وإحياء البشرة
               </h3>
             </div>
           </div>
 
-          <!-- بطاقة 5 -->
+          <!-- كارت 5 -->
           <div class="w-full px-2 mb-8 sm:w-1/2 md:w-1/3">
             <div
               class="flex flex-col h-full p-6 transition-all duration-300 border-2 border-gray-300 border-dotted hover:border-solid hover:border-blue-500"
             >
               <img
                 class="object-cover w-full mb-5 rounded-lg h-60"
-                src="images/Teeth Braces.jpg"
-                alt="تقويم الأسنان"
+                src="images/Nose Contouring.jpg"
+                alt="تشكيل الأنف"
               />
               <h3 class="text-xl font-bold text-center text-gray-800">
-                تقويم الأسنان
+                تشكيل وتحديد الأنف
               </h3>
             </div>
           </div>
 
-          <!-- بطاقة 6 -->
+          <!-- كارت 6 -->
           <div class="w-full px-2 mb-8 sm:w-1/2 md:w-1/3">
             <div
               class="flex flex-col h-full p-6 transition-all duration-300 border-2 border-gray-300 border-dotted hover:border-solid hover:border-blue-500"
             >
               <img
                 class="object-cover w-full mb-5 rounded-lg h-60"
-                src="images/Cosmetic Dentistry.jpg"
-                alt="طب الأسنان التجميلي"
+                src="images/Wrinkle Treatment.jpg"
+                alt="علاج التجاعيد"
               />
               <h3 class="text-xl font-bold text-center text-gray-800">
-                طب الأسنان التجميلي
+                علاج التجاعيد والخطوط
               </h3>
             </div>
           </div>
         </div>
       </div>
     </section>
-
+    <!------------------------------------------------------------------>
     <!-- معرض قبل وبعد -->
     <section
       class="relative py-20 overflow-hidden lg:py-40 bg-gradient-to-br from-blue-100 via-indigo-100 to-purple-100"
@@ -1451,7 +1458,7 @@
           </h2>
           <p class="max-w-2xl mx-auto text-lg text-gray-600">
             قصص حقيقية من مرضى حقيقيين عاشوا الرعاية الاستثنائية والنتائج
-            التحويلية في عيادة الدكتورة مها الحكيم
+            التحويلية في عيادة الدكتورة مي الحكيم
           </p>
         </div>
 
@@ -1469,7 +1476,7 @@
                 <p
                   class="mb-6 text-sm leading-relaxed text-gray-700 sm:text-base"
                 >
-                  "الدكتورة مها غيرت ابتسامتي بالكامل! عملية تبييض الأسنان كانت
+                  "الدكتورة مي غيرت ابتسامتي بالكامل! عملية تبييض الأسنان كانت
                   بدون ألم والنتائج فاقت توقعاتي."
                 </p>
                 <div class="flex items-center">
@@ -1525,7 +1532,7 @@
                 <p
                   class="mb-6 text-sm leading-relaxed text-gray-700 sm:text-base"
                 >
-                  "كنت أخاف من زيارات الأسنان، لكن النهج اللطيف للدكتورة مها
+                  "كنت أخاف من زيارات الأسنان، لكن النهج اللطيف للدكتورة مي
                   جعلني مرتاحة تماماً طوال رحلة التقويم."
                 </p>
                 <div class="flex items-center">
