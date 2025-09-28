@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="dist/output-rtl.css" />
 
-    <title>Document</title>
+    <title>المدونة - عيادة د. ماي الحكيم</title>
   </head>
-  <body>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- الهيدر الشفاف -->
     <header class="absolute top-0 z-50 w-full bg-white shadow-md">
       <nav
         class="flex items-center justify-between lg:gap-10 py-4 sm:py-6 md:py-8 lg:py-10 max-w-[1200px] mx-auto"
@@ -67,13 +68,13 @@
             <a
               href="Blogs-ar.html"
               class="px-3 py-2 text-sm font-medium transition-all duration-300 transform text-sky-600 menu-link active xl:px-4 xl:py-2 xl:text-base"
-              >المقالات</a
+              >المدونة</a
             >
           </li>
           <li>
             <a
               href="ContactUs-ar.html"
-              class="px-3 py-2 text-sm font-medium text-gray-800 transition-all duration-300 transform menu-link xl:px-4 xl:py-2 xl:text-base hover:text-sky-600"
+              class="px-3 py-2 text-sm font-medium text-gray-800 transition-all duration-300 transform menu-link xl:px-4 xl:text-base hover:text-sky-600"
               >تواصل معنا</a
             >
           </li>
@@ -139,7 +140,7 @@
         <a
           href="Blogs-ar.html"
           class="block px-3 py-2 text-base font-medium transition-all duration-300 rounded-lg text-sky-600 bg-sky-50"
-          >المقالات</a
+          >المدونة</a
         >
         <a
           href="ContactUs-ar.html"
@@ -153,6 +154,448 @@
         >
       </div>
     </header>
+
+    <!-- Hero Section -->
+    <section
+      class="relative py-32 overflow-hidden translate-y-32 bg-gradient-to-br from-sky-100 via-white to-blue-100"
+    >
+      <div class="container relative z-10 px-6 mx-auto max-w-7xl">
+        <div class="mb-16 text-center">
+          <h1
+            class="mb-6 text-4xl font-bold text-gray-900 md:text-5xl lg:text-6xl"
+          >
+            أحدث <span class="text-sky-300">المدونات</span>
+          </h1>
+          <p class="max-w-3xl mx-auto text-lg text-gray-600 md:text-xl">
+            نصائح خبراء الجلدية، وإرشادات العناية بالبشرة، وأحدث الابتكارات في
+            العلاجات التجميلية المتقدمة.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ✅ Blogs Section -->
+    <section class="relative py-20 overflow-hidden bg-white lg:py-40">
+      <div class="container relative z-10 px-6 mx-auto max-w-7xl">
+        <!-- Blogs Section -->
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <!-- Blog Card 1 -->
+          <article
+            class="relative overflow-hidden transition-all duration-500 bg-white shadow-lg cursor-pointer blog-card group rounded-2xl hover:shadow-xl hover:-translate-y-2"
+          >
+            <div class="relative h-48">
+              <img
+                src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                alt="skincare routine image"
+                class="object-cover w-full h-full"
+              />
+              <div
+                class="absolute px-3 py-1 text-xs font-bold bg-white rounded-full text-sky-600 top-3 right-3"
+              >
+                العناية بالبشرة
+              </div>
+            </div>
+
+            <div class="blog-card-content">
+              <div class="blog-card-main">
+                <div
+                  class="flex items-center mb-3 space-x-2 text-xs text-gray-500"
+                >
+                  <span>12 ديسمبر 2024</span>
+                  <span>•</span>
+                  <span>4 دقائق قراءة</span>
+                </div>
+
+                <h3
+                  class="mb-3 text-lg font-bold leading-tight text-gray-900 transition-colors group-hover:text-sky-500"
+                >
+                  10 خطوات أساسية لروتين مثالي للعناية اليومية بالبشرة
+                </h3>
+
+                <p class="mb-4 text-sm leading-relaxed text-gray-600">
+                  اكتشف روتين العناية بالبشرة الأساسي الذي سيحول صحة بشرتك
+                  ويمنحك توهجًا طبيعيًا ومشرقًا طالما حلمت به.
+                </p>
+              </div>
+
+              <div class="blog-card-footer">
+                <a
+                  href="#"
+                  class="inline-flex items-center text-sm font-semibold text-sky-600 hover:text-sky-800 group"
+                >
+                  <span>اقرأ المزيد</span>
+                  <svg
+                    class="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </a>
+                <div class="flex space-x-1">
+                  <span
+                    class="px-2 py-1 text-xs rounded-full text-sky-600 bg-sky-100"
+                    >روتين</span
+                  >
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Blog Card 2 -->
+          <article
+            class="relative overflow-hidden transition-all duration-500 bg-white shadow-lg cursor-pointer blog-card group rounded-2xl hover:shadow-xl hover:-translate-y-2"
+          >
+            <div class="relative h-48">
+              <img
+                src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                alt="botox treatment image"
+                class="object-cover w-full h-full"
+              />
+              <div
+                class="absolute px-3 py-1 text-xs font-bold bg-white rounded-full text-sky-600 top-3 right-3"
+              >
+                علاج
+              </div>
+            </div>
+
+            <div class="blog-card-content">
+              <div class="blog-card-main">
+                <div
+                  class="flex items-center mb-3 space-x-2 text-xs text-gray-500"
+                >
+                  <span>10 ديسمبر 2024</span>
+                  <span>•</span>
+                  <span>5 دقائق قراءة</span>
+                </div>
+
+                <h3
+                  class="mb-3 text-lg font-bold leading-tight text-gray-900 transition-colors group-hover:text-sky-500"
+                >
+                  كل ما تحتاج معرفته عن علاج البوتوكس
+                </h3>
+
+                <p class="mb-4 text-sm leading-relaxed text-gray-600">
+                  دليل شامل لحقن البوتوكس يغطي الإجراء، النتائج المتوقعة، وقت
+                  التعافي، وكيفية الحفاظ على مظهر شبابي.
+                </p>
+              </div>
+
+              <div class="blog-card-footer">
+                <a
+                  href="#"
+                  class="inline-flex items-center text-sm font-semibold text-sky-600 hover:text-sky-800 group"
+                >
+                  <span>اقرأ المزيد</span>
+                  <svg
+                    class="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </a>
+                <div class="flex space-x-1">
+                  <span
+                    class="px-2 py-1 text-xs rounded-full text-sky-600 bg-sky-100"
+                    >تجميلي</span
+                  >
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Blog Card 3 -->
+          <article
+            class="relative overflow-hidden transition-all duration-500 bg-white shadow-lg cursor-pointer blog-card group rounded-2xl hover:shadow-xl hover:-translate-y-2"
+          >
+            <div class="relative h-48">
+              <img
+                src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                alt="chemical peel image"
+                class="object-cover w-full h-full"
+              />
+              <div
+                class="absolute px-3 py-1 text-xs font-bold bg-white rounded-full text-sky-600 top-3 right-3"
+              >
+                تقشير
+              </div>
+            </div>
+            <div class="blog-card-content">
+              <div class="blog-card-main">
+                <div
+                  class="flex items-center mb-3 space-x-2 text-xs text-gray-500"
+                >
+                  <span>8 ديسمبر 2024</span>
+                  <span>•</span>
+                  <span>6 دقائق قراءة</span>
+                </div>
+                <h3
+                  class="mb-3 text-lg font-bold leading-tight text-gray-900 transition-colors group-hover:text-sky-500"
+                >
+                  كل ما تحتاج معرفته عن التقشير الكيميائي
+                </h3>
+                <p class="mb-4 text-sm leading-relaxed text-gray-600">
+                  تعرفي على فوائد ومخاطر جلسات التقشير الكيميائي وكيف تساعد في
+                  تحسين ملمس البشرة وتفتيحها.
+                </p>
+              </div>
+              <div class="blog-card-footer">
+                <a
+                  href="#"
+                  class="inline-flex items-center text-sm font-semibold text-sky-600 hover:text-sky-800 group"
+                >
+                  <span>اقرأ المزيد</span>
+                  <svg
+                    class="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </a>
+                <div class="flex space-x-1">
+                  <span
+                    class="px-2 py-1 text-xs rounded-full text-sky-600 bg-sky-100"
+                    >بشرة</span
+                  >
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Blog Card 4 -->
+          <article
+            class="relative overflow-hidden transition-all duration-500 bg-white shadow-lg cursor-pointer blog-card group rounded-2xl hover:shadow-xl hover:-translate-y-2"
+          >
+            <div class="relative h-48">
+              <img
+                src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                alt="laser treatment image"
+                class="object-cover w-full h-full"
+              />
+              <div
+                class="absolute px-3 py-1 text-xs font-bold bg-white rounded-full text-sky-600 top-3 right-3"
+              >
+                ليزر
+              </div>
+            </div>
+            <div class="blog-card-content">
+              <div class="blog-card-main">
+                <div
+                  class="flex items-center mb-3 space-x-2 text-xs text-gray-500"
+                >
+                  <span>6 ديسمبر 2024</span>
+                  <span>•</span>
+                  <span>5 دقائق قراءة</span>
+                </div>
+                <h3
+                  class="mb-3 text-lg font-bold leading-tight text-gray-900 transition-colors group-hover:text-sky-500"
+                >
+                  كل ما يجب معرفته عن إزالة الشعر بالليزر
+                </h3>
+                <p class="mb-4 text-sm leading-relaxed text-gray-600">
+                  دليل كامل حول جلسات الليزر، عدد الجلسات، وطرق التحضير للحصول
+                  على أفضل النتائج.
+                </p>
+              </div>
+              <div class="blog-card-footer">
+                <a
+                  href="#"
+                  class="inline-flex items-center text-sm font-semibold text-sky-600 hover:text-sky-800 group"
+                >
+                  <span>اقرأ المزيد</span>
+                  <svg
+                    class="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </a>
+                <div class="flex space-x-1">
+                  <span
+                    class="px-2 py-1 text-xs rounded-full text-sky-600 bg-sky-100"
+                    >علاج</span
+                  >
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Blog Card 5 -->
+          <article
+            class="relative overflow-hidden transition-all duration-500 bg-white shadow-lg cursor-pointer blog-card group rounded-2xl hover:shadow-xl hover:-translate-y-2"
+          >
+            <div class="relative h-48">
+              <img
+                src="https://images.unsplash.com/photo-1556228720-195a672e8a03?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                alt="filler care image"
+                class="object-cover w-full h-full"
+              />
+              <div
+                class="absolute px-3 py-1 text-xs font-bold bg-white rounded-full text-sky-600 top-3 right-3"
+              >
+                فيلر
+              </div>
+            </div>
+            <div class="blog-card-content">
+              <div class="blog-card-main">
+                <div
+                  class="flex items-center mb-3 space-x-2 text-xs text-gray-500"
+                >
+                  <span>4 ديسمبر 2024</span>
+                  <span>•</span>
+                  <span>4 دقائق قراءة</span>
+                </div>
+                <h3
+                  class="mb-3 text-lg font-bold leading-tight text-gray-900 transition-colors group-hover:text-sky-500"
+                >
+                  نصائح هامة بعد جلسات الفيلر
+                </h3>
+                <p class="mb-4 text-sm leading-relaxed text-gray-600">
+                  تعرفي على أهم التعليمات للحفاظ على نتائج جلسات الفيلر لأطول
+                  فترة ممكنة مع تجنب أي مضاعفات.
+                </p>
+              </div>
+              <div class="blog-card-footer">
+                <a
+                  href="#"
+                  class="inline-flex items-center text-sm font-semibold text-sky-600 hover:text-sky-800 group"
+                >
+                  <span>اقرأ المزيد</span>
+                  <svg
+                    class="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </a>
+                <div class="flex space-x-1">
+                  <span
+                    class="px-2 py-1 text-xs rounded-full text-sky-600 bg-sky-100"
+                    >عناية</span
+                  >
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Blog Card 6 -->
+          <article
+            class="relative overflow-hidden transition-all duration-500 bg-white shadow-lg cursor-pointer blog-card group rounded-2xl hover:shadow-xl hover:-translate-y-2"
+          >
+            <div class="relative h-48">
+              <img
+                src="https://images.unsplash.com/photo-1601925269995-d705c1c90a3c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                alt="natural masks image"
+                class="object-cover w-full h-full"
+              />
+              <div
+                class="absolute px-3 py-1 text-xs font-bold bg-white rounded-full text-sky-600 top-3 right-3"
+              >
+                ماسكات
+              </div>
+            </div>
+            <div class="blog-card-content">
+              <div class="blog-card-main">
+                <div
+                  class="flex items-center mb-3 space-x-2 text-xs text-gray-500"
+                >
+                  <span>2 ديسمبر 2024</span>
+                  <span>•</span>
+                  <span>3 دقائق قراءة</span>
+                </div>
+                <h3
+                  class="mb-3 text-lg font-bold leading-tight text-gray-900 transition-colors group-hover:text-sky-500"
+                >
+                  أفضل ماسكات طبيعية لترطيب البشرة
+                </h3>
+                <p class="mb-4 text-sm leading-relaxed text-gray-600">
+                  وصفات منزلية سهلة وفعالة لماسكات طبيعية تساعد على ترطيب وتفتيح
+                  البشرة بعمق.
+                </p>
+              </div>
+              <div class="blog-card-footer">
+                <a
+                  href="#"
+                  class="inline-flex items-center text-sm font-semibold text-sky-600 hover:text-sky-800 group"
+                >
+                  <span>اقرأ المزيد</span>
+                  <svg
+                    class="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </a>
+                <div class="flex space-x-1">
+                  <span
+                    class="px-2 py-1 text-xs rounded-full text-sky-600 bg-sky-100"
+                    >طبيعي</span
+                  >
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Browse All Blogs CTA -->
+        <div class="mt-16 text-center">
+          <div class="inline-flex flex-col items-center space-y-6">
+            <a
+              href="Blogs.html"
+              class="px-6 py-3 font-semibold text-center text-white transition-colors duration-300 border border-gray-400 shadow-lg bg-sky-600 hover:bg-sky-800"
+            >
+              تصفح جميع المقالات
+            </a>
+            <p class="text-sm text-gray-600">
+              انضم إلى آلاف القراء للبقاء على اطلاع بآخر أخبار العناية بالبشرة
+              والجمال
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ✅ Footer -->
     <footer
       class="relative text-white bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900"
@@ -267,7 +710,7 @@
       </div>
     </footer>
 
-     <!-- ✅ Back to Top Button -->
+    <!-- ✅ Back to Top Button -->
     <button
       id="back-to-top"
       class="fixed z-50 p-3 text-white transition-all duration-300 transform rounded-full shadow-lg opacity-0 pointer-events-none bottom-6 right-6 bg-sky-600 hover:bg-sky-700 hover:scale-110"

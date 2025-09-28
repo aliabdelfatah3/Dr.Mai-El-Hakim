@@ -679,12 +679,12 @@
               </div>
               <div class="slider-line"></div>
               <div
-                class="absolute z-10 px-3 py-1 text-sm font-medium text-white rounded-full top-4 right-4 bg-gray-800/80"
+                class="absolute z-10 px-3 py-1 text-sm font-medium text-white rounded-full top-4 left-4 bg-gray-800/80"
               >
                 قبل
               </div>
               <div
-                class="absolute z-10 px-3 py-1 text-sm font-medium text-white rounded-full top-4 left-4 bg-sky-500/90"
+                class="absolute z-10 px-3 py-1 text-sm font-medium text-white rounded-full top-4 right-4 bg-sky-500/90"
               >
                 بعد
               </div>
@@ -702,7 +702,7 @@
                       stroke-linecap="round"
                       stroke-linejoin="round"
                       stroke-width="2"
-                      d="M8 9l4-4 4 4m0 6l-4 4-4-4"
+                      d="M9 5l-7 7 7 7M15 5l7 7-7 7"
                     />
                   </svg>
                 </div>
@@ -738,14 +738,14 @@
               </div>
               <div class="slider-line"></div>
               <div
-                class="absolute z-10 px-3 py-1 text-sm font-medium text-white rounded-full top-4 left-4 bg-sky-500/90"
-              >
-                بعد
-              </div>
-              <div
-                class="absolute z-10 px-3 py-1 text-sm font-medium text-white rounded-full top-4 right-4 bg-gray-800/80"
+                class="absolute z-10 px-3 py-1 text-sm font-medium text-white rounded-full top-4 left-4 bg-gray-800/80"
               >
                 قبل
+              </div>
+              <div
+                class="absolute z-10 px-3 py-1 text-sm font-medium text-white rounded-full top-4 right-4 bg-sky-500/90"
+              >
+                بعد
               </div>
               <div class="slider-handle">
                 <div
@@ -761,7 +761,7 @@
                       stroke-linecap="round"
                       stroke-linejoin="round"
                       stroke-width="2"
-                      d="M8 9l4-4 4 4m0 6l-4 4-4-4"
+                      d="M9 5l-7 7 7 7M15 5l7 7-7 7"
                     />
                   </svg>
                 </div>
@@ -797,6 +797,109 @@
         class="absolute border-2 border-purple-200 rounded-full bottom-20 right-20 w-60 h-60 opacity-15"
       ></div>
     </section>
+
+    <script>
+      // Before/After Slider Functionality (يدعم RTL)
+      function initBeforeAfterSliders() {
+        const sliders = document.querySelectorAll(".before-after-container");
+        const isRTL = document.documentElement.dir === "rtl";
+
+        sliders.forEach((container) => {
+          const handle = container.querySelector(".slider-handle");
+          const afterImage = container.querySelector(".after-image");
+          const sliderLine = container.querySelector(".slider-line");
+          let isDragging = false;
+
+          function updateSlider(percentage) {
+            // Clamp percentage between 0 and 100
+            percentage = Math.max(0, Math.min(100, percentage));
+
+            // Update after image clip-path
+            // في RTL نحتاج نقلب الاتجاه (نقص من اليمين بدلاً من اليسار)
+            if (isRTL) {
+              afterImage.style.clipPath = `inset(0 ${percentage}% 0 0)`;
+            } else {
+              afterImage.style.clipPath = `inset(0 0 0 ${percentage}%)`;
+            }
+
+            // Update handle and line position
+            if (isRTL) {
+              handle.style.right = `${percentage}%`;
+              sliderLine.style.right = `${percentage}%`;
+            } else {
+              handle.style.left = `${percentage}%`;
+              sliderLine.style.left = `${percentage}%`;
+            }
+          }
+
+          function getPercentage(clientX, rect) {
+            if (isRTL) {
+              // احسب المسافة من اليمين
+              return ((rect.right - clientX) / rect.width) * 100;
+            } else {
+              return ((clientX - rect.left) / rect.width) * 100;
+            }
+          }
+
+          function handleMouseDown(e) {
+            isDragging = true;
+            document.body.style.cursor = "ew-resize";
+            e.preventDefault();
+          }
+
+          function handleMouseMove(e) {
+            if (!isDragging) return;
+            const rect = container.getBoundingClientRect();
+            updateSlider(getPercentage(e.clientX, rect));
+          }
+
+          function handleMouseUp() {
+            isDragging = false;
+            document.body.style.cursor = "default";
+          }
+
+          // Touch events for mobile
+          function handleTouchStart(e) {
+            isDragging = true;
+            e.preventDefault();
+          }
+
+          function handleTouchMove(e) {
+            if (!isDragging) return;
+            const rect = container.getBoundingClientRect();
+            const touch = e.touches[0];
+            updateSlider(getPercentage(touch.clientX, rect));
+            e.preventDefault();
+          }
+
+          function handleTouchEnd() {
+            isDragging = false;
+          }
+
+          // Event listeners
+          handle.addEventListener("mousedown", handleMouseDown);
+          document.addEventListener("mousemove", handleMouseMove);
+          document.addEventListener("mouseup", handleMouseUp);
+
+          handle.addEventListener("touchstart", handleTouchStart);
+          document.addEventListener("touchmove", handleTouchMove);
+          document.addEventListener("touchend", handleTouchEnd);
+
+          // Click anywhere on container to move slider
+          container.addEventListener("click", (e) => {
+            if (e.target === handle || handle.contains(e.target)) return;
+            const rect = container.getBoundingClientRect();
+            updateSlider(getPercentage(e.clientX, rect));
+          });
+
+          // Initialize at 50%
+          updateSlider(50);
+        });
+      }
+
+      // Initialize sliders when DOM is loaded
+      document.addEventListener("DOMContentLoaded", initBeforeAfterSliders);
+    </script>
 
     <!-- قسم الفديوهات -->
     <section class="relative py-20 overflow-hidden bg-white lg:py-40">
@@ -1611,7 +1714,7 @@
       });
     </script>
 
-    <!-- Booking Form Section DONE -->
+    <!-- Booking Form Section  -->
     <section
       class="relative py-20 bg-center bg-cover lg:py-32"
       style="background-image: url('images/dermatology-reception.jpg')"
@@ -2000,94 +2103,6 @@
 
       // Keep header transparent on scroll - removed the problematic scroll event
       // The header will stay transparent as defined in CSS
-
-      // Before/After Slider Functionality
-      function initBeforeAfterSliders() {
-        const sliders = document.querySelectorAll(".before-after-container");
-
-        sliders.forEach((container) => {
-          const handle = container.querySelector(".slider-handle");
-          const afterImage = container.querySelector(".after-image");
-          const sliderLine = container.querySelector(".slider-line");
-          let isDragging = false;
-
-          function updateSlider(percentage) {
-            // Clamp percentage between 0 and 100
-            percentage = Math.max(0, Math.min(100, percentage));
-
-            // Update after image clip-path
-            afterImage.style.clipPath = `inset(0 0 0 ${percentage}%)`;
-
-            // Update handle and line position
-            handle.style.left = `${percentage}%`;
-            sliderLine.style.left = `${percentage}%`;
-          }
-
-          function handleMouseDown(e) {
-            isDragging = true;
-            document.body.style.cursor = "ew-resize";
-            e.preventDefault();
-          }
-
-          function handleMouseMove(e) {
-            if (!isDragging) return;
-
-            const rect = container.getBoundingClientRect();
-            const percentage = ((e.clientX - rect.left) / rect.width) * 100;
-            updateSlider(percentage);
-          }
-
-          function handleMouseUp() {
-            isDragging = false;
-            document.body.style.cursor = "default";
-          }
-
-          // Touch events for mobile
-          function handleTouchStart(e) {
-            isDragging = true;
-            e.preventDefault();
-          }
-
-          function handleTouchMove(e) {
-            if (!isDragging) return;
-
-            const rect = container.getBoundingClientRect();
-            const touch = e.touches[0];
-            const percentage = ((touch.clientX - rect.left) / rect.width) * 100;
-            updateSlider(percentage);
-            e.preventDefault();
-          }
-
-          function handleTouchEnd() {
-            isDragging = false;
-          }
-
-          // Event listeners
-          handle.addEventListener("mousedown", handleMouseDown);
-          document.addEventListener("mousemove", handleMouseMove);
-          document.addEventListener("mouseup", handleMouseUp);
-
-          // Touch events
-          handle.addEventListener("touchstart", handleTouchStart);
-          document.addEventListener("touchmove", handleTouchMove);
-          document.addEventListener("touchend", handleTouchEnd);
-
-          // Click anywhere on container to move slider
-          container.addEventListener("click", (e) => {
-            if (e.target === handle || handle.contains(e.target)) return;
-
-            const rect = container.getBoundingClientRect();
-            const percentage = ((e.clientX - rect.left) / rect.width) * 100;
-            updateSlider(percentage);
-          });
-
-          // Initialize at 50%
-          updateSlider(50);
-        });
-      }
-
-      // Initialize sliders when DOM is loaded
-      document.addEventListener("DOMContentLoaded", initBeforeAfterSliders);
     </script>
   </body>
 </html>
