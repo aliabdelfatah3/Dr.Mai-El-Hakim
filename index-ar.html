@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>د. مي الحكيم</title>
-    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="dist/output-rtl.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -16,7 +16,7 @@
     <!-- خلفية الصورة -->
     <div class="fixed inset-0 -z-10">
       <div
-        class="absolute inset-0 bg-cover bg-top bg-no-repeat"
+        class="absolute inset-0 bg-top bg-no-repeat bg-cover"
         style="background-image: url('/images/Mai-ElHakim.png')"
       ></div>
       <div class="absolute inset-0 bg-black/20"></div>
@@ -37,7 +37,18 @@
           <span class="text-white">مي</span>
           <span class="text-sky-300">الحكيم</span>
         </a>
-
+        <!-- زرار EN -->
+        <button
+          onclick="window.location.href='index.html'"
+          class="flex items-center gap-2 text-lg font-medium text-white cursor-pointer"
+        >
+          <img
+            src="https://flagcdn.com/gb.svg"
+            alt="UK Flag"
+            class="object-cover w-4 h-2"
+          />
+          EN
+        </button>
         <!-- قائمة الديسكتوب -->
         <ul class="items-center hidden gap-4 lg:flex xl:gap-6">
           <li>
@@ -50,7 +61,7 @@
           </li>
           <li>
             <a
-              href="AboutUs.html"
+              href="AboutUs-ar.html"
               class="px-3 py-2 text-sm font-medium text-white transition-all duration-300 transform menu-link xl:px-4 xl:py-2 xl:text-base hover:bg-white/10 hover:text-white hover:-translate-y-1"
             >
               من نحن
@@ -58,7 +69,7 @@
           </li>
           <li>
             <a
-              href="Services.html"
+              href="Services-ar.html"
               class="px-3 py-2 text-sm font-medium text-white transition-all duration-300 transform menu-link xl:px-4 xl:py-2 xl:text-base hover:bg-white/10 hover:text-white hover:-translate-y-1"
             >
               الخدمات
@@ -66,7 +77,7 @@
           </li>
           <li>
             <a
-              href="Videos.html"
+              href="Videos-ar.html"
               class="px-3 py-2 text-sm font-medium text-white transition-all duration-300 transform menu-link xl:px-4 xl:py-2 xl:text-base hover:bg-white/10 hover:text-white hover:-translate-y-1"
             >
               الفيديوهات
@@ -74,7 +85,7 @@
           </li>
           <li>
             <a
-              href="Blogs.html"
+              href="Blogs-ar.html"
               class="px-3 py-2 text-sm font-medium text-white transition-all duration-300 transform menu-link xl:px-4 xl:py-2 xl:text-base hover:bg-white/10 hover:text-white hover:-translate-y-1"
             >
               المدونة
@@ -82,7 +93,7 @@
           </li>
           <li>
             <a
-              href="ContactUs.html"
+              href="ContactUs-ar.html"
               class="px-3 py-2 text-sm font-medium text-white transition-all duration-300 transform menu-link xl:px-4 xl:text-base hover:bg-white/10 hover:text-white hover:-translate-y-1"
             >
               اتصل بنا
@@ -92,7 +103,7 @@
 
         <!-- زر الحجز للديسكتوب -->
         <a
-          href="Booking.html"
+          href="Booking-ar.html"
           class="hidden px-4 py-2 text-sm font-semibold text-white transition-colors duration-300 bg-transparent border border-gray-300 lg:inline-block xl:px-6 xl:py-3 xl:text-base hover:bg-sky-600 hover:text-white"
           aria-label="احجز موعد"
         >
@@ -130,43 +141,43 @@
         class="hidden px-4 py-4 space-y-3 border-t lg:hidden bg-black/20 backdrop-blur-sm border-white/10 sm:px-6 sm:py-6 sm:space-y-4 animate-fade-in"
       >
         <a
-          href="index.html"
+          href="index-ar.html"
           class="block px-3 py-2 text-base font-medium text-white transition-all duration-300 rounded-lg sm:py-3 sm:px-4 sm:text-lg hover:bg-white/10 hover:text-white sm:rounded-xl hover:scale-105 touch-manipulation"
         >
           الرئيسية
         </a>
         <a
-          href="AboutUs.html"
+          href="AboutUs-ar.html"
           class="block px-3 py-2 text-base font-medium text-white transition-all duration-300 rounded-lg sm:py-3 sm:px-4 sm:text-lg hover:bg-white/10 hover:text-white sm:rounded-xl hover:scale-105 touch-manipulation"
         >
           من نحن
         </a>
         <a
-          href="Services.html"
+          href="Services-ar.html"
           class="block px-3 py-2 text-base font-medium text-white transition-all duration-300 rounded-lg sm:py-3 sm:px-4 sm:text-lg hover:bg-white/10 hover:text-white sm:rounded-xl hover:scale-105 touch-manipulation"
         >
           الخدمات
         </a>
         <a
-          href="Videos.html"
+          href="Videos-ar.html"
           class="block px-3 py-2 text-base font-medium text-white transition-all duration-300 rounded-lg sm:py-3 sm:px-4 sm:text-lg hover:bg-white/10 hover:text-white sm:rounded-xl hover:scale-105 touch-manipulation"
         >
           الفيديوهات
         </a>
         <a
-          href="Blogs.html"
+          href="Blogs-ar.html"
           class="block px-3 py-2 text-base font-medium text-white transition-all duration-300 rounded-lg sm:py-3 sm:px-4 sm:text-lg hover:bg-white/10 hover:text-white sm:rounded-xl hover:scale-105 touch-manipulation"
         >
           المدونة
         </a>
         <a
-          href="ContactUs.html"
+          href="ContactUs-ar.html"
           class="block px-3 py-2 text-base font-medium text-white transition-all duration-300 rounded-lg sm:py-3 sm:px-4 sm:text-lg hover:bg-white/10 hover:text-white sm:rounded-xl hover:scale-105 touch-manipulation"
         >
           اتصل بنا
         </a>
         <a
-          href="Booking.html"
+          href="Booking-ar.html"
           class="block w-full px-4 py-3 mt-3 text-sm font-semibold text-center text-white transition-colors duration-300 border border-gray-400 rounded-lg shadow-lg sm:mt-4 sm:px-6 sm:text-base bg-sky-600 sm:rounded-xl touch-manipulation"
         >
           احجز موعد
@@ -180,11 +191,11 @@
     >
       <!-- Hero Content Container -->
       <div
-        class="flex items-end justify-center w-full px-0 lg:flex-1 lg:items-center md:justify-start lg:pb-10"
+        class="flex items-end justify-center w-full pr-10 px- lg:flex-1 lg:items-center lg:justify-start"
       >
         <!-- Hero Content -->
         <div
-          class="w-full max-w-md text-right lg:hero-contente sm:max-w-md xl:max-w-xl"
+          class="w-full max-w-md pr-10 text-right lg:hero-content sm:max-w-md xl:max-w-xl"
         >
           <h1
             class="mb-4 text-4xl font-bold leading-tight text-right text-white md:text-5xl xl:text-6xl sm:mb-6 opacity-95"
@@ -240,11 +251,11 @@
                 >
                   ساعات العمل
                 </h3>
-                <div class="heading-underline mr-auto"></div>
+                <div class="mr-auto heading-underline"></div>
               </div>
               <div class="p-2 rounded-full arrow-animate bg-gray-600/70 sm:p-3">
                 <svg
-                  class="w-4 h-4 text-white sm:w-5 lg:w-6 sm:h-5 lg:h-6 rotate-180"
+                  class="w-4 h-4 text-white rotate-180 sm:w-5 lg:w-6 sm:h-5 lg:h-6"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -253,20 +264,12 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M9 5l7 7-7 7"
+                    d="M15 19l-7-7 7-7"
                   ></path>
                 </svg>
               </div>
             </div>
-            <div class="flex items-center text-right">
-              <div>
-                <p class="mb-1 text-xs font-semibold text-white sm:text-sm">
-                  الإثنين - السبت
-                </p>
-                <p class="text-lg font-bold text-white sm:text-xl">
-                  9 صباحاً - 8 مساءً
-                </p>
-              </div>
+            <div class="flex gap-3 text-right items-baselines-center">
               <div class="ml-3 sm:ml-4">
                 <svg
                   class="w-8 h-8 sm:w-10 lg:w-12 sm:h-10 lg:h-12 text-cyan-400"
@@ -289,6 +292,14 @@
                   ></polyline>
                 </svg>
               </div>
+              <div class="flex flex-col">
+                <p class="mb-1 text-xs font-semibold text-white sm:text-sm">
+                  الإثنين - السبت
+                </p>
+                <p class="text-lg font-bold text-white sm:text-xl">
+                  9 صباحاً - 8 مساءً
+                </p>
+              </div>
             </div>
           </a>
 
@@ -304,11 +315,11 @@
                 >
                   احجز موعداً
                 </h3>
-                <div class="heading-underline mr-auto"></div>
+                <div class="mr-auto heading-underline"></div>
               </div>
               <div class="p-2 rounded-full arrow-animate bg-gray-600/70 sm:p-3">
                 <svg
-                  class="w-4 h-4 text-white sm:w-5 lg:w-6 sm:h-5 lg:h-6 rotate-180"
+                  class="w-4 h-4 text-white rotate-180 sm:w-5 lg:w-6 sm:h-5 lg:h-6"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -317,18 +328,12 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M9 5l7 7-7 7"
+                    d="M15 19l-7-7 7-7"
                   ></path>
                 </svg>
               </div>
             </div>
-            <div class="flex items-center text-right">
-              <div>
-                <p class="mb-1 text-xs font-semibold text-white sm:text-sm">
-                  احجز الآن
-                </p>
-                <p class="text-lg font-bold text-white sm:text-xl">سريع وسهل</p>
-              </div>
+            <div class="flex items-center gap-3 text-right">
               <div class="ml-3 sm:ml-4">
                 <svg
                   class="w-8 h-8 sm:w-10 lg:w-12 sm:h-10 lg:h-12 text-cyan-400"
@@ -339,6 +344,12 @@
                     d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"
                   />
                 </svg>
+              </div>
+              <div class="flex flex-col">
+                <p class="mb-1 text-xs font-semibold text-white sm:text-sm">
+                  احجز الآن
+                </p>
+                <p class="text-lg font-bold text-white sm:text-xl">سريع وسهل</p>
               </div>
             </div>
           </a>
@@ -355,11 +366,11 @@
                 >
                   تواصل معنا
                 </h3>
-                <div class="heading-underline mr-auto"></div>
+                <div class="mr-auto heading-underline"></div>
               </div>
               <div class="p-2 rounded-full arrow-animate bg-gray-600/70 sm:p-3">
                 <svg
-                  class="w-4 h-4 text-white sm:w-5 lg:w-6 sm:h-5 lg:h-6 rotate-180"
+                  class="w-4 h-4 text-white rotate-180 sm:w-5 lg:w-6 sm:h-5 lg:h-6"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -368,30 +379,33 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M9 5l7 7-7 7"
+                    d="M15 19l-7-7 7-7"
                   ></path>
                 </svg>
               </div>
             </div>
             <div class="flex items-center text-right">
-              <div>
-                <p class="mb-1 text-xs font-semibold text-white sm:text-sm">
-                  ابق على تواصل
-                </p>
-                <p class="text-lg font-bold text-white sm:text-xl">
-                  دعم على مدار الساعة
-                </p>
-              </div>
-              <div class="ml-3 sm:ml-4">
-                <svg
-                  class="w-8 h-8 sm:w-10 lg:w-12 sm:h-10 lg:h-12 text-cyan-400"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
-                  />
-                </svg>
+              <div class="flex gap-3">
+                <div class="ml-3 sm:ml-4">
+                  <svg
+                    style="transform: scaleY(-1); display: inline-block"
+                    class="w-8 h-8 sm:w-10 lg:w-12 sm:h-10 lg:h-12 text-cyan-400"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M17.38 13.21c-1.44-2.83-3.76-5.14-6.59-6.59l-2.2 2.2c-.27.27-.67.36-1.02.24A11.42 11.42 0 0 0 4 8.5c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1 9.39 0 17 7.61 17 17 0 .55-.45 1-1 1h-3.5c-.55 0-1-.45-1-1 0-1.25-.2-2.45-.57-3.57-.11-.35-.03-.74.25-1.02l2.2-2.2z"
+                    />
+                  </svg>
+                </div>
+                <div class="flex flex-col">
+                  <p class="mb-1 text-xs font-semibold text-white sm:text-sm">
+                    ابق على تواصل
+                  </p>
+                  <p class="text-lg font-bold text-white sm:text-xl">
+                    دعم على مدار الساعة
+                  </p>
+                </div>
               </div>
             </div>
           </a>
@@ -399,7 +413,7 @@
       </div>
     </section>
 
-    <!-- About Section -->
+    <!-- قسم عن الدكتورة -->
     <section
       id="about"
       class="relative py-20 overflow-hidden sm:py-24 lg:py-40 dental-gradient"
@@ -595,7 +609,7 @@
         </div>
       </div>
     </section>
-    <!------------------------------------------------------------------>
+
     <!-- معرض قبل وبعد -->
     <section
       class="relative py-20 overflow-hidden lg:py-40 bg-gradient-to-br from-blue-100 via-indigo-100 to-purple-100"
@@ -603,51 +617,74 @@
       <div class="container relative z-10 px-6 mx-auto max-w-7xl">
         <div class="grid items-start gap-16 lg:grid-cols-2">
           <!-- النص الأساسي -->
-          <div class="order-1 space-y-4 lg:order-2">
-            <h2
-              class="text-4xl font-bold leading-tight text-gray-900 md:text-5xl"
-            >
-              معرض قبل وبعد العلاج
-            </h2>
-            <div class="space-y-4 leading-relaxed text-gray-600">
-              <p>
-                اشهد التحولات المذهلة التي تم تحقيقها من خلال علاجاتنا المتقدمة
-                للأسنان. كل حالة تمثل التزامنا بالتميز ورضا المرضى.
-              </p>
-              <p>
-                نهجنا الشامل يجمع بين أحدث التقنيات والرؤية الفنية لخلق نتائج
-                طبيعية المظهر وطويلة الأمد تعزز الوظيفة والجماليات.
-              </p>
+          <div class="order-1 space-y-8 lg:order-2">
+            <!-- النص الأساسي -->
+            <div class="space-y-4">
+              <h2
+                class="text-4xl font-bold leading-tight text-gray-900 md:text-5xl"
+              >
+                معرض قبل وبعد
+              </h2>
+              <div class="space-y-4 leading-relaxed text-gray-600">
+                <p>
+                  شاهد التحولات المذهلة التي تحققت من خلال علاجات الأمراض
+                  الجلدية والتجميل المتقدمة لدينا. كل حالة تعكس تفانينا في
+                  التميز ورضا المرضى.
+                </p>
+                <p>
+                  نهجنا الشامل يمزج بين أحدث التقنيات والخبرة الطبية والرؤية
+                  الفنية لتقديم نتائج طبيعية ودائمة تعزز صحة البشرة والجمال
+                  والثقة بالنفس بشكل عام.
+                </p>
+              </div>
+            </div>
+
+            <!-- زرار الحجز + ملاحظة التأمين (يظهر هنا على الشاشات الكبيرة فقط) -->
+            <div class="flex-col hidden space-y-6 lg:flex">
+              <a
+                href="#booking"
+                class="block px-6 py-3 font-semibold text-center text-white transition-colors duration-300 border border-gray-400 shadow-lg bg-sky-600 hover:bg-sky-800"
+              >
+                احجز موعدك
+              </a>
+              <div class="pt-8 border-t border-gray-200">
+                <p class="text-gray-600">
+                  <span class="font-semibold text-gray-900"
+                    >ليس لديك تأمين؟</span
+                  >
+                  احصل على رعايتك الوقائية مقابل رسوم شهرية منخفضة
+                </p>
+              </div>
             </div>
           </div>
 
           <!-- الصور -->
           <div class="order-2 space-y-8 lg:order-1">
-            <!-- مقارنة قبل/بعد 1 -->
+            <!-- Before/After Comparison 1 -->
             <div
               class="relative overflow-hidden transition-all duration-500 bg-white shadow-2xl group rounded-3xl hover:shadow-purple-300/30 before-after-container"
               data-slider="1"
             >
-              <img
-                src="images/before1.jpg"
-                alt="قبل العلاج"
-                class="object-cover w-full h-80"
-              />
               <div class="after-image">
                 <img
                   src="images/after1.jpg"
-                  alt="بعد العلاج"
+                  alt="After Treatment"
                   class="object-cover w-full h-80"
                 />
               </div>
+              <img
+                src="images/before1.jpg"
+                alt="Before Treatment"
+                class="object-cover w-full h-80"
+              />
               <div class="slider-line"></div>
               <div
-                class="absolute z-10 px-3 py-1 text-sm font-medium text-white rounded-full top-4 left-4 bg-gray-800/80"
+                class="absolute z-10 px-3 py-1 text-sm font-medium text-white rounded-full top-4 right-4 bg-gray-800/80"
               >
                 قبل
               </div>
               <div
-                class="absolute z-10 px-3 py-1 text-sm font-medium text-white rounded-full top-4 right-4 bg-sky-500/90"
+                class="absolute z-10 px-3 py-1 text-sm font-medium text-white rounded-full top-4 left-4 bg-sky-500/90"
               >
                 بعد
               </div>
@@ -672,23 +709,33 @@
               </div>
             </div>
 
-            <!-- مقارنة قبل/بعد 2 -->
+            <!-- Before/After Comparison 2 -->
             <div
               class="relative overflow-hidden transition-all duration-500 bg-white shadow-2xl group rounded-3xl hover:shadow-pink-300/30 before-after-container"
               data-slider="2"
             >
-              <img
-                src="images/before2.jpg"
-                alt="قبل العلاج"
-                class="object-cover w-full h-80"
-              />
               <div class="after-image">
                 <img
                   src="images/after2.jpg"
-                  alt="بعد العلاج"
-                  class="object-cover w-full h-80"
+                  alt="After Treatment"
+                  style="
+                    object-fit: cover;
+                    object-position: bottom;
+                    width: 100%;
+                    height: 20rem;
+                  "
                 />
               </div>
+              <img
+                src="images/before2.jpg"
+                alt="Before Treatment"
+                style="
+                  object-fit: cover;
+                  object-position: bottom;
+                  width: 100%;
+                  height: 20rem;
+                "
+              />
               <div class="slider-line"></div>
               <div
                 class="absolute z-10 px-3 py-1 text-sm font-medium text-white rounded-full top-4 left-4 bg-gray-800/80"
@@ -720,75 +767,75 @@
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- زر الحجز + ملاحظة التأمين -->
-          <div class="order-3 space-y-6 lg:order-3">
-            <a
-              href="Booking.html"
-              class="block px-6 py-3 font-semibold text-center text-white transition-colors duration-300 border border-gray-400 shadow-lg bg-sky-600 hover:bg-sky-800"
-            >
-              احجز موعدك
-            </a>
-            <div class="pt-8 border-t border-gray-200">
-              <p class="text-gray-600">
-                <span class="font-semibold text-gray-900"
-                  >لا تملك تأمينًا؟</span
-                >
-                احصل على الرعاية الوقائية برسوم شهرية منخفضة
-              </p>
+            <!-- زرار الحجز + ملاحظة التأمين (يظهر هنا على الشاشات الصغيرة والمتوسطة فقط) -->
+            <div class="block space-y-6 lg:hidden">
+              <a
+                href="#booking"
+                class="block px-6 py-3 font-semibold text-center text-white transition-colors duration-300 border border-gray-400 shadow-lg bg-sky-600 hover:bg-sky-800"
+              >
+                احجز موعدك
+              </a>
+              <div class="pt-8 border-t border-gray-200">
+                <p class="text-gray-600">
+                  <span class="font-semibold text-gray-900"
+                    >ليس لديك تأمين؟</span
+                  >
+                  احصل على رعايتك الوقائية مقابل رسوم شهرية منخفضة
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- العناصر الديكورية -->
+      <!-- Decorative Elements -->
       <div
-        class="absolute w-40 h-40 border-2 border-pink-200 rounded-full top-10 right-10 opacity-20"
-      ></div>
-      <div
-        class="absolute border-2 border-purple-200 rounded-full bottom-20 left-20 w-60 h-60 opacity-15"
-      ></div>
-    </section>
-
-    <!-- قسم الفيديوهات -->
-    <section class="relative py-20 overflow-hidden bg-white lg:py-40">
-      <!-- العناصر الديكورية -->
-      <div
-        class="absolute border-2 border-pink-200 rounded-full top-20 left-20 w-80 h-80 opacity-20"
+        class="absolute w-40 h-40 border-2 border-pink-200 rounded-full top-10 left-10 opacity-20"
       ></div>
       <div
         class="absolute border-2 border-purple-200 rounded-full bottom-20 right-20 w-60 h-60 opacity-15"
       ></div>
+    </section>
+
+    <!-- قسم الفديوهات -->
+    <section class="relative py-20 overflow-hidden bg-white lg:py-40">
+      <!-- Decorative Elements -->
+      <div
+        class="absolute border-2 border-pink-200 rounded-full top-20 right-20 w-80 h-80 opacity-20"
+      ></div>
+      <div
+        class="absolute border-2 border-purple-200 rounded-full bottom-20 left-20 w-60 h-60 opacity-15"
+      ></div>
 
       <div class="container relative z-10 px-6 mx-auto max-w-7xl">
-        <!-- العنوان الرئيسي -->
+        <!-- Header -->
         <div class="mb-16 text-center">
           <h2 class="mb-4 text-4xl font-bold text-gray-900 lg:text-5xl">
             شاهد فيديوهاتنا
           </h2>
           <p class="max-w-2xl mx-auto text-lg text-gray-600">
-            استكشف فيديوهاتنا التعليمية والتحويلية لتتعرف أكثر على إجراءاتنا
-            المتقدمة للأسنان وتجارب المرضى
+            استكشف مقاطع الفيديو التعليمية والتحويلية الخاصة بنا لتتعرف أكثر على
+            إجراءات الأمراض الجلدية المتقدمة وتجارب المرضى.
           </p>
         </div>
 
-        <!-- شبكة الفيديوهات -->
+        <!-- Videos Grid -->
         <div
           class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 sm:gap-8"
         >
-          <!-- فيديو 1 -->
+          <!-- Video 1 -->
           <div
             class="relative overflow-hidden transition-all duration-500 bg-white shadow-xl cursor-pointer group rounded-2xl hover:shadow-2xl hover:-translate-y-3"
           >
-            <!-- صورة مصغرة للفيديو -->
+            <!-- Video Thumbnail -->
             <div class="relative">
               <img
-                src="images/video1.jpg"
-                alt="إجراء زراعة الأسنان"
+                src="images/botox-injection-procedure.jpg"
+                alt="إجراءات حقن البوتكس"
                 class="object-cover w-full h-48 transition-transform duration-700 sm:h-56 lg:h-64 group-hover:scale-110"
               />
-              <!-- زر التشغيل -->
+              <!-- Play Button Overlay -->
               <div
                 class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 bg-black/30 group-hover:opacity-100"
               >
@@ -805,25 +852,25 @@
                 </div>
               </div>
             </div>
-            <!-- عنوان الفيديو -->
+            <!-- Video Title -->
             <div class="p-4 sm:p-6">
               <h3 class="mb-2 text-lg font-bold text-gray-800">
-                إجراء زراعة الأسنان
+                إجراءات حقن البوتكس
               </h3>
               <p class="text-sm text-gray-600">
-                دليل خطوة بخطوة لجراحة الزراعة المتقدمة لدينا
+                دليل خطوة بخطوة لعلاج البوتكس المتقدم لدينا.
               </p>
             </div>
           </div>
 
-          <!-- فيديو 2 -->
+          <!-- Video 2 -->
           <div
             class="relative overflow-hidden transition-all duration-500 bg-white shadow-xl cursor-pointer group rounded-2xl hover:shadow-2xl hover:-translate-y-3"
           >
             <div class="relative">
               <img
-                src="images/video2.jpg"
-                alt="تحول تبييض الأسنان"
+                src="images/Laser Hair Removal Process.jpg"
+                alt="عملية إزالة الشعر بالليزر"
                 class="object-cover w-full h-48 transition-transform duration-700 sm:h-56 lg:h-64 group-hover:scale-110"
               />
               <div
@@ -844,22 +891,22 @@
             </div>
             <div class="p-4 sm:p-6">
               <h3 class="mb-2 text-lg font-bold text-gray-800">
-                تحول تبييض الأسنان
+                عملية إزالة الشعر بالليزر
               </h3>
               <p class="text-sm text-gray-600">
-                شاهد النتائج المذهلة قبل وبعد العلاج
+                شاهد كيف تعمل تقنية الليزر لدينا بفعالية.
               </p>
             </div>
           </div>
 
-          <!-- فيديو 3 -->
+          <!-- Video 3 -->
           <div
             class="relative overflow-hidden transition-all duration-500 bg-white shadow-xl cursor-pointer group rounded-2xl hover:shadow-2xl hover:-translate-y-3"
           >
             <div class="relative">
               <img
-                src="images/video3.jpg"
-                alt="رحلة تجميل الابتسامة"
+                src="images/Skin Rejuvenation Journey.jpg"
+                alt="رحلة تجديد البشرة"
                 class="object-cover w-full h-48 transition-transform duration-700 sm:h-56 lg:h-64 group-hover:scale-110"
               />
               <div
@@ -880,20 +927,20 @@
             </div>
             <div class="p-4 sm:p-6">
               <h3 class="mb-2 text-lg font-bold text-gray-800">
-                رحلة تجميل الابتسامة
+                رحلة تجديد البشرة
               </h3>
-              <p class="text-sm text-gray-600">قصة تحول ابتسامة كاملة</p>
+              <p class="text-sm text-gray-600">قصة تحول كاملة للبشرة.</p>
             </div>
           </div>
 
-          <!-- فيديو 4 -->
+          <!-- Video 4 -->
           <div
             class="relative overflow-hidden transition-all duration-500 bg-white shadow-xl cursor-pointer group rounded-2xl hover:shadow-2xl hover:-translate-y-3"
           >
             <div class="relative">
               <img
-                src="images/video4.jpg"
-                alt="شهادة مريض"
+                src="images/Acne Treatment Process.jpg"
+                alt="عملية علاج حب الشباب"
                 class="object-cover w-full h-48 transition-transform duration-700 sm:h-56 lg:h-64 group-hover:scale-110"
               />
               <div
@@ -913,13 +960,17 @@
               </div>
             </div>
             <div class="p-4 sm:p-6">
-              <h3 class="mb-2 text-lg font-bold text-gray-800">شهادة مريض</h3>
-              <p class="text-sm text-gray-600">استمع لمرضانا الراضين</p>
+              <h3 class="mb-2 text-lg font-bold text-gray-800">
+                عملية علاج حب الشباب
+              </h3>
+              <p class="text-sm text-gray-600">
+                شاهد طرق علاج حب الشباب الفعالة لدينا.
+              </p>
             </div>
           </div>
         </div>
 
-        <!-- زر الاستشارة -->
+        <!-- CTA Button -->
         <div class="mt-12 text-center">
           <a
             href="Booking.html"
@@ -942,19 +993,19 @@
           معرض العيادة
         </h2>
         <p class="max-w-2xl mx-auto mb-12 text-sm text-gray-600 sm:text-base">
-          ادخل إلى عيادتنا العصرية والمريحة المصممة لراحتك ورعايتك
+          ادخل إلى عيادتنا العصرية والمريحة المصممة لراحتك ورعايتك.
         </p>
 
         <div
           class="grid gap-3 sm:gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
         >
-          <!-- صورة المعرض 1 -->
+          <!-- Gallery 1 -->
           <div
             class="relative overflow-hidden transition-all duration-500 shadow-xl cursor-pointer group rounded-2xl hover:shadow-green-300/50 hover:-translate-y-3 hover:scale-105"
           >
             <img
-              src="images/gallery1.jpg"
-              alt="داخل العيادة"
+              src="images/dermatology-reception.jpg"
+              alt="استقبال عيادة الأمراض الجلدية"
               class="object-cover w-full h-48 transition-transform duration-700 sm:h-64 group-hover:scale-110"
             />
             <div
@@ -966,49 +1017,49 @@
             </div>
           </div>
 
-          <!-- صورة المعرض 2 -->
+          <!-- Gallery 2 -->
           <div
             class="relative overflow-hidden transition-all duration-500 shadow-xl cursor-pointer group rounded-2xl hover:shadow-blue-300/50 hover:-translate-y-3 hover:scale-105"
           >
             <img
-              src="images/gallery2.jpg"
-              alt="غرفة العلاج"
+              src="images/laser-treatment-room.jpg"
+              alt="غرفة علاج الليزر"
               class="object-cover w-full h-48 transition-transform duration-700 sm:h-64 group-hover:scale-110"
             />
             <div
               class="absolute inset-0 flex items-end p-3 transition-opacity opacity-0 bg-gradient-to-t from-black/70 via-transparent to-transparent group-hover:opacity-100 sm:p-4"
             >
               <h3 class="text-sm font-bold text-white sm:text-base">
-                غرفة علاج متطورة
+                غرفة علاج الليزر
               </h3>
             </div>
           </div>
 
-          <!-- صورة المعرض 3 -->
+          <!-- Gallery 3 -->
           <div
             class="relative overflow-hidden transition-all duration-500 shadow-xl cursor-pointer group rounded-2xl hover:shadow-purple-300/50 hover:-translate-y-3 hover:scale-105"
           >
             <img
-              src="images/gallery3.jpg"
-              alt="منطقة الانتظار"
+              src="images/cosmetic-consultation-area.jpg"
+              alt="منطقة الاستشارة"
               class="object-cover w-full h-48 transition-transform duration-700 sm:h-64 group-hover:scale-110"
             />
             <div
               class="absolute inset-0 flex items-end p-3 transition-opacity opacity-0 bg-gradient-to-t from-black/70 via-transparent to-transparent group-hover:opacity-100 sm:p-4"
             >
               <h3 class="text-sm font-bold text-white sm:text-base">
-                صالة مريحة
+                منطقة الاستشارة
               </h3>
             </div>
           </div>
 
-          <!-- صورة المعرض 4 -->
+          <!-- Gallery 4 -->
           <div
             class="relative overflow-hidden transition-all duration-500 shadow-xl cursor-pointer group rounded-2xl hover:shadow-green-300/50 hover:-translate-y-3 hover:scale-105"
           >
             <img
-              src="images/gallery4.jpg"
-              alt="وحدة التعقيم"
+              src="images/sterilization-equipment.jpg"
+              alt="معدات التعقيم"
               class="object-cover w-full h-48 transition-transform duration-700 sm:h-64 group-hover:scale-110"
             />
             <div
@@ -1026,78 +1077,62 @@
     <!-- قسم المدونات -->
     <section class="relative py-20 overflow-hidden bg-white lg:py-40">
       <div class="container relative z-10 px-6 mx-auto max-w-7xl">
-        <!-- عنوان القسم -->
+        <!-- Section Header -->
         <div class="mb-16 text-center">
           <h2 class="mb-6 text-4xl font-black text-gray-900 lg:text-6xl">
             أحدث المقالات
           </h2>
           <p class="max-w-3xl mx-auto text-xl leading-relaxed text-gray-600">
-            ابق على اطلاع بنصائح الخبراء في طب الأسنان، وإرشادات للحفاظ على صحة
-            الفم، وأحدث الابتكارات في طب الأسنان
+            ابقَ على اطلاع مع نصائح خبراء العناية بالبشرة، ونصائح الجمال، وأحدث
+            الابتكارات في طب الجلدية والعلاجات التجميلية
           </p>
         </div>
 
-        <!-- قسم المدونات -->
+        <!-- Blogs Section -->
         <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          <!-- بطاقة مدونة 1 -->
+          <!-- Blog Card 1 -->
           <article
-            class="relative overflow-hidden transition-all duration-500 bg-white shadow-lg cursor-pointer group rounded-2xl hover:shadow-xl hover:-translate-y-2"
+            class="relative overflow-hidden transition-all duration-500 bg-white shadow-lg cursor-pointer blog-card group rounded-2xl hover:shadow-xl hover:-translate-y-2"
           >
             <div class="relative h-48">
-              <div class="absolute inset-0 bg-gray-100">
-                <img
-                  src=""
-                  alt="صورة المقال"
-                  class="object-cover w-full h-full"
-                />
-              </div>
-              <div class="absolute inset-0 flex items-center justify-center">
-                <div class="text-center text-white">
-                  <div
-                    class="flex items-center justify-center w-12 h-12 mx-auto mb-2 bg-black rounded-full backdrop-blur-sm"
-                  >
-                    <svg
-                      class="w-6 h-6"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                  </div>
-                  <p class="text-sm font-medium text-black">صورة المدونة</p>
-                </div>
-              </div>
+              <img
+                src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                alt="صورة روتين العناية بالبشرة"
+                class="object-cover w-full h-full"
+              />
               <div
-                class="absolute px-3 py-1 text-xs font-bold text-blue-600 bg-white rounded-full top-3 right-3"
+                class="absolute px-3 py-1 text-xs font-bold bg-white rounded-full text-sky-600 top-3 right-3"
               >
-                نصائح
+                العناية بالبشرة
               </div>
             </div>
 
-            <div class="p-6">
-              <div
-                class="flex items-center mb-3 space-x-2 text-xs text-gray-500"
-              >
-                <span>12 ديسمبر، 2024</span>
-                <span>•</span>
-                <span>3 دقائق قراءة</span>
+            <div class="blog-card-content">
+              <div class="blog-card-main">
+                <div
+                  class="flex items-center mb-3 space-x-2 text-xs text-gray-500"
+                >
+                  <span>12 ديسمبر، 2024</span>
+                  <span>•</span>
+                  <span>4 دقائق قراءة</span>
+                </div>
+
+                <h3
+                  class="mb-3 text-lg font-bold leading-tight text-gray-900 transition-colors group-hover:text-sky-500"
+                >
+                  10 خطوات أساسية للحصول على روتين مثالي للعناية بالبشرة يومياً
+                </h3>
+
+                <p class="mb-4 text-sm leading-relaxed text-gray-600">
+                  اكتشف روتين العناية بالبشرة الأساسي الذي سيحول صحة بشرتك
+                  ويمنحك ذلك الإشراق الطبيعي والصحي الذي طالما رغبت فيه.
+                </p>
               </div>
 
-              <h3
-                class="mb-3 text-lg font-bold leading-tight text-gray-900 transition-colors group-hover:text-sky-500"
-              >
-                5 أطعمة تبيض أسنانك طبيعياً
-              </h3>
-
-              <p class="mb-4 text-sm leading-relaxed text-gray-600">
-                اكتشف الطرق الطبيعية لتبييض ابتسامتك مع هذه الأطعمة التي يمكنك
-                بسهولة إدراجها في نظامك الغذائي اليومي
-              </p>
-
-              <div class="flex items-center justify-between">
+              <div class="blog-card-footer">
                 <a
                   href="#"
-                  class="inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-800 group"
+                  class="inline-flex items-center text-sm font-semibold text-sky-600 hover:text-sky-800 group"
                 >
                   <span>اقرأ المزيد</span>
                   <svg
@@ -1116,75 +1151,57 @@
                 </a>
                 <div class="flex space-x-1">
                   <span
-                    class="px-2 py-1 text-xs text-blue-600 bg-blue-100 rounded-full"
-                    >تغذية</span
+                    class="px-2 py-1 text-xs rounded-full text-sky-600 bg-sky-100"
+                    >روتين</span
                   >
                 </div>
               </div>
             </div>
           </article>
 
-          <!-- بطاقة مدونة 2 -->
+          <!-- Blog Card 2 -->
           <article
-            class="relative overflow-hidden transition-all duration-500 bg-white shadow-lg cursor-pointer group rounded-2xl hover:shadow-xl hover:-translate-y-2"
+            class="relative overflow-hidden transition-all duration-500 bg-white shadow-lg cursor-pointer blog-card group rounded-2xl hover:shadow-xl hover:-translate-y-2"
           >
             <div class="relative h-48">
-              <div class="absolute inset-0 bg-gray-100">
-                <img
-                  src=""
-                  alt="صورة المقال"
-                  class="object-cover w-full h-full"
-                />
-              </div>
-              <div class="absolute inset-0 flex items-center justify-center">
-                <div class="text-center text-white">
-                  <div
-                    class="flex items-center justify-center w-12 h-12 mx-auto mb-2 bg-black rounded-full backdrop-blur-sm"
-                  >
-                    <svg
-                      class="w-6 h-6"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                      />
-                    </svg>
-                  </div>
-                  <p class="text-sm font-medium text-black">صورة المدونة</p>
-                </div>
-              </div>
+              <img
+                src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                alt="صورة علاج البوتوكس"
+                class="object-cover w-full h-full"
+              />
               <div
-                class="absolute px-3 py-1 text-xs font-bold text-blue-600 bg-white rounded-full top-3 right-3"
+                class="absolute px-3 py-1 text-xs font-bold bg-white rounded-full text-sky-600 top-3 right-3"
               >
-                علاج
+                العلاج
               </div>
             </div>
 
-            <div class="p-6">
-              <div
-                class="flex items-center mb-3 space-x-2 text-xs text-gray-500"
-              >
-                <span>10 ديسمبر، 2024</span>
-                <span>•</span>
-                <span>4 دقائق قراءة</span>
+            <div class="blog-card-content">
+              <div class="blog-card-main">
+                <div
+                  class="flex items-center mb-3 space-x-2 text-xs text-gray-500"
+                >
+                  <span>10 ديسمبر، 2024</span>
+                  <span>•</span>
+                  <span>5 دقائق قراءة</span>
+                </div>
+
+                <h3
+                  class="mb-3 text-lg font-bold leading-tight text-gray-900 transition-colors group-hover:text-sky-500"
+                >
+                  كل ما تحتاج معرفته حول علاج البوتوكس
+                </h3>
+
+                <p class="mb-4 text-sm leading-relaxed text-gray-600">
+                  دليل شامل لحقن البوتوكس يغطي الإجراء والنتائج المتوقعة ووقت
+                  التعافي وكيفية المحافظة على مظهرك الشبابي.
+                </p>
               </div>
 
-              <h3
-                class="mb-3 text-lg font-bold leading-tight text-gray-900 transition-colors group-hover:text-sky-500"
-              >
-                فهم علاج عصب الأسنان: ما يمكن توقعه
-              </h3>
-
-              <p class="mb-4 text-sm leading-relaxed text-gray-600">
-                كشف الغموض عن إجراءات عصب الأسنان مع هذا الدليل الشامل الذي يوضح
-                العملية والفوائد وتوقعات التعافي
-              </p>
-
-              <div class="flex items-center justify-between">
+              <div class="blog-card-footer">
                 <a
                   href="#"
-                  class="inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-800 group"
+                  class="inline-flex items-center text-sm font-semibold text-sky-600 hover:text-sky-800 group"
                 >
                   <span>اقرأ المزيد</span>
                   <svg
@@ -1203,73 +1220,57 @@
                 </a>
                 <div class="flex space-x-1">
                   <span
-                    class="px-2 py-1 text-xs text-blue-600 bg-blue-100 rounded-full"
-                    >إجراءات</span
+                    class="px-2 py-1 text-xs rounded-full text-sky-600 bg-sky-100"
+                    >تجميلي</span
                   >
                 </div>
               </div>
             </div>
           </article>
 
-          <!-- بطاقة مدونة 3 -->
+          <!-- Blog Card 3 -->
           <article
-            class="relative overflow-hidden transition-all duration-500 bg-white shadow-lg cursor-pointer group rounded-2xl hover:shadow-xl hover:-translate-y-2"
+            class="relative overflow-hidden transition-all duration-500 bg-white shadow-lg cursor-pointer blog-card group rounded-2xl hover:shadow-xl hover:-translate-y-2"
           >
             <div class="relative h-48">
-              <div class="absolute inset-0 bg-gray-100">
-                <img
-                  src=""
-                  alt="صورة المقال"
-                  class="object-cover w-full h-full"
-                />
-              </div>
-              <div class="absolute inset-0 flex items-center justify-center">
-                <div class="text-center text-white">
-                  <div
-                    class="flex items-center justify-center w-12 h-12 mx-auto mb-2 bg-black rounded-full backdrop-blur-sm"
-                  >
-                    <svg
-                      class="w-6 h-6"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
-                  </div>
-                  <p class="text-sm font-medium text-black">صورة المدونة</p>
-                </div>
-              </div>
+              <img
+                src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                alt="صورة علاج الليزر"
+                class="object-cover w-full h-full"
+              />
               <div
-                class="absolute px-3 py-1 text-xs font-bold text-blue-600 bg-white rounded-full top-3 right-3"
+                class="absolute px-3 py-1 text-xs font-bold bg-white rounded-full text-sky-600 top-3 right-3"
               >
-                تقنيات
+                التكنولوجيا
               </div>
             </div>
 
-            <div class="p-6">
-              <div
-                class="flex items-center mb-3 space-x-2 text-xs text-gray-500"
-              >
-                <span>8 ديسمبر، 2024</span>
-                <span>•</span>
-                <span>6 دقائق قراءة</span>
+            <div class="blog-card-content">
+              <div class="blog-card-main">
+                <div
+                  class="flex items-center mb-3 space-x-2 text-xs text-gray-500"
+                >
+                  <span>8 ديسمبر، 2024</span>
+                  <span>•</span>
+                  <span>6 دقائق قراءة</span>
+                </div>
+
+                <h3
+                  class="mb-3 text-lg font-bold leading-tight text-gray-900 transition-colors group-hover:text-sky-500"
+                >
+                  علاجات الليزر المتقدمة لتجديد البشرة
+                </h3>
+
+                <p class="mb-4 text-sm leading-relaxed text-gray-600">
+                  استكشف تقنيات الليزر المتطورة التي تحدث ثورة في علاج البشرة،
+                  من ندبات حب الشباب إلى التجاعيد ومشاكل التصبغ.
+                </p>
               </div>
 
-              <h3
-                class="mb-3 text-lg font-bold leading-tight text-gray-900 transition-colors group-hover:text-sky-500"
-              >
-                أحدث الابتكارات في طب الأسنان الرقمي
-              </h3>
-
-              <p class="mb-4 text-sm leading-relaxed text-gray-600">
-                استكشف التقنيات المتطورة في طب الأسنان التي تحدث ثورة في رعاية
-                المرضى ونتائج العلاج في الطب الحديث
-              </p>
-
-              <div class="flex items-center justify-between">
+              <div class="blog-card-footer">
                 <a
                   href="#"
-                  class="inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-800 group"
+                  class="inline-flex items-center text-sm font-semibold text-sky-600 hover:text-sky-800 group"
                 >
                   <span>اقرأ المزيد</span>
                   <svg
@@ -1288,7 +1289,7 @@
                 </a>
                 <div class="flex space-x-1">
                   <span
-                    class="px-2 py-1 text-xs text-blue-600 bg-blue-100 rounded-full"
+                    class="px-2 py-1 text-xs rounded-full text-sky-600 bg-sky-100"
                     >ابتكار</span
                   >
                 </div>
@@ -1296,67 +1297,50 @@
             </div>
           </article>
 
-          <!-- بطاقة مدونة 4 -->
+          <!-- Blog Card 4 -->
           <article
-            class="relative overflow-hidden transition-all duration-500 bg-white shadow-lg cursor-pointer group rounded-2xl hover:shadow-xl hover:-translate-y-2"
+            class="relative overflow-hidden transition-all duration-500 bg-white shadow-lg cursor-pointer blog-card group rounded-2xl hover:shadow-xl hover:-translate-y-2"
           >
             <div class="relative h-48">
-              <div class="absolute inset-0 bg-gray-100">
-                <img
-                  src=""
-                  alt="صورة المقال"
-                  class="object-cover w-full h-full"
-                />
-              </div>
-              <div class="absolute inset-0 flex items-center justify-center">
-                <div class="text-center text-white">
-                  <div
-                    class="flex items-center justify-center w-12 h-12 mx-auto mb-2 bg-black rounded-full backdrop-blur-sm"
-                  >
-                    <svg
-                      class="w-6 h-6"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                      />
-                    </svg>
-                  </div>
-                  <p class="text-sm font-medium text-black">صورة المدونة</p>
-                </div>
-              </div>
+              <img
+                src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                alt="صورة مكافحة الشيخوخة للبشرة"
+                class="object-cover w-full h-full"
+              />
               <div
-                class="absolute px-3 py-1 text-xs font-bold text-blue-600 bg-white rounded-full top-3 right-3"
+                class="absolute px-3 py-1 text-xs font-bold bg-white rounded-full text-sky-600 top-3 right-3"
               >
-                عناية
+                مكافحة الشيخوخة
               </div>
             </div>
 
-            <div class="p-6">
-              <div
-                class="flex items-center mb-3 space-x-2 text-xs text-gray-500"
-              >
-                <span>5 ديسمبر، 2024</span>
-                <span>•</span>
-                <span>5 دقائق قراءة</span>
+            <div class="blog-card-content">
+              <div class="blog-card-main">
+                <div
+                  class="flex items-center mb-3 space-x-2 text-xs text-gray-500"
+                >
+                  <span>5 ديسمبر، 2024</span>
+                  <span>•</span>
+                  <span>7 دقائق قراءة</span>
+                </div>
+
+                <h3
+                  class="mb-3 text-lg font-bold leading-tight text-gray-900 transition-colors group-hover:text-sky-500"
+                >
+                  أفضل مكونات مكافحة الشيخوخة للحصول على بشرة شابة
+                </h3>
+
+                <p class="mb-4 text-sm leading-relaxed text-gray-600">
+                  تعرف على مكونات مكافحة الشيخوخة القوية مثل الريتينول وحمض
+                  الهيالورونيك والببتيدات التي يمكن أن تساعد في المحافظة على
+                  مظهر بشرتك الشبابي.
+                </p>
               </div>
 
-              <h3
-                class="mb-3 text-lg font-bold leading-tight text-gray-900 transition-colors group-hover:text-sky-500"
-              >
-                كيفية العناية بأسنانك بعد التبييض
-              </h3>
-
-              <p class="mb-4 text-sm leading-relaxed text-gray-600">
-                تعلم النصائح الأساسية للعناية اللاحقة للحفاظ على ابتسامتك
-                البيضاء الناصعة وإطالة نتائج علاج التبييض المهني
-              </p>
-
-              <div class="flex items-center justify-between">
+              <div class="blog-card-footer">
                 <a
                   href="#"
-                  class="inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-800 group"
+                  class="inline-flex items-center text-sm font-semibold text-sky-600 hover:text-sky-800 group"
                 >
                   <span>اقرأ المزيد</span>
                   <svg
@@ -1375,8 +1359,8 @@
                 </a>
                 <div class="flex space-x-1">
                   <span
-                    class="px-2 py-1 text-xs text-blue-600 bg-blue-100 rounded-full"
-                    >عناية لاحقة</span
+                    class="px-2 py-1 text-xs rounded-full text-sky-600 bg-sky-100"
+                    >مكونات</span
                   >
                 </div>
               </div>
@@ -1384,88 +1368,53 @@
           </article>
         </div>
 
-        <!-- زر تصفح جميع المقالات -->
+        <!-- Browse All Blogs CTA -->
         <div class="mt-16 text-center">
           <div class="inline-flex flex-col items-center space-y-6">
             <a
               href="Blogs.html"
               class="px-6 py-3 font-semibold text-center text-white transition-colors duration-300 border border-gray-400 shadow-lg bg-sky-600 hover:bg-sky-800"
             >
-              تصفح جميع مقالات المدونة
+              تصفح جميع المقالات
             </a>
             <p class="text-sm text-gray-600">
-              انضم إلى آلاف القراء الذين يتابعون أخبار صحة الأسنان
+              انضم لآلاف القراء الذين يبقون على اطلاع حول العناية بالبشرة
+              والجمال
             </p>
           </div>
         </div>
       </div>
-
-      <!-- أنماط إضافية -->
-      <style>
-        @keyframes bounce-slow {
-          0%,
-          100% {
-            transform: translateY(-25%);
-            animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
-          }
-          50% {
-            transform: none;
-            animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-          }
-        }
-
-        @keyframes spin-slow {
-          from {
-            transform: rotate(0deg);
-          }
-          to {
-            transform: rotate(360deg);
-          }
-        }
-
-        .animate-bounce-slow {
-          animation: bounce-slow 3s infinite;
-        }
-
-        .animate-spin-slow {
-          animation: spin-slow 20s linear infinite;
-        }
-
-        /* تأثيرات التفاعل */
-        article:hover .backdrop-blur-sm {
-          backdrop-filter: blur(8px);
-        }
-      </style>
     </section>
 
     <!-- قسم شهادات المرضى -->
     <section
       class="relative py-20 overflow-hidden lg:py-40 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50"
     >
-      <!-- الدوائر الديكورية -->
+      <!-- Decorative Circles -->
       <div
-        class="absolute border-2 rounded-full border-sky-200 top-20 left-20 w-80 h-80 opacity-20"
+        class="absolute border-2 border-pink-200 rounded-full top-20 left-20 w-80 h-80 opacity-20"
       ></div>
       <div
         class="absolute border-2 border-purple-200 rounded-full bottom-20 right-20 w-60 h-60 opacity-15"
       ></div>
 
       <div class="container relative z-10 px-6 mx-auto max-w-7xl">
-        <!-- عنوان القسم -->
+        <!-- Section Header -->
         <div class="mb-16 text-center">
           <h2 class="mb-4 text-4xl font-bold text-gray-900 lg:text-5xl">
-            ماذا يقول مرضانا
+            آراء عملائنا
           </h2>
           <p class="max-w-2xl mx-auto text-lg text-gray-600">
-            قصص حقيقية من مرضى حقيقيين عاشوا الرعاية الاستثنائية والنتائج
-            التحويلية في عيادة الدكتورة مي الحكيم
+            قصص حقيقية من العملاء الذين عاشوا تجربة استثنائية في العناية بالبشرة
+            والعلاجات التجميلية المتطورة في عيادة
+            <b>د. مي الحكيم</b>.
           </p>
         </div>
 
-        <!-- شريط التمرير -->
+        <!-- ✅ Swiper Slider -->
         <div class="relative swiper testimonials-swiper">
           <div class="swiper-wrapper">
-            <!-- الشريحة 1 -->
+            <!-- ===== Slide 1 ===== -->
             <div class="swiper-slide">
               <div
                 class="relative p-6 overflow-hidden transition-all duration-500 bg-white shadow-xl group rounded-2xl hover:shadow-2xl sm:p-8"
@@ -1476,24 +1425,24 @@
                 <p
                   class="mb-6 text-sm leading-relaxed text-gray-700 sm:text-base"
                 >
-                  "الدكتورة مي غيرت ابتسامتي بالكامل! عملية تبييض الأسنان كانت
-                  بدون ألم والنتائج فاقت توقعاتي."
+                  "د. مي ساعدتني أحصل على بشرة متوهجة وصحية من خلال علاج وجه
+                  مخصص. أشعر بثقة كبيرة الآن!"
                 </p>
                 <div class="flex items-center">
                   <div
-                    class="flex items-center justify-center w-12 h-12 mr-4 text-white rounded-full bg-sky-500"
+                    class="flex items-center justify-center w-12 h-12 mr-4 text-white bg-pink-500 rounded-full"
                   >
                     <span class="text-lg font-bold">س</span>
                   </div>
                   <div>
                     <h4 class="text-lg font-bold text-gray-900">سارة أحمد</h4>
-                    <p class="text-sm text-gray-600">مريضة تبييض أسنان</p>
+                    <p class="text-sm text-gray-600">عميلة هيدرا فيشل</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- الشريحة 2 -->
+            <!-- ===== Slide 2 ===== -->
             <div class="swiper-slide">
               <div
                 class="relative p-6 overflow-hidden transition-all duration-500 bg-white shadow-xl group rounded-2xl hover:shadow-2xl sm:p-8"
@@ -1504,24 +1453,24 @@
                 <p
                   class="mb-6 text-sm leading-relaxed text-gray-700 sm:text-base"
                 >
-                  "تمت عملية زراعة الأسنان بمهنية عالية. ابتسامتي الجديدة تبدو
-                  طبيعية تماماً!"
+                  "جلسات إزالة الشعر بالليزر كانت سريعة وغير مؤلمة. النتائج
+                  مذهلة وطويلة المدى!"
                 </p>
                 <div class="flex items-center">
                   <div
-                    class="flex items-center justify-center w-12 h-12 mr-4 text-white rounded-full bg-sky-500"
+                    class="flex items-center justify-center w-12 h-12 mr-4 text-white bg-pink-500 rounded-full"
                   >
                     <span class="text-lg font-bold">م</span>
                   </div>
                   <div>
-                    <h4 class="text-lg font-bold text-gray-900">محمد حسن</h4>
-                    <p class="text-sm text-gray-600">مريض زراعة أسنان</p>
+                    <h4 class="text-lg font-bold text-gray-900">منى خالد</h4>
+                    <p class="text-sm text-gray-600">إزالة الشعر بالليزر</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- الشريحة 3 -->
+            <!-- ===== Slide 3 ===== -->
             <div class="swiper-slide">
               <div
                 class="relative p-6 overflow-hidden transition-all duration-500 bg-white shadow-xl group rounded-2xl hover:shadow-2xl sm:p-8"
@@ -1532,24 +1481,24 @@
                 <p
                   class="mb-6 text-sm leading-relaxed text-gray-700 sm:text-base"
                 >
-                  "كنت أخاف من زيارات الأسنان، لكن النهج اللطيف للدكتورة مي
-                  جعلني مرتاحة تماماً طوال رحلة التقويم."
+                  "أحببت علاج البوتوكس! د. مي شرحت لي كل شيء والنتائج تبدو
+                  طبيعية جداً."
                 </p>
                 <div class="flex items-center">
                   <div
-                    class="flex items-center justify-center w-12 h-12 mr-4 text-white rounded-full bg-sky-500"
+                    class="flex items-center justify-center w-12 h-12 mr-4 text-white bg-pink-500 rounded-full"
                   >
                     <span class="text-lg font-bold">ل</span>
                   </div>
                   <div>
                     <h4 class="text-lg font-bold text-gray-900">ليلى كريم</h4>
-                    <p class="text-sm text-gray-600">مريضة تقويم</p>
+                    <p class="text-sm text-gray-600">علاج البوتوكس</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- الشريحة 4 -->
+            <!-- ===== Slide 4 ===== -->
             <div class="swiper-slide">
               <div
                 class="relative p-6 overflow-hidden transition-all duration-500 bg-white shadow-xl group rounded-2xl hover:shadow-2xl sm:p-8"
@@ -1560,24 +1509,24 @@
                 <p
                   class="mb-6 text-sm leading-relaxed text-gray-700 sm:text-base"
                 >
-                  "من الاستشارة الأولى إلى الفحص النهائي، قدم الفريق خدمة
-                  متميزة. لا يمكنني أن أكون أكثر سعادة!"
+                  "خطة علاج حب الشباب عملت معجزات. بشرتي لم تكن بهذا الصفاء
+                  والصحة من قبل!"
                 </p>
                 <div class="flex items-center">
                   <div
-                    class="flex items-center justify-center w-12 h-12 mr-4 text-white rounded-full bg-sky-500"
+                    class="flex items-center justify-center w-12 h-12 mr-4 text-white bg-pink-500 rounded-full"
                   >
                     <span class="text-lg font-bold">أ</span>
                   </div>
                   <div>
                     <h4 class="text-lg font-bold text-gray-900">أحمد ناصر</h4>
-                    <p class="text-sm text-gray-600">فحص دوري</p>
+                    <p class="text-sm text-gray-600">علاج حب الشباب</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- الشريحة 5 -->
+            <!-- ===== Slide 5 ===== -->
             <div class="swiper-slide">
               <div
                 class="relative p-6 overflow-hidden transition-all duration-500 bg-white shadow-xl group rounded-2xl hover:shadow-2xl sm:p-8"
@@ -1588,24 +1537,24 @@
                 <p
                   class="mb-6 text-sm leading-relaxed text-gray-700 sm:text-base"
                 >
-                  "علاج الإنفيزالاين كان سريعاً والنتائج كانت مذهلة. أبتسم الآن
-                  بثقة كل يوم!"
+                  "عملت حقن شفايف وأنا مهووسة بالشكل الطبيعي والمتوازن. شكراً د.
+                  مي!"
                 </p>
                 <div class="flex items-center">
                   <div
-                    class="flex items-center justify-center w-12 h-12 mr-4 text-white rounded-full bg-sky-500"
+                    class="flex items-center justify-center w-12 h-12 mr-4 text-white bg-pink-500 rounded-full"
                   >
-                    <span class="text-lg font-bold">ع</span>
+                    <span class="text-lg font-bold">و</span>
                   </div>
                   <div>
-                    <h4 class="text-lg font-bold text-gray-900">عمر فريد</h4>
-                    <p class="text-sm text-gray-600">مريض إنفيزالاين</p>
+                    <h4 class="text-lg font-bold text-gray-900">ولاء فريد</h4>
+                    <p class="text-sm text-gray-600">حقن الشفايف</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- الشريحة 6 -->
+            <!-- ===== Slide 6 ===== -->
             <div class="swiper-slide">
               <div
                 class="relative p-6 overflow-hidden transition-all duration-500 bg-white shadow-xl group rounded-2xl hover:shadow-2xl sm:p-8"
@@ -1616,30 +1565,30 @@
                 <p
                   class="mb-6 text-sm leading-relaxed text-gray-700 sm:text-base"
                 >
-                  "رعاية استثنائية للأطفال! أطفالي يحبون المجيء هنا ويغادرون
-                  دائماً بابتسامات كبيرة."
+                  "المايكرو نيدلنغ في عيادة د. مي حسن ملمس بشرتي وقلل الندوب
+                  بشكل كبير!"
                 </p>
                 <div class="flex items-center">
                   <div
-                    class="flex items-center justify-center w-12 h-12 mr-4 text-white rounded-full bg-sky-500"
+                    class="flex items-center justify-center w-12 h-12 mr-4 text-white bg-pink-500 rounded-full"
                   >
-                    <span class="text-lg font-bold">هـ</span>
+                    <span class="text-lg font-bold">ه</span>
                   </div>
                   <div>
                     <h4 class="text-lg font-bold text-gray-900">هدى سالم</h4>
-                    <p class="text-sm text-gray-600">طب أسنان الأطفال</p>
+                    <p class="text-sm text-gray-600">المايكرو نيدلنغ</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- التنقل -->
+        <!-- Navigation -->
         <div class="swiper-button-prev custom-nav"></div>
         <div class="swiper-button-next custom-nav"></div>
       </div>
-      <!-- المؤشرات -->
-      <div class="mt-8 swiper-pagination"></div>
+      <!-- ✅ Pagination  -->
+      <div class="mb-16 swiper-pagination"></div>
     </section>
 
     <!-- ✅ Slider Init -->
@@ -1662,37 +1611,37 @@
       });
     </script>
 
-    <!-- ✅ Creative Booking Form Section -->
+    <!-- Booking Form Section DONE -->
     <section
       class="relative py-20 bg-center bg-cover lg:py-32"
-      style="background-image: url('images/gallery1.jpg')"
+      style="background-image: url('images/dermatology-reception.jpg')"
     >
       <!-- Overlay -->
       <div class="absolute inset-0 bg-black/40"></div>
 
       <!-- Floating Blobs - متوافقة مع الديزاين -->
       <div
-        class="absolute border-2 border-pink-200 rounded-full -top-20 -right-20 w-80 h-80 opacity-20"
+        class="absolute border-2 border-pink-200 rounded-full -top-20 -left-20 w-80 h-80 opacity-20"
       ></div>
       <div
-        class="absolute border-2 border-purple-200 rounded-full -bottom-20 -left-20 w-96 h-96 opacity-15"
+        class="absolute border-2 border-purple-200 rounded-full -bottom-20 -right-20 w-96 h-96 opacity-15"
       ></div>
 
       <div class="container relative z-10 max-w-4xl px-6 mx-auto">
-        <!-- ✅ Title -->
+        <!-- Title -->
         <div class="mb-12 text-center">
           <h1
             class="mb-4 text-3xl font-bold text-white md:text-4xl lg:text-5xl"
           >
-            Book Your Appointment
+            احجز موعدك
           </h1>
           <p class="max-w-2xl mx-auto text-base text-gray-200 md:text-lg">
-            Schedule your visit with Dr. Mai El-Hakim and take the first step
-            towards your perfect smile.
+            حدد موعد زيارتك مع الدكتورة مي الحكيم واتخذ الخطوة الأولى نحو بشرة
+            مثالية وصحية.
           </p>
         </div>
 
-        <!-- ✅ Booking Form -->
+        <!-- Booking Form -->
         <div
           class="max-w-3xl p-6 mx-auto transition-all duration-500 transform border shadow-2xl md:p-8 bg-white/90 backdrop-blur-sm rounded-3xl border-white/20 hover:shadow-xl hover:-translate-y-2"
         >
@@ -1703,14 +1652,14 @@
                 for="booking-name"
                 class="flex items-center gap-2 mb-2 text-sm font-semibold text-gray-800"
               >
-                Full Name
+                الاسم الكامل
               </label>
               <input
                 type="text"
                 id="booking-name"
                 name="name"
-                placeholder="Your name"
-                class="w-full px-4 py-3 text-gray-800 placeholder-gray-400 transition-all duration-300 bg-white border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-4 focus:ring-sky-300/30 focus:border-sky-500"
+                placeholder="اكتب اسمك"
+                class="w-full px-4 py-3 text-right text-gray-800 placeholder-gray-400 transition-all duration-300 bg-white border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-4 focus:ring-sky-300/30 focus:border-sky-500"
               />
             </div>
 
@@ -1720,7 +1669,7 @@
                 for="booking-email"
                 class="flex items-center gap-2 mb-2 text-sm font-semibold text-gray-800"
               >
-                Email Address
+                البريد الإلكتروني
               </label>
               <input
                 type="email"
@@ -1737,7 +1686,7 @@
                 for="booking-phone"
                 class="flex items-center gap-2 mb-2 text-sm font-semibold text-gray-800"
               >
-                Phone Number
+                رقم الهاتف
               </label>
               <input
                 type="tel"
@@ -1754,20 +1703,22 @@
                 for="booking-service"
                 class="flex items-center gap-2 mb-2 text-sm font-semibold text-gray-800"
               >
-                Select Service
+                اختر الخدمة
               </label>
               <select
                 id="booking-service"
                 name="service"
-                class="w-full px-4 py-3 text-gray-800 transition-all duration-300 bg-white border-2 border-gray-300 appearance-none rounded-xl focus:outline-none focus:ring-4 focus:ring-sky-300/30 focus:border-sky-500"
+                class="w-full px-4 py-3 text-right text-gray-800 transition-all duration-300 bg-white border-2 border-gray-300 appearance-none rounded-xl focus:outline-none focus:ring-4 focus:ring-sky-300/30 focus:border-sky-500"
               >
-                <option value="" disabled selected>Select a service</option>
-                <option>Teeth Whitening</option>
-                <option>Dental Implants</option>
-                <option>Braces & Aligners</option>
-                <option>Smile Makeover</option>
-                <option>Cosmetic Dentistry</option>
-                <option>Root Canal Treatment</option>
+                <option value="" disabled selected>اختر خدمة</option>
+                <option>علاج بيكو شور</option>
+                <option>إزالة الشعر بالليزر</option>
+                <option>حقن البوتكس</option>
+                <option>حقن الفيلر (الشفاه/الوجه)</option>
+                <option>التقشير الكيميائي</option>
+                <option>الوخز بالإبر الدقيقة</option>
+                <option>علاج حب الشباب</option>
+                <option>تبييض وإشراق البشرة</option>
               </select>
             </div>
 
@@ -1777,7 +1728,7 @@
                 for="booking-date"
                 class="flex items-center gap-2 mb-2 text-sm font-semibold text-gray-800"
               >
-                Preferred Date
+                التاريخ المفضل
               </label>
               <input
                 type="date"
@@ -1793,14 +1744,14 @@
                 for="booking-notes"
                 class="flex items-center gap-2 mb-2 text-sm font-semibold text-gray-800"
               >
-                Additional Notes
+                ملاحظات إضافية
               </label>
               <textarea
                 id="booking-notes"
                 name="notes"
                 rows="3"
-                placeholder="Any special requests or questions?"
-                class="w-full px-4 py-3 text-gray-800 placeholder-gray-400 transition-all duration-300 bg-white border-2 border-gray-300 resize-none rounded-xl focus:outline-none focus:ring-4 focus:ring-sky-300/30 focus:border-sky-500"
+                placeholder="أي طلبات خاصة أو أسئلة؟"
+                class="w-full px-4 py-3 text-right text-gray-800 placeholder-gray-400 transition-all duration-300 bg-white border-2 border-gray-300 resize-none rounded-xl focus:outline-none focus:ring-4 focus:ring-sky-300/30 focus:border-sky-500"
               ></textarea>
             </div>
 
@@ -1810,7 +1761,7 @@
                 type="submit"
                 class="w-full px-6 py-3 font-semibold text-white transition-colors duration-300 border border-gray-400 rounded-lg shadow-lg bg-sky-600 hover:bg-sky-800 hover:shadow-xl hover:-translate-y-1"
               >
-                Submit Booking
+                إرسال الحجز
               </button>
             </div>
           </form>
@@ -1828,12 +1779,11 @@
           <!-- Brand -->
           <div>
             <h3 class="mb-4 text-2xl font-extrabold tracking-wide">
-              <span class="text-white">Dr. Mai</span>
-              <span class="text-sky-300">El-Hakim</span>
+              <span class="text-white">د. مي</span>
+              <span class="text-sky-300">الحكيم</span>
             </h3>
             <p class="mb-6 text-gray-300">
-              Creating perfect smiles with advanced dental care and a personal
-              touch.
+              خلق بشرة مشرقة وجمال خالد مع طب الجلدية المتقدم واللمسة الشخصية.
             </p>
             <!-- Socials -->
             <div class="flex space-x-4">
@@ -1872,46 +1822,52 @@
 
           <!-- Contact -->
           <div>
-            <h3 class="mb-4 text-lg font-semibold text-sky-400">Contact</h3>
+            <h3 class="mb-4 text-lg font-semibold text-sky-400">تواصل معنا</h3>
             <ul class="space-y-2 text-gray-300">
-              <li>123 Dental Street, Cairo, Egypt</li>
-              <li>Email: example@gmail.com</li>
-              <li>Phone: +20 123 456 789</li>
+              <li>عيادات نيو ديرما، المدينة المنورة، السعودية</li>
+              <li>البريد الإلكتروني: example@gmail.com</li>
+              <li>الهاتف: +966 56 463 7050</li>
             </ul>
           </div>
 
           <!-- Links -->
           <div>
-            <h3 class="mb-4 text-lg font-semibold text-sky-400">Links</h3>
+            <h3 class="mb-4 text-lg font-semibold text-sky-400">الروابط</h3>
             <ul class="space-y-2">
               <li>
-                <a href="#" class="transition hover:text-sky-400">Homepage</a>
+                <a href="#" class="transition hover:text-sky-400"
+                  >الصفحة الرئيسية</a
+                >
               </li>
               <li>
-                <a href="#" class="transition hover:text-sky-400">About Us</a>
+                <a href="#" class="transition hover:text-sky-400">من نحن</a>
               </li>
               <li>
-                <a href="#" class="transition hover:text-sky-400">Help</a>
+                <a href="#" class="transition hover:text-sky-400">المساعدة</a>
               </li>
               <li>
-                <a href="#" class="transition hover:text-sky-400">Contact Us</a>
+                <a href="#" class="transition hover:text-sky-400">اتصل بنا</a>
               </li>
             </ul>
           </div>
 
           <!-- Info -->
           <div>
-            <h3 class="mb-4 text-lg font-semibold text-sky-400">Information</h3>
+            <h3 class="mb-4 text-lg font-semibold text-sky-400">معلومات</h3>
             <ul class="space-y-2">
-              <li><a href="#" class="transition hover:text-sky-400">FAQ</a></li>
               <li>
                 <a href="#" class="transition hover:text-sky-400"
-                  >Terms & Conditions</a
+                  >الأسئلة الشائعة</a
                 >
               </li>
               <li>
                 <a href="#" class="transition hover:text-sky-400"
-                  >Privacy Policy</a
+                  >الشروط والأحكام</a
+                >
+              </li>
+              <li>
+                <a href="#" class="transition hover:text-sky-400"
+                  >سياسة الخصوصية</a
                 >
               </li>
             </ul>
@@ -1922,7 +1878,7 @@
         <div
           class="pt-6 pb-8 text-sm text-center text-gray-400 border-t border-gray-700"
         >
-          &copy; 2025 Dr. Mai El-Hakim. All rights reserved.
+          &copy; 2025 د. مي الحكيم. جميع الحقوق محفوظة.
         </div>
       </div>
     </footer>
