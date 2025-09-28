@@ -31,35 +31,23 @@
       class="relative top-0 z-50 w-full bg-transparent border-b border-white/10"
     >
       <nav
-        class="flex items-center justify-between p-4 sm:px-10 lg:px-20 xl:px-40 lg:gap-10 sm:py-6 md:py-8 lg:py-10"
+        class="flex items-center justify-between p-4 sm:px-8 lg:px-14 xl:px-20 lg:gap-10 sm:py-6 md:py-8 lg:py-10"
       >
         <!-- Logo - Responsive Sizing -->
         <a
           href="index.html"
-          class="text-lg font-extrabold transition-transform duration-300 sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl"
+          class="text-base font-extrabold transition-transform duration-300 md:text-lg lg:text-xl xl:text-xl 2xl:text-3xl"
         >
           <span class="text-white">Dr. Mai</span>
           <span class="text-sky-300">El-Hakim</span>
         </a>
 
-        <button
-          onclick="window.location.href='index-ar.html'"
-          class="flex items-center gap-2 text-lg font-medium text-white cursor-pointer"
-        >
-          AR
-          <!-- علم السعودية صغير -->
-          <img
-            src="https://flagcdn.com/sa.svg"
-            alt="Arabic"
-            class="object-cover w-5 h-3"
-          />
-        </button>
         <!-- Desktop Menu - Hidden on mobile/tablet -->
         <ul class="items-center hidden gap-4 lg:flex xl:gap-6">
           <li>
             <a
               href="index.html"
-              class="px-3 py-2 text-sm font-medium text-white transition-all duration-300 transform menu-link active xl:px-4 xl:py-2 xl:text-base hover:bg-white/10 hover:text-white hover:-translate-y-1"
+              class="px-3 py-2 text-sm font-medium text-white transition-all duration-300 transform menu-link active lg:text-sm xl:px-4 xl:py-2 hover:bg-white/10 hover:text-white hover:-translate-y-1"
             >
               Home
             </a>
@@ -67,7 +55,7 @@
           <li>
             <a
               href="AboutUs.html"
-              class="px-3 py-2 text-sm font-medium text-white transition-all duration-300 transform menu-link xl:px-4 xl:py-2 xl:text-base hover:bg-white/10 hover:text-white hover:-translate-y-1"
+              class="px-3 py-2 text-sm font-medium text-white transition-all duration-300 transform menu-link lg:text-sm xl:px-4 xl:py-2 hover:bg-white/10 hover:text-white hover:-translate-y-1"
             >
               About us
             </a>
@@ -75,7 +63,7 @@
           <li>
             <a
               href="Services.html"
-              class="px-3 py-2 text-sm font-medium text-white transition-all duration-300 transform menu-link xl:px-4 xl:py-2 xl:text-base hover:bg-white/10 hover:text-white hover:-translate-y-1"
+              class="px-3 py-2 text-sm font-medium text-white transition-all duration-300 transform menu-link lg:text-sm xl:px-4 xl:py-2 hover:bg-white/10 hover:text-white hover:-translate-y-1"
             >
               Services
             </a>
@@ -83,7 +71,7 @@
           <li>
             <a
               href="Videos.html"
-              class="px-3 py-2 text-sm font-medium text-white transition-all duration-300 transform menu-link xl:px-4 xl:py-2 xl:text-base hover:bg-white/10 hover:text-white hover:-translate-y-1"
+              class="px-3 py-2 text-sm font-medium text-white transition-all duration-300 transform menu-link lg:text-sm xl:px-4 xl:py-2 hover:bg-white/10 hover:text-white hover:-translate-y-1"
             >
               Videos
             </a>
@@ -91,61 +79,89 @@
           <li>
             <a
               href="Blogs.html"
-              class="px-3 py-2 text-sm font-medium text-white transition-all duration-300 transform menu-link xl:px-4 xl:py-2 xl:text-base hover:bg-white/10 hover:text-white hover:-translate-y-1"
+              class="px-3 py-2 text-sm font-medium text-white transition-all duration-300 transform menu-link lg:text-sm xl:px-4 xl:py-2 hover:bg-white/10 hover:text-white hover:-translate-y-1"
             >
               Blogs
             </a>
           </li>
-
           <li>
             <a
               href="ContactUs.html"
-              class="px-3 py-2 text-sm font-medium text-white transition-all duration-300 transform menu-link xl:px-4 xl:text-base hover:bg-white/10 hover:text-white hover:-translate-y-1"
+              class="px-3 py-2 text-sm font-medium text-white transition-all duration-300 transform menu-link xl:px-4 hover:bg-white/10 hover:text-white hover:-translate-y-1"
             >
               Contact us
             </a>
           </li>
         </ul>
 
-        <!-- Desktop CTA Button - Responsive sizing -->
-        <a
-          href="Booking.html"
-          class="hidden px-4 py-2 text-sm font-semibold text-white transition-colors duration-300 bg-transparent border border-gray-300 lg:inline-block xl:px-6 xl:py-3 xl:text-base hover:bg-sky-600 hover:text-white"
-          aria-label="Toggle menu"
-          aria-expanded="false"
-        >
-          <span class="hidden xl:inline">Book Appointment</span>
-          <span class="xl:hidden">Book</span>
-        </a>
-
-        <!-- Mobile Hamburger Button - Enhanced for touch -->
-        <button
-          id="mobile-menu-button"
-          class="p-2 text-white transition-all duration-300 rounded-full lg:hidden sm:p-3 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/30 group touch-manipulation"
-          aria-label="Toggle menu"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5 transition-transform duration-300 sm:h-6 sm:w-6 group-hover:rotate-90"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            id="menu-icon"
+        <!-- Desktop Language Button and CTA -->
+        <div class="items-center hidden gap-4 lg:flex">
+          <button
+            onclick="window.location.href='index-ar.html'"
+            class="flex items-center gap-2 text-sm font-medium text-white cursor-pointer sm:text-base md:text-lg"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"
+            AR
+            <img
+              src="https://flagcdn.com/sa.svg"
+              alt="Arabic"
+              class="object-cover w-5 h-3 sm:w-6 sm:h-4"
             />
-          </svg>
-        </button>
+          </button>
+
+          <a
+            href="Booking.html"
+            class="px-4 py-2 text-base font-semibold text-white transition-colors duration-300 bg-transparent border border-gray-300 lg:text-sm xl:px-6 xl:py-3 hover:bg-sky-600 hover:text-white"
+            aria-label="Book Appointment"
+          >
+            <span class="hidden xl:inline">Book Appointment</span>
+            <span class="xl:hidden">Book</span>
+          </a>
+        </div>
+
+        <!-- Mobile Controls Container - Language Button + Hamburger -->
+        <div class="flex items-center gap-2 lg:hidden">
+          <!-- Mobile Language Button -->
+          <button
+            onclick="window.location.href='index-ar.html'"
+            class="flex items-center gap-2 text-sm font-medium text-white cursor-pointer p-2 transition-all duration-300 rounded-full hover:bg-white/10 touch-manipulation"
+          >
+            AR
+            <img
+              src="https://flagcdn.com/sa.svg"
+              alt="Arabic"
+              class="object-cover w-4 h-3"
+            />
+          </button>
+
+          <!-- Mobile Hamburger Button -->
+          <button
+            id="mobile-menu-button"
+            class="p-2 text-white transition-all duration-300 rounded-full hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/30 group touch-manipulation"
+            aria-label="Toggle menu"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5 transition-transform duration-300 sm:h-6 sm:w-6 group-hover:rotate-90"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              id="menu-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
       </nav>
 
-      <!-- Mobile Menu Dropdown - Enhanced responsive design -->
+      <!-- Mobile Menu Dropdown -->
       <div
         id="mobile-menu"
-        class="hidden px-4 py-4 space-y-3 border-t lg:hidden bg-black/20 backdrop-blur-sm border-white/10 sm:px-6 sm:py-6 sm:space-y-4 animate-fade-in"
+        class="absolute top-full left-0 right-0 hidden w-full px-4 py-4 space-y-3 border-t lg:hidden bg-black/30 backdrop-blur-sm border-white/10 sm:px-6 sm:py-6 sm:space-y-4 animate-fade-in shadow-2xl"
       >
         <a
           href="index.html"
@@ -194,7 +210,7 @@
 
     <!-- Hero Section -->
     <section
-      class="flex flex-col w-full lg:justify-between justify-end px-4 sm:px-6 lg:px-8 overflow-x-hidden  min-h-[90vh] lg:min-h-[125vh]"
+      class="flex flex-col w-full lg:justify-between justify-end px-4 sm:px-6 lg:px-8 overflow-x-hidden min-h-[90vh] lg:min-h-[125vh]"
     >
       <!-- Hero Content Container -->
       <div
@@ -1684,26 +1700,6 @@
       <div class="mb-16 swiper-pagination"></div>
     </section>
 
-    <!-- ✅ Slider Init -->
-    <script>
-      new Swiper(".testimonials-swiper", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        loop: true,
-        autoplay: { delay: 3000 },
-        pagination: { el: ".swiper-pagination", clickable: true },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-          640: { slidesPerView: 1 },
-          768: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
-        },
-      });
-    </script>
-
     <!-- ✅ Creative Booking Form Section -->
     <section
       class="relative py-20 bg-center bg-cover lg:py-32"
@@ -1991,191 +1987,7 @@
         />
       </svg>
     </button>
-    <script>
-      // Get the button
-      const backToTopButton = document.getElementById("back-to-top");
 
-      // Show button when user scrolls down 300px
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > 300) {
-          backToTopButton.classList.remove("opacity-0", "pointer-events-none");
-          backToTopButton.classList.add("opacity-100");
-        } else {
-          backToTopButton.classList.remove("opacity-100");
-          backToTopButton.classList.add("opacity-0", "pointer-events-none");
-        }
-      });
-
-      // Scroll to top when button is clicked
-      backToTopButton.addEventListener("click", () => {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth", // Remove this line if you want instant scroll
-        });
-      });
-    </script>
-
-    <!-- ✅ Mobile Menu Toggle Script (Clean & Enhanced) -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const mobileMenuButton = document.getElementById("mobile-menu-button");
-        const mobileMenu = document.getElementById("mobile-menu");
-        const menuIcon = document.getElementById("menu-icon");
-
-        if (!mobileMenuButton || !mobileMenu || !menuIcon) {
-          console.warn("Mobile menu elements not found");
-          return;
-        }
-
-        function toggleMenu() {
-          const isVisible = !mobileMenu.classList.contains("hidden");
-          if (isVisible) {
-            // Close menu
-            mobileMenu.classList.add("hidden");
-            menuIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />`;
-          } else {
-            // Open menu
-            mobileMenu.classList.remove("hidden");
-            mobileMenu.classList.add("animate-fade-in");
-            menuIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />`;
-          }
-        }
-
-        // Toggle on button click
-        mobileMenuButton.addEventListener("click", toggleMenu);
-
-        // Close menu when clicking outside
-        document.addEventListener("click", function (e) {
-          if (
-            !mobileMenu.contains(e.target) &&
-            !mobileMenuButton.contains(e.target) &&
-            !mobileMenu.classList.contains("hidden")
-          ) {
-            toggleMenu();
-          }
-        });
-
-        // Close menu when clicking on a link inside it
-        const mobileLinks = mobileMenu.querySelectorAll("a");
-        mobileLinks.forEach((link) => {
-          link.addEventListener("click", toggleMenu);
-        });
-      });
-    </script>
-
-    <script>
-      // Add active state functionality
-      const menuLinks = document.querySelectorAll(".menu-link");
-
-      menuLinks.forEach((link) => {
-        link.addEventListener("click", (e) => {
-          // Remove active class from all links
-          menuLinks.forEach((l) => l.classList.remove("active"));
-          // Add active class to clicked link
-          e.target.classList.add("active");
-        });
-      });
-
-      // Close mobile menu when clicking on a link
-      const mobileLinks = document.querySelectorAll("#mobile-menu a");
-      mobileLinks.forEach((link) => {
-        link.addEventListener("click", () => {
-          mobileMenu.classList.add("hidden");
-          menuIcon.innerHTML =
-            '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />';
-        });
-      });
-
-      // Keep header transparent on scroll - removed the problematic scroll event
-      // The header will stay transparent as defined in CSS
-
-      // Before/After Slider Functionality
-      function initBeforeAfterSliders() {
-        const sliders = document.querySelectorAll(".before-after-container");
-
-        sliders.forEach((container) => {
-          const handle = container.querySelector(".slider-handle");
-          const afterImage = container.querySelector(".after-image");
-          const sliderLine = container.querySelector(".slider-line");
-          let isDragging = false;
-
-          function updateSlider(percentage) {
-            // Clamp percentage between 0 and 100
-            percentage = Math.max(0, Math.min(100, percentage));
-
-            // Update after image clip-path
-            afterImage.style.clipPath = `inset(0 0 0 ${percentage}%)`;
-
-            // Update handle and line position
-            handle.style.left = `${percentage}%`;
-            sliderLine.style.left = `${percentage}%`;
-          }
-
-          function handleMouseDown(e) {
-            isDragging = true;
-            document.body.style.cursor = "ew-resize";
-            e.preventDefault();
-          }
-
-          function handleMouseMove(e) {
-            if (!isDragging) return;
-
-            const rect = container.getBoundingClientRect();
-            const percentage = ((e.clientX - rect.left) / rect.width) * 100;
-            updateSlider(percentage);
-          }
-
-          function handleMouseUp() {
-            isDragging = false;
-            document.body.style.cursor = "default";
-          }
-
-          // Touch events for mobile
-          function handleTouchStart(e) {
-            isDragging = true;
-            e.preventDefault();
-          }
-
-          function handleTouchMove(e) {
-            if (!isDragging) return;
-
-            const rect = container.getBoundingClientRect();
-            const touch = e.touches[0];
-            const percentage = ((touch.clientX - rect.left) / rect.width) * 100;
-            updateSlider(percentage);
-            e.preventDefault();
-          }
-
-          function handleTouchEnd() {
-            isDragging = false;
-          }
-
-          // Event listeners
-          handle.addEventListener("mousedown", handleMouseDown);
-          document.addEventListener("mousemove", handleMouseMove);
-          document.addEventListener("mouseup", handleMouseUp);
-
-          // Touch events
-          handle.addEventListener("touchstart", handleTouchStart);
-          document.addEventListener("touchmove", handleTouchMove);
-          document.addEventListener("touchend", handleTouchEnd);
-
-          // Click anywhere on container to move slider
-          container.addEventListener("click", (e) => {
-            if (e.target === handle || handle.contains(e.target)) return;
-
-            const rect = container.getBoundingClientRect();
-            const percentage = ((e.clientX - rect.left) / rect.width) * 100;
-            updateSlider(percentage);
-          });
-
-          // Initialize at 50%
-          updateSlider(50);
-        });
-      }
-
-      // Initialize sliders when DOM is loaded
-      document.addEventListener("DOMContentLoaded", initBeforeAfterSliders);
-    </script>
+    <script src="index.js"></script>
   </body>
 </html>
