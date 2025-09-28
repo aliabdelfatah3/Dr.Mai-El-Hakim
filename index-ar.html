@@ -665,6 +665,11 @@
               class="relative overflow-hidden transition-all duration-500 bg-white shadow-2xl group rounded-3xl hover:shadow-purple-300/30 before-after-container"
               data-slider="1"
             >
+              <img
+                src="images/before1.jpg"
+                alt="Before Treatment"
+                class="object-cover w-full h-80"
+              />
               <div class="after-image">
                 <img
                   src="images/after1.jpg"
@@ -672,11 +677,6 @@
                   class="object-cover w-full h-80"
                 />
               </div>
-              <img
-                src="images/before1.jpg"
-                alt="Before Treatment"
-                class="object-cover w-full h-80"
-              />
               <div class="slider-line"></div>
               <div
                 class="absolute z-10 px-3 py-1 text-sm font-medium text-white rounded-full top-4 right-4 bg-gray-800/80"
@@ -714,6 +714,16 @@
               class="relative overflow-hidden transition-all duration-500 bg-white shadow-2xl group rounded-3xl hover:shadow-pink-300/30 before-after-container"
               data-slider="2"
             >
+              <img
+                src="images/before2.jpg"
+                alt="Before Treatment"
+                style="
+                  object-fit: cover;
+                  object-position: bottom;
+                  width: 100%;
+                  height: 20rem;
+                "
+              />
               <div class="after-image">
                 <img
                   src="images/after2.jpg"
@@ -726,26 +736,16 @@
                   "
                 />
               </div>
-              <img
-                src="images/before2.jpg"
-                alt="Before Treatment"
-                style="
-                  object-fit: cover;
-                  object-position: bottom;
-                  width: 100%;
-                  height: 20rem;
-                "
-              />
               <div class="slider-line"></div>
               <div
-                class="absolute z-10 px-3 py-1 text-sm font-medium text-white rounded-full top-4 left-4 bg-gray-800/80"
-              >
-                قبل
-              </div>
-              <div
-                class="absolute z-10 px-3 py-1 text-sm font-medium text-white rounded-full top-4 right-4 bg-sky-500/90"
+                class="absolute z-10 px-3 py-1 text-sm font-medium text-white rounded-full top-4 left-4 bg-sky-500/90"
               >
                 بعد
+              </div>
+              <div
+                class="absolute z-10 px-3 py-1 text-sm font-medium text-white rounded-full top-4 right-4 bg-gray-800/80"
+              >
+                قبل
               </div>
               <div class="slider-handle">
                 <div
@@ -1582,10 +1582,10 @@
               </div>
             </div>
           </div>
+          <div class="swiper-button-next custom-nav"></div>
+          <div class="swiper-button-prev custom-nav"></div>
         </div>
         <!-- Navigation -->
-        <div class="swiper-button-prev custom-nav"></div>
-        <div class="swiper-button-next custom-nav"></div>
       </div>
       <!-- ✅ Pagination  -->
       <div class="mb-16 swiper-pagination"></div>
