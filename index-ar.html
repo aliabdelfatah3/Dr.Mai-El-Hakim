@@ -799,10 +799,8 @@
     </section>
 
     <script>
-      // Before/After Slider Functionality (يدعم RTL)
       function initBeforeAfterSliders() {
         const sliders = document.querySelectorAll(".before-after-container");
-        const isRTL = document.documentElement.dir === "rtl";
 
         sliders.forEach((container) => {
           const handle = container.querySelector(".slider-handle");
@@ -811,34 +809,12 @@
           let isDragging = false;
 
           function updateSlider(percentage) {
-            // Clamp percentage between 0 and 100
             percentage = Math.max(0, Math.min(100, percentage));
 
-            // Update after image clip-path
-            // في RTL نحتاج نقلب الاتجاه (نقص من اليمين بدلاً من اليسار)
-            if (isRTL) {
-              afterImage.style.clipPath = `inset(0 ${percentage}% 0 0)`;
-            } else {
-              afterImage.style.clipPath = `inset(0 0 0 ${percentage}%)`;
-            }
+            afterImage.style.clipPath = `inset(0 0 0 ${percentage}%)`;
 
-            // Update handle and line position
-            if (isRTL) {
-              handle.style.right = `${percentage}%`;
-              sliderLine.style.right = `${percentage}%`;
-            } else {
-              handle.style.left = `${percentage}%`;
-              sliderLine.style.left = `${percentage}%`;
-            }
-          }
-
-          function getPercentage(clientX, rect) {
-            if (isRTL) {
-              // احسب المسافة من اليمين
-              return ((rect.right - clientX) / rect.width) * 100;
-            } else {
-              return ((clientX - rect.left) / rect.width) * 100;
-            }
+            handle.style.left = `${percentage}%`;
+            sliderLine.style.left = `${percentage}%`;
           }
 
           function handleMouseDown(e) {
@@ -849,8 +825,10 @@
 
           function handleMouseMove(e) {
             if (!isDragging) return;
+
             const rect = container.getBoundingClientRect();
-            updateSlider(getPercentage(e.clientX, rect));
+            const percentage = ((e.clientX - rect.left) / rect.width) * 100;
+            updateSlider(percentage);
           }
 
           function handleMouseUp() {
@@ -866,9 +844,11 @@
 
           function handleTouchMove(e) {
             if (!isDragging) return;
+
             const rect = container.getBoundingClientRect();
             const touch = e.touches[0];
-            updateSlider(getPercentage(touch.clientX, rect));
+            const percentage = ((touch.clientX - rect.left) / rect.width) * 100;
+            updateSlider(percentage);
             e.preventDefault();
           }
 
@@ -881,6 +861,7 @@
           document.addEventListener("mousemove", handleMouseMove);
           document.addEventListener("mouseup", handleMouseUp);
 
+          // Touch events
           handle.addEventListener("touchstart", handleTouchStart);
           document.addEventListener("touchmove", handleTouchMove);
           document.addEventListener("touchend", handleTouchEnd);
@@ -888,8 +869,10 @@
           // Click anywhere on container to move slider
           container.addEventListener("click", (e) => {
             if (e.target === handle || handle.contains(e.target)) return;
+
             const rect = container.getBoundingClientRect();
-            updateSlider(getPercentage(e.clientX, rect));
+            const percentage = ((e.clientX - rect.left) / rect.width) * 100;
+            updateSlider(percentage);
           });
 
           // Initialize at 50%
@@ -2103,6 +2086,94 @@
 
       // Keep header transparent on scroll - removed the problematic scroll event
       // The header will stay transparent as defined in CSS
+
+      // Before/After Slider Functionality
+      function initBeforeAfterSliders() {
+        const sliders = document.querySelectorAll(".before-after-container");
+
+        sliders.forEach((container) => {
+          const handle = container.querySelector(".slider-handle");
+          const afterImage = container.querySelector(".after-image");
+          const sliderLine = container.querySelector(".slider-line");
+          let isDragging = false;
+
+          function updateSlider(percentage) {
+            // Clamp percentage between 0 and 100
+            percentage = Math.max(0, Math.min(100, percentage));
+
+            // Update after image clip-path
+            afterImage.style.clipPath = `inset(0 0 0 ${percentage}%)`;
+
+            // Update handle and line position
+            handle.style.left = `${percentage}%`;
+            sliderLine.style.left = `${percentage}%`;
+          }
+
+          function handleMouseDown(e) {
+            isDragging = true;
+            document.body.style.cursor = "ew-resize";
+            e.preventDefault();
+          }
+
+          function handleMouseMove(e) {
+            if (!isDragging) return;
+
+            const rect = container.getBoundingClientRect();
+            const percentage = ((e.clientX - rect.left) / rect.width) * 100;
+            updateSlider(percentage);
+          }
+
+          function handleMouseUp() {
+            isDragging = false;
+            document.body.style.cursor = "default";
+          }
+
+          // Touch events for mobile
+          function handleTouchStart(e) {
+            isDragging = true;
+            e.preventDefault();
+          }
+
+          function handleTouchMove(e) {
+            if (!isDragging) return;
+
+            const rect = container.getBoundingClientRect();
+            const touch = e.touches[0];
+            const percentage = ((touch.clientX - rect.left) / rect.width) * 100;
+            updateSlider(percentage);
+            e.preventDefault();
+          }
+
+          function handleTouchEnd() {
+            isDragging = false;
+          }
+
+          // Event listeners
+          handle.addEventListener("mousedown", handleMouseDown);
+          document.addEventListener("mousemove", handleMouseMove);
+          document.addEventListener("mouseup", handleMouseUp);
+
+          // Touch events
+          handle.addEventListener("touchstart", handleTouchStart);
+          document.addEventListener("touchmove", handleTouchMove);
+          document.addEventListener("touchend", handleTouchEnd);
+
+          // Click anywhere on container to move slider
+          container.addEventListener("click", (e) => {
+            if (e.target === handle || handle.contains(e.target)) return;
+
+            const rect = container.getBoundingClientRect();
+            const percentage = ((e.clientX - rect.left) / rect.width) * 100;
+            updateSlider(percentage);
+          });
+
+          // Initialize at 50%
+          updateSlider(50);
+        });
+      }
+
+      // Initialize sliders when DOM is loaded
+      document.addEventListener("DOMContentLoaded", initBeforeAfterSliders);
     </script>
   </body>
 </html>
