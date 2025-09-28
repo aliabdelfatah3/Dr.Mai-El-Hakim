@@ -335,15 +335,15 @@ article:hover .backdrop-blur-sm {
 }
 
 /* شاشات كبيرة (ديسكتوب) */
-/* @media (min-width: 1024px) {
+@media (min-width: 1024px) {
   .custom-nav.swiper-button-prev {
-    right: -6px !important;
-    top: 50% !important;
-    display: block;
-  }
-  .custom-nav.swiper-button-next {
     left: -8px !important;
     top: 70% !important;
     display: block;
   }
-} */
+  .custom-nav.swiper-button-next {
+    right: -8px !important;
+    top: 70% !important;
+    display: block;
+  }
+}
