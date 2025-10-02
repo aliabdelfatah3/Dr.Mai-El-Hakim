@@ -5,6 +5,7 @@
 * {
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
   font-family: "Cairo", sans-serif;
@@ -23,6 +24,7 @@ body {
     opacity: 0;
     transform: translateY(60px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -34,6 +36,7 @@ body {
     opacity: 0;
     transform: translateX(60px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -45,6 +48,7 @@ body {
     opacity: 0;
     transform: translateX(-30px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -52,21 +56,25 @@ body {
 }
 
 @keyframes float {
+
   0%,
   100% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-20px);
   }
 }
 
 @keyframes bounce-slow {
+
   0%,
   100% {
     transform: translateY(-25%);
     animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
   }
+
   50% {
     transform: none;
     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
@@ -77,6 +85,7 @@ body {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -94,6 +103,7 @@ body {
 article:hover .backdrop-blur-sm {
   backdrop-filter: blur(8px);
 }
+
 .animate-fade-up {
   animation: fadeInUp 0.8s ease-out;
 }
@@ -111,13 +121,11 @@ article:hover .backdrop-blur-sm {
 }
 
 .dental-gradient {
-  background: linear-gradient(
-    135deg,
-    #ffffff 0%,
-    #f0f9ff 30%,
-    #e0f2fe 70%,
-    #f8fafc 100%
-  );
+  background: linear-gradient(135deg,
+      #ffffff 0%,
+      #f0f9ff 30%,
+      #e0f2fe 70%,
+      #f8fafc 100%);
 }
 
 .text-gradient {
@@ -217,12 +225,10 @@ article:hover .backdrop-blur-sm {
 }
 
 .separator-line {
-  background: linear-gradient(
-    to bottom,
-    transparent,
-    rgba(255, 255, 255, 0.3),
-    transparent
-  );
+  background: linear-gradient(to bottom,
+      transparent,
+      rgba(255, 255, 255, 0.3),
+      transparent);
 }
 
 .hero-content {
@@ -330,6 +336,7 @@ article:hover .backdrop-blur-sm {
 .custom-nav.swiper-button-prev {
   display: none;
 }
+
 .custom-nav.swiper-button-next {
   display: none;
 }
@@ -341,6 +348,7 @@ article:hover .backdrop-blur-sm {
     top: 70% !important;
     display: block;
   }
+
   .custom-nav.swiper-button-next {
     right: -8px !important;
     top: 70% !important;
