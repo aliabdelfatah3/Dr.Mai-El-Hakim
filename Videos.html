@@ -1,564 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Watch Our Videos - Dr. Mai El-Hakim</title>
-    <link rel="stylesheet" href="dist/output.css" />
-  </head>
-  <body class="min-h-screen font-sans text-darkText">
-    <!-- Header -->
-    <header class="relative top-0 z-50 w-full bg-white shadow-md">
-      <nav
-        class="flex items-center justify-between lg:gap-10 py-4 sm:py-6 md:py-8 lg:py-10 max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8"
-      >
-        <!-- Logo -->
-        <a
-          href="index.html"
-          class="text-lg font-extrabold transition-transform duration-300 sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl"
-        >
-          <span class="text-gray-800">Dr. Mai</span>
-          <span class="text-sky-300">El-Hakim</span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Watch Our Videos - Dr. Mai El-Hakim</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="dist/output.css" />
+</head>
+
+
+
+<body class="min-h-screen font-sans text-darkText">
+  <!-- Transparent Header - Fully Responsive -->
+  <header class="relative top-0 z-50 w-full bg-transparent border-b border-white/10">
+    <nav class="flex items-center justify-between p-4 sm:px-8 lg:px-14 xl:px-20 lg:gap-10 sm:py-6 md:py-8 lg:py-10">
+      <!-- Logo - Responsive Sizing -->
+      <a href="index.html"
+        class="text-base font-extrabold transition-transform duration-300 md:text-lg lg:text-xl xl:text-xl 2xl:text-3xl">
+        <span class="text-primary">Dr. Mai</span>
+        <span class="text-primary">El-Hakim</span>
+      </a>
+
+      <!-- Desktop Menu - Hidden on mobile/tablet -->
+      <ul class="items-center hidden gap-4 lg:flex xl:gap-6">
+        <li>
+          <a href="index.html"
+            class="px-3 py-2 text-sm font-medium text-primary transition-all duration-300 transform menu-link active lg:text-sm xl:px-4 xl:py-2 hover:bg-white/10 hover:text-primary hover:-translate-y-1">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="AboutUs.html"
+            class="px-3 py-2 text-sm font-medium text-primary transition-all duration-300 transform menu-link lg:text-sm xl:px-4 xl:py-2 hover:bg-white/10 hover:text-primary hover:-translate-y-1">
+            About us
+          </a>
+        </li>
+        <li>
+          <a href="Services.html"
+            class="px-3 py-2 text-sm font-medium text-primary transition-all duration-300 transform menu-link lg:text-sm xl:px-4 xl:py-2 hover:bg-white/10 hover:text-primary hover:-translate-y-1">
+            Services
+          </a>
+        </li>
+        <li>
+          <a href="Videos.html"
+            class="px-3 py-2 text-sm font-medium text-primary transition-all duration-300 transform menu-link lg:text-sm xl:px-4 xl:py-2 hover:bg-white/10 hover:text-primary hover:-translate-y-1">
+            Videos
+          </a>
+        </li>
+        <li>
+          <a href="Blogs.html"
+            class="px-3 py-2 text-sm font-medium text-primary transition-all duration-300 transform menu-link lg:text-sm xl:px-4 xl:py-2 hover:bg-white/10 hover:text-primary hover:-translate-y-1">
+            Blogs
+          </a>
+        </li>
+        <li>
+          <a href="ContactUs.html"
+            class="px-3 py-2 text-sm font-medium text-primary transition-all duration-300 transform menu-link xl:px-4 hover:bg-white/10 hover:text-primary hover:-translate-y-1">
+            Contact us
+          </a>
+        </li>
+      </ul>
+
+      <!-- Desktop Language Button and CTA -->
+      <div class="items-center hidden gap-4 lg:flex">
+        <button onclick="window.location.href='index-ar.html'"
+          class="flex items-center gap-2 text-sm font-medium text-primary cursor-pointer sm:text-base md:text-lg">
+          AR
+          <img src="https://flagcdn.com/sa.svg" alt="Arabic" class="object-cover w-5 h-3 sm:w-6 sm:h-4" />
+        </button>
+
+        <a href="Booking.html"
+          class="px-4 py-2 text-base font-semibold text-white transition-colors duration-300 bg-primary rounded-full border border-gray-300 lg:text-sm xl:px-6 xl:py-3 hover:bg-fff4eb hover:text-white"
+          aria-label="Book Appointment">
+          <span class="hidden xl:inline">Book Appointment</span>
+          <span class="xl:hidden">Book</span>
         </a>
-
-        <!-- Desktop Menu -->
-        <ul class="items-center hidden gap-4 lg:flex xl:gap-6">
-          <li>
-            <a
-              href="index.html"
-              class="px-3 py-2 text-sm font-medium text-gray-800 transition-all duration-300 transform menu-link xl:px-4 xl:py-2 xl:text-base hover:text-sky-600"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              href="AboutUs.html"
-              class="px-3 py-2 text-sm font-medium text-gray-800 transition-all duration-300 transform menu-link xl:px-4 xl:py-2 xl:text-base hover:text-sky-600"
-              >About us</a
-            >
-          </li>
-          <li>
-            <a
-              href="Services.html"
-              class="px-3 py-2 text-sm font-medium text-gray-800 transition-all duration-300 transform menu-link xl:px-4 xl:py-2 xl:text-base hover:text-sky-600"
-              >Services</a
-            >
-          </li>
-          <li>
-            <a
-              href="Videos.html"
-              class="px-3 py-2 text-sm font-medium transition-all duration-300 transform text-sky-600 menu-link active xl:px-4 xl:py-2 xl:text-base"
-              >Videos</a
-            >
-          </li>
-          <li>
-            <a
-              href="Blogs.html"
-              class="px-3 py-2 text-sm font-medium text-gray-800 transition-all duration-300 transform menu-link xl:px-4 xl:py-2 xl:text-base hover:text-sky-600"
-              >Blogs</a
-            >
-          </li>
-          <li>
-            <a
-              href="ContactUs.html"
-              class="px-3 py-2 text-sm font-medium text-gray-800 transition-all duration-300 transform menu-link xl:px-4 xl:text-base hover:text-sky-600"
-              >Contact us</a
-            >
-          </li>
-        </ul>
-
-        <!-- Desktop Language Button and CTA -->
-        <div class="items-center hidden gap-4 lg:flex">
-          <button
-            onclick="window.location.href='Services-ar.html'"
-            class="flex items-center gap-2 text-lg font-medium text-black cursor-pointer"
-          >
-            AR
-            <img
-              src="https://flagcdn.com/sa.svg"
-              alt="Arabic"
-              class="object-cover w-5 h-3"
-            />
-          </button>
-
-          <a
-            href="Booking.html"
-            class="px-4 py-2 text-sm font-semibold text-white transition-colors duration-300 bg-sky-600 xl:px-6 xl:py-3 xl:text-base hover:bg-sky-700"
-          >
-            <span class="hidden xl:inline">Book Appointment</span>
-            <span class="xl:hidden">Book</span>
-          </a>
-        </div>
-
-        <!-- Mobile Controls Container - Language Button + Hamburger -->
-        <div class="flex items-center gap-2 lg:hidden">
-          <!-- Mobile Language Button -->
-          <button
-            onclick="window.location.href='Services-ar.html'"
-            class="flex items-center gap-2 text-sm font-medium text-black cursor-pointer p-2 transition-all duration-300 rounded-full hover:bg-gray-100 touch-manipulation"
-          >
-            AR
-            <img
-              src="https://flagcdn.com/sa.svg"
-              alt="Arabic"
-              class="object-cover w-5 h-3"
-            />
-          </button>
-
-          <!-- Mobile Hamburger Button -->
-          <button
-            id="mobile-menu-button"
-            class="p-2 text-gray-800 transition-all duration-300 rounded-full hover:bg-gray-100 focus:outline-none group touch-manipulation"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="w-5 h-5 transition-transform duration-300 sm:h-6 sm:w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              id="menu-icon"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </button>
-        </div>
-      </nav>
-
-      <!-- Mobile Menu -->
-      <div
-        id="mobile-menu"
-        class="absolute w-full hidden px-4 py-4 space-y-3 bg-white border-t shadow-lg lg:hidden sm:px-6 sm:py-6 sm:space-y-4"
-      >
-        <a
-          href="index.html"
-          class="block px-3 py-2 text-base font-medium text-gray-800 transition-all duration-300 rounded-lg hover:bg-gray-100 hover:text-sky-600"
-          >Home</a
-        >
-        <a
-          href="AboutUs.html"
-          class="block px-3 py-2 text-base font-medium text-gray-800 transition-all duration-300 rounded-lg hover:bg-gray-100 hover:text-sky-600"
-          >About us</a
-        >
-        <a
-          href="Services.html"
-          class="block px-3 py-2 text-base font-medium text-gray-800 transition-all duration-300 rounded-lg hover:bg-gray-100 hover:text-sky-600"
-          >Services</a
-        >
-        <a
-          href="Videos.html"
-          class="block px-3 py-2 text-base font-medium transition-all duration-300 rounded-lg text-sky-600 bg-sky-50"
-          >Videos</a
-        >
-        <a
-          href="Blogs.html"
-          class="block px-3 py-2 text-base font-medium text-gray-800 transition-all duration-300 rounded-lg hover:bg-gray-100 hover:text-sky-600"
-          >Blogs</a
-        >
-        <a
-          href="ContactUs.html"
-          class="block px-3 py-2 text-base font-medium text-gray-800 transition-all duration-300 rounded-lg hover:bg-gray-100 hover:text-sky-600"
-          >Contact us</a
-        >
-        <a
-          href="Booking.html"
-          class="block w-full px-4 py-3 mt-3 text-sm font-semibold text-center text-white transition-colors duration-300 rounded-lg shadow-lg bg-sky-600 hover:bg-sky-700"
-          >Book Appointment</a
-        >
       </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section
-      class="relative py-32 overflow-hidden bg-gradient-to-br from-sky-100 via-white to-blue-100"
-    >
-      <div class="container relative z-10 px-6 mx-auto max-w-7xl">
-        <div class="mb-16 text-center">
-          <h1
-            class="mb-6 text-4xl font-bold text-gray-900 md:text-5xl lg:text-6xl"
-          >
-            Watch Our <span class="text-sky-300">Videos</span>
-          </h1>
-          <p class="max-w-3xl mx-auto text-lg text-gray-600 md:text-xl">
-            Explore educational and transformational videos showcasing our
-            advanced dermatology treatments, aesthetic procedures, and patient
-            experiences.
+      <!-- Mobile Controls Container - Language Button + Hamburger -->
+      <div class="flex items-center gap-2 lg:hidden">
+        <!-- Mobile Language Button -->
+        <button onclick="window.location.href='index-ar.html'"
+          class="flex items-center gap-2 text-sm font-medium text-white cursor-pointer p-2 transition-all duration-300 rounded-full hover:bg-white/10 touch-manipulation">
+          AR
+          <img src="https://flagcdn.com/sa.svg" alt="Arabic" class="object-cover w-4 h-3" />
+        </button>
+
+        <!-- Mobile Hamburger Button -->
+        <button id="mobile-menu-button"
+          class="p-2 text-white transition-all duration-300 rounded-full hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/30 group touch-manipulation"
+          aria-label="Toggle menu">
+          <svg xmlns="http://www.w3.org/2000/svg"
+            class="w-5 h-5 transition-transform duration-300 sm:h-6 sm:w-6 group-hover:rotate-90" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor" id="menu-icon">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu Dropdown -->
+    <div id="mobile-menu"
+      class="absolute top-full left-0 right-0 hidden w-full px-4 py-4 space-y-3 border-t lg:hidden bg-black/30 backdrop-blur-sm border-white/10 sm:px-6 sm:py-6 sm:space-y-4 animate-fade-in shadow-2xl">
+      <a href="index.html"
+        class="block px-3 py-2 text-base font-medium text-white transition-all duration-300 rounded-lg sm:py-3 sm:px-4 sm:text-lg hover:bg-white/10 hover:text-white sm:rounded-xl hover:scale-105 touch-manipulation">
+        Home
+      </a>
+      <a href="AboutUs.html"
+        class="block px-3 py-2 text-base font-medium text-white transition-all duration-300 rounded-lg sm:py-3 sm:px-4 sm:text-lg hover:bg-white/10 hover:text-white sm:rounded-xl hover:scale-105 touch-manipulation">
+        About us
+      </a>
+      <a href="Services.html"
+        class="block px-3 py-2 text-base font-medium text-white transition-all duration-300 rounded-lg sm:py-3 sm:px-4 sm:text-lg hover:bg-white/10 hover:text-white sm:rounded-xl hover:scale-105 touch-manipulation">
+        Services
+      </a>
+      <a href="Videos.html"
+        class="block px-3 py-2 text-base font-medium text-white transition-all duration-300 rounded-lg sm:py-3 sm:px-4 sm:text-lg hover:bg-white/10 hover:text-white sm:rounded-xl hover:scale-105 touch-manipulation">
+        Videos
+      </a>
+      <a href="Blogs.html"
+        class="block px-3 py-2 text-base font-medium text-white transition-all duration-300 rounded-lg sm:py-3 sm:px-4 sm:text-lg hover:bg-white/10 hover:text-white sm:rounded-xl hover:scale-105 touch-manipulation">
+        Blogs
+      </a>
+      <a href="ContactUs.html"
+        class="block px-3 py-2 text-base font-medium text-white transition-all duration-300 rounded-lg sm:py-3 sm:px-4 sm:text-lg hover:bg-white/10 hover:text-white sm:rounded-xl hover:scale-105 touch-manipulation">
+        Contact us
+      </a>
+      <a href="Booking.html"
+        class="block w-full px-4 py-3 mt-3 text-sm font-semibold text-center text-white transition-colors duration-300 border border-gray-400 rounded-lg shadow-lg sm:mt-4 sm:px-6 sm:text-base bg-primary sm:rounded-xl touch-manipulation">
+        Book Appointment
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative py-32 overflow-hidden bg-gradient-to-t from-secondary/80 via-secondary/80 to-transparent">
+    <div class="fixed inset-0 -z-10">
+      <div class="absolute inset-0 bg-no-repeat bg-center bg-cover"
+        style="background-image: url('/images/home-thumb-slider-1.webp')">
+      </div>
+      <!-- <div class="absolute inset-0 bg-gradient-to-l from-secondary from-50% via-transparent to-transparent"></div> -->
+    </div>
+    <div class="container relative z-10 px-6 mx-auto max-w-7xl">
+      <div class="mb-16 text-center">
+        <h1 class="mb-6 text-4xl font-bold text-gray-900 md:text-5xl lg:text-6xl">
+          Watch Our <span class="text-primary">Videos</span>
+        </h1>
+        <p class="max-w-3xl mx-auto text-lg text-gray-600 md:text-xl">
+          Explore educational and transformational videos showcasing our
+          advanced dermatology treatments, aesthetic procedures, and patient
+          experiences.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🌟 Videos Section with Brand Colors -->
+  <section class="relative py-20 bg-base overflow-hidden">
+    <div class="absolute border border-primary rounded-full top-1/4 right-20 w-80 h-80 opacity-10"></div>
+    <div class="absolute border border-primary rounded-full bottom-5 left-20 w-80 h-80 opacity-15"></div>
+    <!-- Decorative Blobs -->
+    <div class="absolute top-10 -left-20 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+
+    <div class="container relative z-10 px-6 mx-auto max-w-7xl">
+      <!-- Header -->
+      <div class="mb-16 text-center">
+        <span
+          class="inline-block px-5 py-1.5 mb-4 text-sm font-semibold tracking-wider text-primary uppercase bg-ternary rounded-full">
+          Videos
+        </span>
+        <h2 class="mb-6 text-4xl font-extrabold leading-tight text-primary md:text-5xl">
+          Watch Our Transformations
+        </h2>
+        <p class="max-w-2xl mx-auto text-lg text-gray-600">
+          Real stories, expert insights, and advanced treatments from our clinic.
+        </p>
+      </div>
+
+      <!-- Videos Grid -->
+      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Video Card -->
+        <div
+          class="group relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-white border border-secondary">
+          <div class="relative aspect-video">
+            <!-- Iframe -->
+            <iframe class="w-full h-full object-cover" src="https://www.youtube.com/embed/ScMzIvxBSi4"
+              title="Laser Hair Removal Process" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <!-- Content -->
+          <div class="transition-all p-6">
+            <h3 class="mb-2 text-lg font-bold text-primary">Botox Injection Procedure</h3>
+            <p class="text-sm text-gray-600">Step-by-step guide to our advanced botox treatment.</p>
+          </div>
+        </div>
+        <div
+          class="group relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-white border border-secondary">
+          <div class="relative aspect-video">
+            <!-- Iframe -->
+            <iframe class="w-full h-full object-cover" src="https://www.youtube.com/embed/ScMzIvxBSi4"
+              title="Laser Hair Removal Process" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <!-- Content -->
+          <div class="transition-all p-6">
+            <h3 class="mb-2 text-lg font-bold text-primary">Botox Injection Procedure</h3>
+            <p class="text-sm text-gray-600">Step-by-step guide to our advanced botox treatment.</p>
+          </div>
+        </div>
+        <div
+          class="group relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-white border border-secondary">
+          <div class="relative aspect-video">
+            <!-- Iframe -->
+            <iframe class="w-full h-full object-cover" src="https://www.youtube.com/embed/ScMzIvxBSi4"
+              title="Laser Hair Removal Process" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <!-- Content -->
+          <div class="transition-all p-6">
+            <h3 class="mb-2 text-lg font-bold text-primary">Botox Injection Procedure</h3>
+            <p class="text-sm text-gray-600">Step-by-step guide to our advanced botox treatment.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CTA Button -->
+      <div class="mt-16 text-center">
+        <a href="Booking.html"
+          class="px-8 py-4 font-semibold text-white transition-all duration-300 rounded-full shadow-lg bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary">
+          Book Your Consultation
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ Footer -->
+  <footer class="relative text-white bg-[#1e0909]">
+    <div class="container px-6 mx-auto max-w-7xl">
+      <!-- Grid -->
+      <div class="grid gap-10 py-16 md:grid-cols-4">
+        <!-- Brand -->
+        <div>
+          <h3 class="mb-4 text-2xl font-extrabold tracking-wide">
+            <span class="text-secondary">Dr. Mai El-Hakim</span>
+          </h3>
+          <p class="mb-6 text-gray-300">
+            Creating radiant skin and timeless beauty with advanced
+            dermatology and a personal touch.
           </p>
+          <!-- Socials -->
+          <div class="flex space-x-4">
+            <a href="#" class="p-2 transition bg-gray-700 rounded-full hover:bg-primary">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M22.46 6c-.77.35-1.6.58-2.46.69a4.27 4.27 0 001.88-2.37 8.57 8.57 0 01-2.71 1.04 4.26 4.26 0 00-7.3 3.89 12.1 12.1 0 01-8.78-4.45 4.26 4.26 0 001.32 5.68 4.24 4.24 0 01-1.93-.53v.05a4.27 4.27 0 003.42 4.18 4.26 4.26 0 01-1.92.07 4.27 4.27 0 003.98 2.96A8.54 8.54 0 012 19.54a12.07 12.07 0 006.56 1.92c7.88 0 12.2-6.53 12.2-12.2 0-.19 0-.38-.01-.57A8.72 8.72 0 0022.46 6z" />
+              </svg>
+            </a>
+            <a href="#" class="p-2 transition bg-gray-700 rounded-full hover:bg-primary">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8v-6.93H7.5V12H10V9.79c0-2.47 1.48-3.84 3.74-3.84 1.08 0 2.21.19 2.21.19v2.43h-1.25c-1.23 0-1.61.76-1.61 1.54V12h2.74l-.44 2.87H13.1V21.8c4.56-.93 8-4.96 8-9.8z" />
+              </svg>
+            </a>
+            <a href="#" class="p-2 transition bg-gray-700 rounded-full hover:bg-primary">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M21.6 0H2.4C1.08 0 0 1.08 0 2.4v19.2C0 22.92 1.08 24 2.4 24h10.34v-8.34H9.69v-3.26h3.05V9.41c0-3.02 1.84-4.67 4.53-4.67 1.29 0 2.4.1 2.72.14v3.15l-1.87.001c-1.47 0-1.76.7-1.76 1.73v2.27h3.52l-.46 3.26h-3.06V24h6c1.32 0 2.4-1.08 2.4-2.4V2.4C24 1.08 22.92 0 21.6 0" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h3 class="mb-4 text-lg font-semibold text-secondary">Contact</h3>
+          <ul class="space-y-2 text-gray-300">
+            <li>NewDerma Clinics, Al Madinah Al Munawwarah, Saudi Arabia</li>
+            <li>Email: example@gmail.com</li>
+            <li>Phone: +966 56 463 7050</li>
+          </ul>
+        </div>
+
+        <!-- Links -->
+        <div>
+          <h3 class="mb-4 text-lg font-semibold text-secondary">Links</h3>
+          <ul class="space-y-2">
+            <li>
+              <a href="#" class="transition hover:text-secondary">Homepage</a>
+            </li>
+            <li>
+              <a href="#" class="transition hover:text-secondary">About Us</a>
+            </li>
+            <li>
+              <a href="#" class="transition hover:text-secondary">Help</a>
+            </li>
+            <li>
+              <a href="#" class="transition hover:text-secondary">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Info -->
+        <div>
+          <h3 class="mb-4 text-lg font-semibold text-secondary">Information</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="transition hover:text-secondary">FAQ</a></li>
+            <li>
+              <a href="#" class="transition hover:text-secondary">Terms & Conditions</a>
+            </li>
+            <li>
+              <a href="#" class="transition hover:text-secondary">Privacy Policy</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
 
-    <!-- Videos Grid -->
-    <section class="relative py-24 bg-white">
-      <div class="container px-6 mx-auto max-w-7xl">
-        <div
-          class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
-        >
-          <!-- Video 1 -->
-          <div
-            class="relative overflow-hidden transition-all duration-500 bg-white shadow-xl cursor-pointer group rounded-2xl hover:shadow-2xl hover:-translate-y-3"
-          >
-            <!-- Video Thumbnail -->
-            <div class="relative">
-              <img
-                src="images/botox-injection-procedure.jpg"
-                alt="Botox Injection Procedure"
-                class="object-cover w-full h-48 transition-transform duration-700 sm:h-56 lg:h-64 group-hover:scale-110"
-              />
-              <!-- Play Button Overlay -->
-              <div
-                class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 bg-black/30 group-hover:opacity-100"
-              >
-                <div
-                  class="flex items-center justify-center w-16 h-16 transition-transform duration-300 transform bg-white rounded-full shadow-lg group-hover:scale-110"
-                >
-                  <svg
-                    class="w-8 h-8 text-pink-600"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <!-- Video Title -->
-            <div class="p-4 sm:p-6">
-              <h3 class="mb-2 text-lg font-bold text-gray-800">
-                Botox Injection Procedure
-              </h3>
-              <p class="text-sm text-gray-600">
-                Step-by-step guide to our advanced botox treatment.
-              </p>
-            </div>
-          </div>
-
-          <!-- Video 2 -->
-          <div
-            class="relative overflow-hidden transition-all duration-500 bg-white shadow-xl cursor-pointer group rounded-2xl hover:shadow-2xl hover:-translate-y-3"
-          >
-            <div class="relative">
-              <img
-                src="images/Laser Hair Removal Process.jpg"
-                alt="Laser Hair Removal Process"
-                class="object-cover w-full h-48 transition-transform duration-700 sm:h-56 lg:h-64 group-hover:scale-110"
-              />
-              <div
-                class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 bg-black/30 group-hover:opacity-100"
-              >
-                <div
-                  class="flex items-center justify-center w-16 h-16 transition-transform duration-300 transform bg-white rounded-full shadow-lg group-hover:scale-110"
-                >
-                  <svg
-                    class="w-8 h-8 text-pink-600"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="p-4 sm:p-6">
-              <h3 class="mb-2 text-lg font-bold text-gray-800">
-                Laser Hair Removal Process
-              </h3>
-              <p class="text-sm text-gray-600">
-                See how our laser technology works effectively.
-              </p>
-            </div>
-          </div>
-
-          <!-- Video 3 -->
-          <div
-            class="relative overflow-hidden transition-all duration-500 bg-white shadow-xl cursor-pointer group rounded-2xl hover:shadow-2xl hover:-translate-y-3"
-          >
-            <div class="relative">
-              <img
-                src="images/Skin Rejuvenation Journey.jpg"
-                alt="Skin Rejuvenation Journey"
-                class="object-cover w-full h-48 transition-transform duration-700 sm:h-56 lg:h-64 group-hover:scale-110"
-              />
-              <div
-                class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 bg-black/30 group-hover:opacity-100"
-              >
-                <div
-                  class="flex items-center justify-center w-16 h-16 transition-transform duration-300 transform bg-white rounded-full shadow-lg group-hover:scale-110"
-                >
-                  <svg
-                    class="w-8 h-8 text-pink-600"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="p-4 sm:p-6">
-              <h3 class="mb-2 text-lg font-bold text-gray-800">
-                Skin Rejuvenation Journey
-              </h3>
-              <p class="text-sm text-gray-600">
-                A complete skin transformation story.
-              </p>
-            </div>
-          </div>
-
-          <!-- Video 4 -->
-          <div
-            class="relative overflow-hidden transition-all duration-500 bg-white shadow-xl cursor-pointer group rounded-2xl hover:shadow-2xl hover:-translate-y-3"
-          >
-            <div class="relative">
-              <img
-                src="images/Acne Treatment Process.jpg"
-                alt="Acne Treatment Process"
-                class="object-cover w-full h-48 transition-transform duration-700 sm:h-56 lg:h-64 group-hover:scale-110"
-              />
-              <div
-                class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 bg-black/30 group-hover:opacity-100"
-              >
-                <div
-                  class="flex items-center justify-center w-16 h-16 transition-transform duration-300 transform bg-white rounded-full shadow-lg group-hover:scale-110"
-                >
-                  <svg
-                    class="w-8 h-8 text-pink-600"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="p-4 sm:p-6">
-              <h3 class="mb-2 text-lg font-bold text-gray-800">
-                Acne Treatment Process
-              </h3>
-              <p class="text-sm text-gray-600">
-                See our effective acne treatment methods.
-              </p>
-            </div>
-          </div>
-          <!-- Video 5 -->
-          <div
-            class="relative overflow-hidden transition-all duration-500 bg-white shadow-xl cursor-pointer group rounded-2xl hover:shadow-2xl hover:-translate-y-2"
-          >
-            <div class="relative">
-              <img
-                src="images/video5.jpg"
-                alt="Laser Skin Therapy Explained
-"
-                class="object-cover w-full h-48 sm:h-56 lg:h-64"
-              />
-              <div
-                class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 bg-black/30 group-hover:opacity-100"
-              >
-                <div
-                  class="flex items-center justify-center transition-transform duration-300 transform bg-white rounded-full shadow-lg w-14 h-14 group-hover:scale-110"
-                >
-                  <svg
-                    class="w-8 h-8 text-pink-600"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="p-5">
-              <h3 class="mb-2 text-lg font-bold text-gray-800">
-                Laser Skin Therapy Explained
-              </h3>
-              <p class="text-sm text-gray-600">
-                What to expect during a laser skin treatment session.
-              </p>
-            </div>
-          </div>
-          <!-- Video 6 -->
-          <div
-            class="relative overflow-hidden transition-all duration-500 bg-white shadow-xl cursor-pointer group rounded-2xl hover:shadow-2xl hover:-translate-y-2"
-          >
-            <div class="relative">
-              <img
-                src="images/video6.jpg"
-                alt="Hair & Scalp Treatment Process"
-                class="object-cover w-full h-48 sm:h-56 lg:h-64"
-              />
-              <div
-                class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 bg-black/30 group-hover:opacity-100"
-              >
-                <div
-                  class="flex items-center justify-center transition-transform duration-300 transform bg-white rounded-full shadow-lg w-14 h-14 group-hover:scale-110"
-                >
-                  <svg
-                    class="w-8 h-8 text-pink-600"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="p-5">
-              <h3 class="mb-2 text-lg font-bold text-gray-800">
-                Hair & Scalp Treatment Process
-              </h3>
-              <p class="text-sm text-gray-600">
-                Learn how advanced dermatology treatments address hair loss,
-                scalp conditions, and promote healthy, strong hair.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-16 text-center">
-          <a
-            href="Booking.html"
-            class="inline-block px-8 py-3 text-white transition-colors duration-300 rounded-lg shadow-lg bg-sky-600 hover:bg-sky-700"
-          >
-            Book Your Consultation
-          </a>
-        </div>
+      <!-- Divider -->
+      <div class="pt-6 pb-8 text-sm text-center text-gray-400 border-t border-gray-700">
+        &copy; 2025 Dr. Mai El-Hakim. All rights reserved.
       </div>
-    </section>
+    </div>
+  </footer>
 
-    <!-- ✅ Footer -->
-    <footer
-      class="relative text-white bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900"
-    >
-      <div class="container px-6 mx-auto max-w-7xl">
-        <!-- Grid -->
-        <div class="grid gap-10 py-16 md:grid-cols-4">
-          <!-- Brand -->
-          <div>
-            <h3 class="mb-4 text-2xl font-extrabold tracking-wide">
-              <span class="text-white">Dr. Mai</span>
-              <span class="text-sky-300">El-Hakim</span>
-            </h3>
-            <p class="mb-6 text-gray-300">
-              Creating radiant skin and timeless beauty with advanced
-              dermatology and a personal touch.
-            </p>
-            <!-- Socials -->
-            <div class="flex space-x-4">
-              <a
-                href="#"
-                class="p-2 transition bg-gray-700 rounded-full hover:bg-sky-500"
-              >
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path
-                    d="M22.46 6c-.77.35-1.6.58-2.46.69a4.27 4.27 0 001.88-2.37 8.57 8.57 0 01-2.71 1.04 4.26 4.26 0 00-7.3 3.89 12.1 12.1 0 01-8.78-4.45 4.26 4.26 0 001.32 5.68 4.24 4.24 0 01-1.93-.53v.05a4.27 4.27 0 003.42 4.18 4.26 4.26 0 01-1.92.07 4.27 4.27 0 003.98 2.96A8.54 8.54 0 012 19.54a12.07 12.07 0 006.56 1.92c7.88 0 12.2-6.53 12.2-12.2 0-.19 0-.38-.01-.57A8.72 8.72 0 0022.46 6z"
-                  />
-                </svg>
-              </a>
-              <a
-                href="#"
-                class="p-2 transition bg-gray-700 rounded-full hover:bg-sky-500"
-              >
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path
-                    d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8v-6.93H7.5V12H10V9.79c0-2.47 1.48-3.84 3.74-3.84 1.08 0 2.21.19 2.21.19v2.43h-1.25c-1.23 0-1.61.76-1.61 1.54V12h2.74l-.44 2.87H13.1V21.8c4.56-.93 8-4.96 8-9.8z"
-                  />
-                </svg>
-              </a>
-              <a
-                href="#"
-                class="p-2 transition bg-gray-700 rounded-full hover:bg-sky-500"
-              >
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path
-                    d="M21.6 0H2.4C1.08 0 0 1.08 0 2.4v19.2C0 22.92 1.08 24 2.4 24h10.34v-8.34H9.69v-3.26h3.05V9.41c0-3.02 1.84-4.67 4.53-4.67 1.29 0 2.4.1 2.72.14v3.15l-1.87.001c-1.47 0-1.76.7-1.76 1.73v2.27h3.52l-.46 3.26h-3.06V24h6c1.32 0 2.4-1.08 2.4-2.4V2.4C24 1.08 22.92 0 21.6 0"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
+  <!-- ✅ Back to Top Button -->
+  <button id="back-to-top"
+    class="fixed z-50 p-3 text-white transition-all duration-300 transform rounded-full shadow-lg opacity-0 pointer-events-none bottom-6 right-6 bg-sky-600 hover:bg-sky-700 hover:scale-110"
+    aria-label="Back to top">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+    </svg>
+  </button>
 
-          <!-- Contact -->
-          <div>
-            <h3 class="mb-4 text-lg font-semibold text-sky-400">Contact</h3>
-            <ul class="space-y-2 text-gray-300">
-              <li>NewDerma Clinics, Al Madinah Al Munawwarah, Saudi Arabia</li>
-              <li>Email: example@gmail.com</li>
-              <li>Phone: +966 56 463 7050</li>
-            </ul>
-          </div>
+  <script src="index.js"></script>
+</body>
 
-          <!-- Links -->
-          <div>
-            <h3 class="mb-4 text-lg font-semibold text-sky-400">Links</h3>
-            <ul class="space-y-2">
-              <li>
-                <a href="#" class="transition hover:text-sky-400">Homepage</a>
-              </li>
-              <li>
-                <a href="#" class="transition hover:text-sky-400">About Us</a>
-              </li>
-              <li>
-                <a href="#" class="transition hover:text-sky-400">Help</a>
-              </li>
-              <li>
-                <a href="#" class="transition hover:text-sky-400">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Info -->
-          <div>
-            <h3 class="mb-4 text-lg font-semibold text-sky-400">Information</h3>
-            <ul class="space-y-2">
-              <li><a href="#" class="transition hover:text-sky-400">FAQ</a></li>
-              <li>
-                <a href="#" class="transition hover:text-sky-400"
-                  >Terms & Conditions</a
-                >
-              </li>
-              <li>
-                <a href="#" class="transition hover:text-sky-400"
-                  >Privacy Policy</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Divider -->
-        <div
-          class="pt-6 pb-8 text-sm text-center text-gray-400 border-t border-gray-700"
-        >
-          &copy; 2025 Dr. Mai El-Hakim. All rights reserved.
-        </div>
-      </div>
-    </footer>
-
-    <!-- ✅ Back to Top Button -->
-    <button
-      id="back-to-top"
-      class="fixed z-50 p-3 text-white transition-all duration-300 transform rounded-full shadow-lg opacity-0 pointer-events-none bottom-6 right-6 bg-sky-600 hover:bg-sky-700 hover:scale-110"
-      aria-label="Back to top"
-    >
-      <svg
-        class="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M5 10l7-7m0 0l7 7m-7-7v18"
-        />
-      </svg>
-    </button>
-
-    <script src="index.js"></script>
-  </body>
 </html>

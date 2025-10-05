@@ -1,658 +1,530 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us - Dr. Mai El-Hakim</title>
-    <link rel="stylesheet" href="dist/output.css" />
-  </head>
 
-  <body class="min-h-screen font-sans text-darkText">
-    <!-- Header -->
-    <header class="relative top-0 z-50 w-full bg-white shadow-md">
-      <nav
-        class="flex items-center justify-between lg:gap-10 py-4 sm:py-6 md:py-8 lg:py-10 max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8"
-      >
-        <!-- Logo -->
-        <a
-          href="index.html"
-          class="text-lg font-extrabold transition-transform duration-300 sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl"
-        >
-          <span class="text-gray-800">Dr. Mai</span>
-          <span class="text-sky-300">El-Hakim</span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Dr. Mai El-Hakim</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <link rel="stylesheet" href="dist/output.css" /> -->
+</head>
+
+
+
+<body class="min-h-screen font-sans text-darkText">
+
+  <!-- Transparent Header - Fully Responsive -->
+  <header class="relative top-0 z-50 w-full bg-transparent border-b border-white/10">
+    <nav class="flex items-center justify-between p-4 sm:px-8 lg:px-14 xl:px-20 lg:gap-10 sm:py-6 md:py-8 lg:py-10">
+      <!-- Logo - Responsive Sizing -->
+      <a href="index.html"
+        class="text-base font-extrabold transition-transform duration-300 md:text-lg lg:text-xl xl:text-xl 2xl:text-3xl">
+        <span class="text-primary">Dr. Mai</span>
+        <span class="text-primary">El-Hakim</span>
+      </a>
+
+      <!-- Desktop Menu - Hidden on mobile/tablet -->
+      <ul class="items-center hidden gap-4 lg:flex xl:gap-6">
+        <li>
+          <a href="index.html"
+            class="px-3 py-2 text-sm font-medium text-primary transition-all duration-300 transform menu-link active lg:text-sm xl:px-4 xl:py-2 hover:bg-white/10 hover:text-primary hover:-translate-y-1">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="AboutUs.html"
+            class="px-3 py-2 text-sm font-medium text-primary transition-all duration-300 transform menu-link lg:text-sm xl:px-4 xl:py-2 hover:bg-white/10 hover:text-primary hover:-translate-y-1">
+            About us
+          </a>
+        </li>
+        <li>
+          <a href="Services.html"
+            class="px-3 py-2 text-sm font-medium text-primary transition-all duration-300 transform menu-link lg:text-sm xl:px-4 xl:py-2 hover:bg-white/10 hover:text-primary hover:-translate-y-1">
+            Services
+          </a>
+        </li>
+        <li>
+          <a href="Videos.html"
+            class="px-3 py-2 text-sm font-medium text-primary transition-all duration-300 transform menu-link lg:text-sm xl:px-4 xl:py-2 hover:bg-white/10 hover:text-primary hover:-translate-y-1">
+            Videos
+          </a>
+        </li>
+        <li>
+          <a href="Blogs.html"
+            class="px-3 py-2 text-sm font-medium text-primary transition-all duration-300 transform menu-link lg:text-sm xl:px-4 xl:py-2 hover:bg-white/10 hover:text-primary hover:-translate-y-1">
+            Blogs
+          </a>
+        </li>
+        <li>
+          <a href="ContactUs.html"
+            class="px-3 py-2 text-sm font-medium text-primary transition-all duration-300 transform menu-link xl:px-4 hover:bg-white/10 hover:text-primary hover:-translate-y-1">
+            Contact us
+          </a>
+        </li>
+      </ul>
+
+      <!-- Desktop Language Button and CTA -->
+      <div class="items-center hidden gap-4 lg:flex">
+        <button onclick="window.location.href='index-ar.html'"
+          class="flex items-center gap-2 text-sm font-medium text-primary cursor-pointer sm:text-base md:text-lg">
+          AR
+          <img src="https://flagcdn.com/sa.svg" alt="Arabic" class="object-cover w-5 h-3 sm:w-6 sm:h-4" />
+        </button>
+
+        <a href="Booking.html"
+          class="px-4 py-2 text-base font-semibold text-white transition-colors duration-300 bg-primary rounded-full border border-gray-300 lg:text-sm xl:px-6 xl:py-3 hover:bg-fff4eb hover:text-white"
+          aria-label="Book Appointment">
+          <span class="hidden xl:inline">Book Appointment</span>
+          <span class="xl:hidden">Book</span>
         </a>
-
-        <!-- Desktop Menu -->
-        <ul class="items-center hidden gap-4 lg:flex xl:gap-6">
-          <li>
-            <a
-              href="index.html"
-              class="px-3 py-2 text-sm font-medium text-gray-800 transition-all duration-300 transform menu-link xl:px-4 xl:py-2 xl:text-base hover:text-sky-600"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              href="AboutUs.html"
-              class="px-3 py-2 text-sm font-medium transition-all duration-300 transform text-sky-600 menu-link active xl:px-4 xl:py-2 xl:text-base"
-              >About us</a
-            >
-          </li>
-          <li>
-            <a
-              href="Services.html"
-              class="px-3 py-2 text-sm font-medium text-gray-800 transition-all duration-300 transform menu-link xl:px-4 xl:py-2 xl:text-base hover:text-sky-600"
-              >Services</a
-            >
-          </li>
-          <li>
-            <a
-              href="Videos.html"
-              class="px-3 py-2 text-sm font-medium text-gray-800 transition-all duration-300 transform menu-link xl:px-4 xl:py-2 xl:text-base hover:text-sky-600"
-              >Videos</a
-            >
-          </li>
-          <li>
-            <a
-              href="Blogs.html"
-              class="px-3 py-2 text-sm font-medium text-gray-800 transition-all duration-300 transform menu-link xl:px-4 xl:py-2 xl:text-base hover:text-sky-600"
-              >Blogs</a
-            >
-          </li>
-          <li>
-            <a
-              href="ContactUs.html"
-              class="px-3 py-2 text-sm font-medium text-gray-800 transition-all duration-300 transform menu-link xl:px-4 xl:text-base hover:text-sky-600"
-              >Contact us</a
-            >
-          </li>
-        </ul>
-
-        <!-- Desktop Language Button and CTA -->
-        <div class="items-center hidden gap-4 lg:flex">
-          <button
-            onclick="window.location.href='AboutUs-ar.html'"
-            class="flex items-center gap-2 text-lg font-medium text-black cursor-pointer"
-          >
-            AR
-            <img
-              src="https://flagcdn.com/sa.svg"
-              alt="Arabic"
-              class="object-cover w-4 h-2"
-            />
-          </button>
-
-          <a
-            href="Booking.html"
-            class="px-4 py-2 text-sm font-semibold text-white transition-colors duration-300 bg-sky-600 xl:px-6 xl:py-3 xl:text-base hover:bg-sky-700"
-          >
-            <span class="hidden xl:inline">Book Appointment</span>
-            <span class="xl:hidden">Book</span>
-          </a>
-        </div>
-
-        <!-- Mobile Controls Container - Language Button + Hamburger -->
-        <div class="flex items-center gap-2 lg:hidden">
-          <!-- Mobile Language Button -->
-          <button
-            onclick="window.location.href='AboutUs-ar.html'"
-            class="flex items-center gap-2 text-sm font-medium text-black cursor-pointer p-2 transition-all duration-300 rounded-full hover:bg-gray-100 touch-manipulation"
-          >
-            AR
-            <img
-              src="https://flagcdn.com/sa.svg"
-              alt="Arabic"
-              class="object-cover w-4 h-2"
-            />
-          </button>
-
-          <!-- Mobile Hamburger Button -->
-          <button
-            id="mobile-menu-button"
-            class="p-2 text-gray-800 transition-all duration-300 rounded-full hover:bg-gray-100 focus:outline-none group touch-manipulation"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="w-5 h-5 transition-transform duration-300 sm:h-6 sm:w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              id="menu-icon"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </button>
-        </div>
-      </nav>
-
-      <!-- Mobile Menu -->
-      <div
-        id="mobile-menu"
-        class="absolute w-full hidden px-4 py-4 space-y-3 bg-white border-t shadow-lg lg:hidden sm:px-6 sm:py-6 sm:space-y-4"
-      >
-        <a
-          href="index.html"
-          class="block px-3 py-2 text-base font-medium text-gray-800 transition-all duration-300 rounded-lg hover:bg-gray-100 hover:text-sky-600"
-          >Home</a
-        >
-        <a
-          href="AboutUs.html"
-          class="block px-3 py-2 text-base font-medium transition-all duration-300 rounded-lg text-sky-600 bg-sky-50"
-          >About us</a
-        >
-        <a
-          href="Services.html"
-          class="block px-3 py-2 text-base font-medium text-gray-800 transition-all duration-300 rounded-lg hover:bg-gray-100 hover:text-sky-600"
-          >Services</a
-        >
-        <a
-          href="Videos.html"
-          class="block px-3 py-2 text-base font-medium text-gray-800 transition-all duration-300 rounded-lg hover:bg-gray-100 hover:text-sky-600"
-          >Videos</a
-        >
-        <a
-          href="Blogs.html"
-          class="block px-3 py-2 text-base font-medium text-gray-800 transition-all duration-300 rounded-lg hover:bg-gray-100 hover:text-sky-600"
-          >Blogs</a
-        >
-        <a
-          href="ContactUs.html"
-          class="block px-3 py-2 text-base font-medium text-gray-800 transition-all duration-300 rounded-lg hover:bg-gray-100 hover:text-sky-600"
-          >Contact us</a
-        >
-        <a
-          href="Booking.html"
-          class="block w-full px-4 py-3 mt-3 text-sm font-semibold text-center text-white transition-colors duration-300 rounded-lg shadow-lg bg-sky-600 hover:bg-sky-700"
-          >Book Appointment</a
-        >
       </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section
-      class="relative py-32 overflow-hidden bg-gradient-to-br from-sky-100 via-white to-blue-100"
-    >
-      <div class="container relative z-10 px-6 mx-auto max-w-7xl">
-        <div class="mb-16 text-center">
-          <h1
-            class="mb-6 text-4xl font-bold text-gray-900 md:text-5xl lg:text-6xl"
-          >
-            About <span class="text-sky-300">Dr. Mai El-Hakim</span>
-          </h1>
-          <p class="max-w-3xl mx-auto text-lg text-gray-600 md:text-xl">
-            Dedicated to providing exceptional dental care with compassion,
-            expertise, and cutting-edge technology
-          </p>
-        </div>
+      <!-- Mobile Controls Container - Language Button + Hamburger -->
+      <div class="flex items-center gap-2 lg:hidden">
+        <!-- Mobile Language Button -->
+        <button onclick="window.location.href='index-ar.html'"
+          class="flex items-center gap-2 text-sm font-medium text-white cursor-pointer p-2 transition-all duration-300 rounded-full hover:bg-white/10 touch-manipulation">
+          AR
+          <img src="https://flagcdn.com/sa.svg" alt="Arabic" class="object-cover w-4 h-3" />
+        </button>
+
+        <!-- Mobile Hamburger Button -->
+        <button id="mobile-menu-button"
+          class="p-2 text-white transition-all duration-300 rounded-full hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/30 group touch-manipulation"
+          aria-label="Toggle menu">
+          <svg xmlns="http://www.w3.org/2000/svg"
+            class="w-5 h-5 transition-transform duration-300 sm:h-6 sm:w-6 group-hover:rotate-90" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor" id="menu-icon">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
       </div>
-    </section>
+    </nav>
 
-    <!-- Doctor Profile Section -->
-    <section class="relative py-24 bg-white">
-      <div class="container px-6 mx-auto max-w-7xl">
-        <div class="grid items-center gap-16 lg:grid-cols-2">
-          <!-- Image -->
-          <div class="order-2 lg:order-1">
-            <div class="relative">
-              <div
-                class="w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl"
-              >
-                <img
-                  src="images/Mai-El-Hakim.jpg"
-                  alt="Dr. Mai El-Hakim"
-                  class="object-cover w-full h-full"
-                />
-              </div>
-              <!-- Decorative Elements -->
-              <div
-                class="absolute w-24 h-24 rounded-full -top-6 -right-6 bg-sky-100 opacity-60"
-              ></div>
-              <div
-                class="absolute w-32 h-32 bg-blue-100 rounded-full -bottom-6 -left-6 opacity-40"
-              ></div>
-            </div>
-          </div>
+    <!-- Mobile Menu Dropdown -->
+    <div id="mobile-menu"
+      class="absolute top-full left-0 right-0 hidden w-full px-4 py-4 space-y-3 border-t lg:hidden bg-black/30 backdrop-blur-sm border-white/10 sm:px-6 sm:py-6 sm:space-y-4 animate-fade-in shadow-2xl">
+      <a href="index.html"
+        class="block px-3 py-2 text-base font-medium text-white transition-all duration-300 rounded-lg sm:py-3 sm:px-4 sm:text-lg hover:bg-white/10 hover:text-white sm:rounded-xl hover:scale-105 touch-manipulation">
+        Home
+      </a>
+      <a href="AboutUs.html"
+        class="block px-3 py-2 text-base font-medium text-white transition-all duration-300 rounded-lg sm:py-3 sm:px-4 sm:text-lg hover:bg-white/10 hover:text-white sm:rounded-xl hover:scale-105 touch-manipulation">
+        About us
+      </a>
+      <a href="Services.html"
+        class="block px-3 py-2 text-base font-medium text-white transition-all duration-300 rounded-lg sm:py-3 sm:px-4 sm:text-lg hover:bg-white/10 hover:text-white sm:rounded-xl hover:scale-105 touch-manipulation">
+        Services
+      </a>
+      <a href="Videos.html"
+        class="block px-3 py-2 text-base font-medium text-white transition-all duration-300 rounded-lg sm:py-3 sm:px-4 sm:text-lg hover:bg-white/10 hover:text-white sm:rounded-xl hover:scale-105 touch-manipulation">
+        Videos
+      </a>
+      <a href="Blogs.html"
+        class="block px-3 py-2 text-base font-medium text-white transition-all duration-300 rounded-lg sm:py-3 sm:px-4 sm:text-lg hover:bg-white/10 hover:text-white sm:rounded-xl hover:scale-105 touch-manipulation">
+        Blogs
+      </a>
+      <a href="ContactUs.html"
+        class="block px-3 py-2 text-base font-medium text-white transition-all duration-300 rounded-lg sm:py-3 sm:px-4 sm:text-lg hover:bg-white/10 hover:text-white sm:rounded-xl hover:scale-105 touch-manipulation">
+        Contact us
+      </a>
+      <a href="Booking.html"
+        class="block w-full px-4 py-3 mt-3 text-sm font-semibold text-center text-white transition-colors duration-300 border border-gray-400 rounded-lg shadow-lg sm:mt-4 sm:px-6 sm:text-base bg-primary sm:rounded-xl touch-manipulation">
+        Book Appointment
+      </a>
+    </div>
+  </header>
 
-          <!-- Content -->
-          <div class="order-1 space-y-6 lg:order-2">
-            <div>
-              <h2 class="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">
-                Meet Your Dermatology & Aesthetics Expert
-              </h2>
-              <h3 class="mb-6 text-xl font-semibold text-sky-600 md:text-2xl">
-                Consultant Dermatologist & Aesthetic Specialist
-              </h3>
-            </div>
-
-            <div class="space-y-4 text-gray-700">
-              <p class="text-lg leading-relaxed">
-                Dr. Mai El-Hakim is a highly skilled Consultant Dermatologist &
-                Aesthetic Specialist with over 15 years of experience in
-                advanced skincare and non-surgical aesthetics. She combines
-                medical precision with artistic vision to enhance natural
-                beauty, treat diverse skin conditions, and help clients achieve
-                healthy, radiant, and youthful skin.
-              </p>
-
-              <p class="leading-relaxed">
-                Specializing in laser treatments, anti-aging procedures, and
-                skin rejuvenation, Dr. Mai uses the latest technologies and
-                evidence-based techniques to deliver safe, effective, and
-                personalized results. Her compassionate care and commitment to
-                continuous learning ensure exceptional treatments and lasting
-                patient trust.
-              </p>
-            </div>
-
-            <div class="pt-6">
-              <a
-                href="Booking.html"
-                class="inline-block px-8 py-3 text-white transition-colors duration-300 rounded-lg shadow-lg bg-sky-600 hover:bg-sky-700"
-              >
-                Book Your Consultation
-              </a>
-            </div>
-          </div>
-        </div>
+  <!-- Hero Section -->
+  <section class="relative py-32 overflow-hidden bg-gradient-to-t from-secondary/80 via-secondary/80 to-transparent">
+    <div class="fixed inset-0 -z-10">
+      <div class="absolute inset-0 bg-no-repeat bg-center bg-cover"
+        style="background-image: url('/images/home-thumb-slider-1.webp')">
       </div>
-    </section>
-
-    <!-- Qualifications Section -->
-    <section class="py-24 bg-gradient-to-br from-gray-50 to-blue-50">
-      <div class="container px-6 mx-auto max-w-7xl">
-        <div class="mb-16 text-center">
-          <h2 class="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">
-            Education & Qualifications
-          </h2>
-          <p class="max-w-2xl mx-auto text-lg text-gray-600">
-            Dr. Mai's extensive education and continuous professional
-            development ensure the highest standard of care
-          </p>
-        </div>
-
-        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          <!-- Education Cards -->
-          <div class="p-8 bg-white shadow-lg rounded-2xl">
-            <div class="flex items-center mb-4">
-              <div
-                class="flex items-center justify-center w-12 h-12 mr-4 rounded-full bg-sky-100"
-              >
-                <svg
-                  class="w-6 h-6 text-sky-600"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72L5.18 9L12 5.28L18.82 9zM17 15.99l-5 2.73l-5-2.73v-3.72L12 15l5-2.73v3.72z"
-                  />
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold text-gray-900">
-                Dermatology & Aesthetic Medicine Degree
-              </h3>
-            </div>
-            <p class="text-gray-600">
-              Master of Dermatology & Aesthetic Medicine, King Saud University –
-              College of Medicine, Riyadh, Saudi Arabia
-            </p>
-          </div>
-
-          <div class="p-8 bg-white shadow-lg rounded-2xl">
-            <div class="flex items-center mb-4">
-              <div
-                class="flex items-center justify-center w-12 h-12 mr-4 rounded-full bg-sky-100"
-              >
-                <svg
-                  class="w-6 h-6 text-sky-600"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M9.5 14C8.11929 14 7 12.8807 7 11.5C7 10.1193 8.11929 9 9.5 9C10.8807 9 12 10.1193 12 11.5C12 12.8807 10.8807 14 9.5 14Z"
-                  />
-                  <path
-                    d="M14.5 14C13.1193 14 12 12.8807 12 11.5C12 10.1193 13.1193 9 14.5 9C15.8807 9 17 10.1193 17 11.5C17 12.8807 15.8807 14 14.5 14Z"
-                  />
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold text-gray-900">Specialization</h3>
-            </div>
-            <p class="text-gray-600">
-              Advanced Certification in Dermatology & Aesthetic Medicine
-            </p>
-          </div>
-
-          <div class="p-8 bg-white shadow-lg rounded-2xl">
-            <div class="flex items-center mb-4">
-              <div
-                class="flex items-center justify-center w-12 h-12 mr-4 rounded-full bg-sky-100"
-              >
-                <svg
-                  class="w-6 h-6 text-sky-600"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 3.5V7.5L11 6L7 7.5L3 5.5V7.5L7 9.5V15L11 13.5V19L12 20.5L13 19V13.5L17 15V9.5L21 9Z"
-                  />
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold text-gray-900">Memberships</h3>
-            </div>
-            <ul class="space-y-1 text-gray-600 list-disc list-inside">
-              <li>
-                -Member of the Afro-Asian Society for Dermatology and Laser
-                (ASDDL)
-              </li>
-              <li>
-                -Member of the European Society for Cosmetic and Laser
-                Dermatology (ESCAD)
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience & Philosophy Section -->
-    <section class="py-24 bg-white">
-      <div class="container px-6 mx-auto max-w-7xl">
-        <div class="grid gap-16 lg:grid-cols-2">
-          <!-- Experience -->
-          <div class="space-y-6">
-            <h2 class="text-3xl font-bold text-gray-900 md:text-4xl">
-              15+ Years of Excellence
-            </h2>
-            <div class="space-y-4">
-              <div class="flex items-start space-x-4">
-                <div
-                  class="flex items-center justify-center flex-shrink-0 w-8 h-8 mt-1 rounded-full bg-sky-100"
-                >
-                  <span class="text-sm font-bold text-sky-600">1</span>
-                </div>
-                <div>
-                  <h3 class="mb-2 text-lg font-semibold text-gray-900">
-                    Advanced Treatment Techniques
-                  </h3>
-                  <p class="text-gray-600">
-                    Expertise in the latest dermatology and aesthetic
-                    technologies, offering advanced, minimally invasive
-                    treatments for optimal skin health, beauty, and patient
-                    comfort.
-                  </p>
-                </div>
-              </div>
-
-              <div class="flex items-start space-x-4">
-                <div
-                  class="flex items-center justify-center flex-shrink-0 w-8 h-8 mt-1 rounded-full bg-sky-100"
-                >
-                  <span class="text-sm font-bold text-sky-600">2</span>
-                </div>
-                <div>
-                  <h3 class="mb-2 text-lg font-semibold text-gray-900">
-                    Comprehensive Care
-                  </h3>
-                  <p class="text-gray-600">
-                    From advanced skin treatments to aesthetic enhancements,
-                    providing comprehensive dermatology and cosmetic solutions
-                    under one roof.
-                  </p>
-                </div>
-              </div>
-
-              <div class="flex items-start space-x-4">
-                <div
-                  class="flex items-center justify-center flex-shrink-0 w-8 h-8 mt-1 rounded-full bg-sky-100"
-                >
-                  <span class="text-sm font-bold text-sky-600">3</span>
-                </div>
-                <div>
-                  <h3 class="mb-2 text-lg font-semibold text-gray-900">
-                    Patient-Centered Approach
-                  </h3>
-                  <p class="text-gray-600">
-                    Every treatment plan is customized to meet individual
-                    patient needs and lifestyle requirements.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Philosophy -->
-          <div class="space-y-6">
-            <h2 class="text-3xl font-bold text-gray-900 md:text-4xl">
-              Our Philosophy
-            </h2>
-            <div class="p-6 border-l-4 border-sky-500 bg-sky-50">
-              <blockquote class="text-lg italic text-gray-700">
-                "I believe every patient deserves personalized, compassionate
-                care that focuses not only on their immediate skin concerns but
-                also on their long-term skin health and beauty goals. My mission
-                is to create a comfortable, welcoming environment where patients
-                feel confident, informed, and empowered in every treatment
-                decision."
-              </blockquote>
-              <cite class="block mt-4 text-sm font-semibold text-sky-600"
-                >- Dr. Mai El-Hakim</cite
-              >
-            </div>
-
-            <div class="space-y-4">
-              <h3 class="text-xl font-semibold text-gray-900">Core Values</h3>
-              <ul class="space-y-2">
-                <li class="flex items-center">
-                  <svg
-                    class="w-5 h-5 mr-3 text-sky-600"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  <span class="text-gray-700">Excellence in clinical care</span>
-                </li>
-                <li class="flex items-center">
-                  <svg
-                    class="w-5 h-5 mr-3 text-sky-600"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  <span class="text-gray-700">Compassionate patient care</span>
-                </li>
-                <li class="flex items-center">
-                  <svg
-                    class="w-5 h-5 mr-3 text-sky-600"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  <span class="text-gray-700"
-                    >Continuous learning and innovation</span
-                  >
-                </li>
-                <li class="flex items-center">
-                  <svg
-                    class="w-5 h-5 mr-3 text-sky-600"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  <span class="text-gray-700">Ethical practice standards</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="py-24 bg-gradient-to-r from-sky-600 to-blue-700">
-      <div class="container max-w-4xl px-6 mx-auto text-center">
-        <h2 class="mb-6 text-3xl font-bold text-white md:text-4xl">
-          Ready to Start Your Journey to Healthy, Radiant Skin?
-        </h2>
-        <p class="mb-8 text-lg text-sky-100 md:text-xl">
-          Schedule your consultation today and discover how Dr. Mai El-Hakim can
-          help you achieve the healthy, radiant skin and natural beauty you
-          deserve.
+      <!-- <div class="absolute inset-0 bg-gradient-to-l from-secondary from-50% via-transparent to-transparent"></div> -->
+    </div>
+    <div class="container relative z-10 px-6 mx-auto max-w-7xl">
+      <div class="mb-16 text-center">
+        <h1 class="mb-6 text-4xl font-bold text-gray-900 md:text-5xl lg:text-6xl">
+          About <span class="text-primary">Dr. Mai El-Hakim</span>
+        </h1>
+        <p class="max-w-3xl mx-auto text-lg text-gray-600 md:text-xl">
+          Dedicated to providing exceptional dental care with compassion,
+          expertise, and cutting-edge technology
         </p>
-        <div class="flex flex-col gap-4 sm:flex-row sm:justify-center">
-          <a
-            href="Booking.html"
-            class="px-8 py-4 text-lg font-semibold transition-colors duration-300 bg-white rounded-lg text-sky-600 hover:bg-gray-100"
-          >
-            Book Appointment
-          </a>
-          <a
-            href="ContactUs.html"
-            class="px-8 py-4 text-lg font-semibold text-white transition-colors duration-300 border-2 border-white rounded-lg hover:bg-white hover:text-sky-600"
-          >
-            Contact Us
-          </a>
-        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ✅ Footer -->
-    <footer
-      class="relative text-white bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900"
-    >
-      <div class="container px-6 mx-auto max-w-7xl">
-        <!-- Grid -->
-        <div class="grid gap-10 py-16 md:grid-cols-4">
-          <!-- Brand -->
-          <div>
-            <h3 class="mb-4 text-2xl font-extrabold tracking-wide">
-              <span class="text-white">Dr. Mai</span>
-              <span class="text-sky-300">El-Hakim</span>
-            </h3>
-            <p class="mb-6 text-gray-300">
-              Creating radiant skin and timeless beauty with advanced
-              dermatology and a personal touch.
-            </p>
-            <!-- Socials -->
-            <div class="flex space-x-4">
-              <a
-                href="#"
-                class="p-2 transition bg-gray-700 rounded-full hover:bg-sky-500"
-              >
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path
-                    d="M22.46 6c-.77.35-1.6.58-2.46.69a4.27 4.27 0 001.88-2.37 8.57 8.57 0 01-2.71 1.04 4.26 4.26 0 00-7.3 3.89 12.1 12.1 0 01-8.78-4.45 4.26 4.26 0 001.32 5.68 4.24 4.24 0 01-1.93-.53v.05a4.27 4.27 0 003.42 4.18 4.26 4.26 0 01-1.92.07 4.27 4.27 0 003.98 2.96A8.54 8.54 0 012 19.54a12.07 12.07 0 006.56 1.92c7.88 0 12.2-6.53 12.2-12.2 0-.19 0-.38-.01-.57A8.72 8.72 0 0022.46 6z"
-                  />
-                </svg>
-              </a>
-              <a
-                href="#"
-                class="p-2 transition bg-gray-700 rounded-full hover:bg-sky-500"
-              >
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path
-                    d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8v-6.93H7.5V12H10V9.79c0-2.47 1.48-3.84 3.74-3.84 1.08 0 2.21.19 2.21.19v2.43h-1.25c-1.23 0-1.61.76-1.61 1.54V12h2.74l-.44 2.87H13.1V21.8c4.56-.93 8-4.96 8-9.8z"
-                  />
-                </svg>
-              </a>
-              <a
-                href="#"
-                class="p-2 transition bg-gray-700 rounded-full hover:bg-sky-500"
-              >
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path
-                    d="M21.6 0H2.4C1.08 0 0 1.08 0 2.4v19.2C0 22.92 1.08 24 2.4 24h10.34v-8.34H9.69v-3.26h3.05V9.41c0-3.02 1.84-4.67 4.53-4.67 1.29 0 2.4.1 2.72.14v3.15l-1.87.001c-1.47 0-1.76.7-1.76 1.73v2.27h3.52l-.46 3.26h-3.06V24h6c1.32 0 2.4-1.08 2.4-2.4V2.4C24 1.08 22.92 0 21.6 0"
-                  />
-                </svg>
-              </a>
+  <!-- Doctor Profile Section -->
+  <section id="about" class="relative py-20 overflow-hidden sm:py-24 lg:py-0 bg-secondary">
+    <div class=" relative z-10 px-4 mx-auto sm:px-6 lg:px-8 lg:pe-0 ">
+      <div class="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
+
+        <!-- Text Content -->
+        <div
+          class="order-2 space-y-6 text-center animate-fade-in-left lg:text-left lg:order-1 max-w-xl justify-self-end lg:py-20">
+
+          <!-- Title -->
+          <h2 class="text-3xl font-extrabold leading-tight text-black sm:text-4xl md:text-5xl">
+            <span class="block">Meet</span>
+            <span class="relative inline-block">
+              <span class="relative">
+                <span class="text-primary">Dr. Mai</span>
+                <span class="ml-2 text-black">El-Hakim</span>
+                <span
+                  class="absolute bottom-0 left-0 w-full h-1 bg-primary rounded-full animate-pulse-underline"></span>
+              </span>
+            </span>
+          </h2>
+
+          <!-- Subtitle -->
+          <h3 class="text-xl font-semibold text-primary sm:text-2xl lg:text-3xl">
+            Consultant Dermatologist & Aesthetic Specialist
+          </h3>
+
+          <!-- Description -->
+          <p class="max-w-2xl mx-auto text-base leading-relaxed text-black/80 sm:text-lg lg:mx-0">
+            With over <span class="font-semibold text-primary">15 years of expertise</span> in dermatology
+            and non-surgical aesthetics, Dr. Mai El-Hakim combines medical precision and
+            artistic vision to deliver advanced skincare and cosmetic treatments.
+            She helps patients achieve naturally radiant, youthful, and healthy skin
+            using the latest global techniques and technologies.
+          </p>
+
+          <!-- CTA Button -->
+          <div class="pt-4">
+            <a href="ContactUs.html"
+              class="inline-block px-6 py-3 text-sm font-semibold text-white transition-all duration-300 rounded-full shadow-lg sm:text-base bg-primary hover:bg-black">
+              Learn More
+            </a>
+          </div>
+        </div>
+
+        <!-- Image -->
+        <div class="order-1 lg:order-2">
+          <div class="relative w-full">
+            <!-- Glow Background -->
+            <div class="absolute inset-0 rounded-2xl bg-primary/10 blur-xl"></div>
+
+            <div class="relative w-full h-72 sm:h-96 lg:h-screen  overflow-hidden ">
+              <img src="images/Mai-El-Hakim.jpg" alt="Dr. Mai El-Hakim"
+                class="object-cover object-center w-full h-full" />
             </div>
           </div>
-
-          <!-- Contact -->
-          <div>
-            <h3 class="mb-4 text-lg font-semibold text-sky-400">Contact</h3>
-            <ul class="space-y-2 text-gray-300">
-              <li>NewDerma Clinics, Al Madinah Al Munawwarah, Saudi Arabia</li>
-              <li>Email: example@gmail.com</li>
-              <li>Phone: +966 56 463 7050</li>
-            </ul>
-          </div>
-
-          <!-- Links -->
-          <div>
-            <h3 class="mb-4 text-lg font-semibold text-sky-400">Links</h3>
-            <ul class="space-y-2">
-              <li>
-                <a href="#" class="transition hover:text-sky-400">Homepage</a>
-              </li>
-              <li>
-                <a href="#" class="transition hover:text-sky-400">About Us</a>
-              </li>
-              <li>
-                <a href="#" class="transition hover:text-sky-400">Help</a>
-              </li>
-              <li>
-                <a href="#" class="transition hover:text-sky-400">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Info -->
-          <div>
-            <h3 class="mb-4 text-lg font-semibold text-sky-400">Information</h3>
-            <ul class="space-y-2">
-              <li><a href="#" class="transition hover:text-sky-400">FAQ</a></li>
-              <li>
-                <a href="#" class="transition hover:text-sky-400"
-                  >Terms & Conditions</a
-                >
-              </li>
-              <li>
-                <a href="#" class="transition hover:text-sky-400"
-                  >Privacy Policy</a
-                >
-              </li>
-            </ul>
-          </div>
         </div>
 
-        <!-- Divider -->
-        <div
-          class="pt-6 pb-8 text-sm text-center text-gray-400 border-t border-gray-700"
-        >
-          &copy; 2025 Dr. Mai El-Hakim. All rights reserved.
+      </div>
+    </div>
+  </section>
+
+  <!-- Qualifications Section -->
+  <section class="py-24 bg-gradient-to-br from-base to-secondary">
+    <div class="container px-6 mx-auto max-w-7xl">
+      <div class="mb-16 text-center">
+        <h2 class="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">
+          Education & Qualifications
+        </h2>
+        <p class="max-w-2xl mx-auto text-lg text-gray-600">
+          Dr. Mai's extensive education and continuous professional
+          development ensure the highest standard of care
+        </p>
+      </div>
+
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Education Cards -->
+        <div class="p-8 bg-white shadow-lg rounded-2xl">
+          <div class="flex items-center mb-4">
+            <div class="flex items-center justify-center w-20 aspect-square mr-4 rounded-full bg-secondary">
+              <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72L5.18 9L12 5.28L18.82 9zM17 15.99l-5 2.73l-5-2.73v-3.72L12 15l5-2.73v3.72z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900">
+              Dermatology & Aesthetic Medicine Degree
+            </h3>
+          </div>
+          <p class="text-gray-600">
+            Master of Dermatology & Aesthetic Medicine, King Saud University –
+            College of Medicine, Riyadh, Saudi Arabia
+          </p>
+        </div>
+
+        <div class="p-8 bg-white shadow-lg rounded-2xl">
+          <div class="flex items-center mb-4">
+            <div class="flex items-center justify-center w-12 aspect-square mr-4 rounded-full bg-secondary">
+              <svg class="w-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M9.5 14C8.11929 14 7 12.8807 7 11.5C7 10.1193 8.11929 9 9.5 9C10.8807 9 12 10.1193 12 11.5C12 12.8807 10.8807 14 9.5 14Z" />
+                <path
+                  d="M14.5 14C13.1193 14 12 12.8807 12 11.5C12 10.1193 13.1193 9 14.5 9C15.8807 9 17 10.1193 17 11.5C17 12.8807 15.8807 14 14.5 14Z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900">Specialization</h3>
+          </div>
+          <p class="text-gray-600">
+            Advanced Certification in Dermatology & Aesthetic Medicine
+          </p>
+        </div>
+
+        <div class="p-8 bg-white shadow-lg rounded-2xl">
+          <div class="flex items-center mb-4">
+            <div class="flex items-center justify-center w-12 aspect-square mr-4 rounded-full bg-secondary">
+              <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 3.5V7.5L11 6L7 7.5L3 5.5V7.5L7 9.5V15L11 13.5V19L12 20.5L13 19V13.5L17 15V9.5L21 9Z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900">Memberships</h3>
+          </div>
+          <ul class="space-y-1 text-gray-600 list-disc list-inside">
+            <li>
+              -Member of the Afro-Asian Society for Dermatology and Laser
+              (ASDDL)
+            </li>
+            <li>
+              -Member of the European Society for Cosmetic and Laser
+              Dermatology (ESCAD)
+            </li>
+          </ul>
         </div>
       </div>
-    </footer>
+    </div>
+  </section>
 
-    <!-- ✅ Back to Top Button -->
-    <button
-      id="back-to-top"
-      class="fixed z-50 p-3 text-white transition-all duration-300 transform rounded-full shadow-lg opacity-0 pointer-events-none bottom-6 right-6 bg-sky-600 hover:bg-sky-700 hover:scale-110"
-      aria-label="Back to top"
-    >
-      <svg
-        class="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M5 10l7-7m0 0l7 7m-7-7v18"
-        />
-      </svg>
-    </button>
-    <script src="index.js"></script>
-  </body>
+  <!-- Experience & Philosophy Section -->
+  <section class="py-24 bg-base">
+    <div class="container px-6 mx-auto max-w-7xl">
+      <div class="grid gap-16 lg:grid-cols-2">
+        <!-- Experience -->
+        <div class="space-y-6">
+          <h2 class="text-3xl font-bold text-gray-900 md:text-4xl">
+            15+ Years of Excellence
+          </h2>
+          <div class="space-y-4">
+            <div class="flex items-start space-x-4">
+              <div class="flex items-center justify-center flex-shrink-0 w-8 h-8 mt-1 rounded-full bg-secondary">
+                <span class="text-sm font-bold text-primary">1</span>
+              </div>
+              <div>
+                <h3 class="mb-2 text-lg font-semibold text-gray-900">
+                  Advanced Treatment Techniques
+                </h3>
+                <p class="text-gray-600">
+                  Expertise in the latest dermatology and aesthetic
+                  technologies, offering advanced, minimally invasive
+                  treatments for optimal skin health, beauty, and patient
+                  comfort.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+              <div class="flex items-center justify-center flex-shrink-0 w-8 h-8 mt-1 rounded-full bg-secondary">
+                <span class="text-sm font-bold text-primary">2</span>
+              </div>
+              <div>
+                <h3 class="mb-2 text-lg font-semibold text-gray-900">
+                  Comprehensive Care
+                </h3>
+                <p class="text-gray-600">
+                  From advanced skin treatments to aesthetic enhancements,
+                  providing comprehensive dermatology and cosmetic solutions
+                  under one roof.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+              <div class="flex items-center justify-center flex-shrink-0 w-8 h-8 mt-1 rounded-full bg-secondary">
+                <span class="text-sm font-bold text-primary">3</span>
+              </div>
+              <div>
+                <h3 class="mb-2 text-lg font-semibold text-gray-900">
+                  Patient-Centered Approach
+                </h3>
+                <p class="text-gray-600">
+                  Every treatment plan is customized to meet individual
+                  patient needs and lifestyle requirements.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Philosophy -->
+        <div class="space-y-6">
+          <h2 class="text-3xl font-bold text-gray-900 md:text-4xl">
+            Our Philosophy
+          </h2>
+          <div class="p-6 border-l-4 border-primary bg-ternary/30">
+            <blockquote class="text-lg italic text-gray-700">
+              "I believe every patient deserves personalized, compassionate
+              care that focuses not only on their immediate skin concerns but
+              also on their long-term skin health and beauty goals. My mission
+              is to create a comfortable, welcoming environment where patients
+              feel confident, informed, and empowered in every treatment
+              decision."
+            </blockquote>
+            <cite class="block mt-4 text-sm font-semibold text-primary">- Dr. Mai El-Hakim</cite>
+          </div>
+
+          <div class="space-y-4">
+            <h3 class="text-xl font-semibold text-gray-900">Core Values</h3>
+            <ul class="space-y-2">
+              <li class="flex items-center">
+                <svg class="w-5 h-5 mr-3 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span class="text-gray-700">Excellence in clinical care</span>
+              </li>
+              <li class="flex items-center">
+                <svg class="w-5 h-5 mr-3 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span class="text-gray-700">Compassionate patient care</span>
+              </li>
+              <li class="flex items-center">
+                <svg class="w-5 h-5 mr-3 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span class="text-gray-700">Continuous learning and innovation</span>
+              </li>
+              <li class="flex items-center">
+                <svg class="w-5 h-5 mr-3 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span class="text-gray-700">Ethical practice standards</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-24 bg-gradient-to-br from-secondary to-base">
+    <div class="container max-w-4xl px-6 mx-auto text-center">
+      <h2 class="mb-6 text-3xl font-bold text-primary md:text-4xl">
+        Ready to Start Your Journey to Healthy, Radiant Skin?
+      </h2>
+      <p class="mb-8 text-lg text-primary md:text-xl">
+        Schedule your consultation today and discover how Dr. Mai El-Hakim can
+        help you achieve the healthy, radiant skin and natural beauty you
+        deserve.
+      </p>
+      <div class="flex flex-col gap-4 sm:flex-row sm:justify-center">
+        <a href="Booking.html"
+          class="px-8 py-4 text-lg font-semibold transition-colors duration-300 bg-primary rounded-lg text-white hover:bg-primary/80">
+          Book Appointment
+        </a>
+        <a href="ContactUs.html"
+          class="px-8 py-4 text-lg font-semibold text-primary transition-colors duration-300 border-2 border-primary rounded-lg hover:bg-white hover:text-primary">
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ Footer -->
+  <footer class="relative text-white bg-[#1e0909]">
+    <div class="container px-6 mx-auto max-w-7xl">
+      <!-- Grid -->
+      <div class="grid gap-10 py-16 md:grid-cols-4">
+        <!-- Brand -->
+        <div>
+          <h3 class="mb-4 text-2xl font-extrabold tracking-wide">
+            <span class="text-secondary">Dr. Mai El-Hakim</span>
+          </h3>
+          <p class="mb-6 text-gray-300">
+            Creating radiant skin and timeless beauty with advanced
+            dermatology and a personal touch.
+          </p>
+          <!-- Socials -->
+          <div class="flex space-x-4">
+            <a href="#" class="p-2 transition bg-gray-700 rounded-full hover:bg-primary">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M22.46 6c-.77.35-1.6.58-2.46.69a4.27 4.27 0 001.88-2.37 8.57 8.57 0 01-2.71 1.04 4.26 4.26 0 00-7.3 3.89 12.1 12.1 0 01-8.78-4.45 4.26 4.26 0 001.32 5.68 4.24 4.24 0 01-1.93-.53v.05a4.27 4.27 0 003.42 4.18 4.26 4.26 0 01-1.92.07 4.27 4.27 0 003.98 2.96A8.54 8.54 0 012 19.54a12.07 12.07 0 006.56 1.92c7.88 0 12.2-6.53 12.2-12.2 0-.19 0-.38-.01-.57A8.72 8.72 0 0022.46 6z" />
+              </svg>
+            </a>
+            <a href="#" class="p-2 transition bg-gray-700 rounded-full hover:bg-primary">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8v-6.93H7.5V12H10V9.79c0-2.47 1.48-3.84 3.74-3.84 1.08 0 2.21.19 2.21.19v2.43h-1.25c-1.23 0-1.61.76-1.61 1.54V12h2.74l-.44 2.87H13.1V21.8c4.56-.93 8-4.96 8-9.8z" />
+              </svg>
+            </a>
+            <a href="#" class="p-2 transition bg-gray-700 rounded-full hover:bg-primary">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M21.6 0H2.4C1.08 0 0 1.08 0 2.4v19.2C0 22.92 1.08 24 2.4 24h10.34v-8.34H9.69v-3.26h3.05V9.41c0-3.02 1.84-4.67 4.53-4.67 1.29 0 2.4.1 2.72.14v3.15l-1.87.001c-1.47 0-1.76.7-1.76 1.73v2.27h3.52l-.46 3.26h-3.06V24h6c1.32 0 2.4-1.08 2.4-2.4V2.4C24 1.08 22.92 0 21.6 0" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h3 class="mb-4 text-lg font-semibold text-secondary">Contact</h3>
+          <ul class="space-y-2 text-gray-300">
+            <li>NewDerma Clinics, Al Madinah Al Munawwarah, Saudi Arabia</li>
+            <li>Email: example@gmail.com</li>
+            <li>Phone: +966 56 463 7050</li>
+          </ul>
+        </div>
+
+        <!-- Links -->
+        <div>
+          <h3 class="mb-4 text-lg font-semibold text-secondary">Links</h3>
+          <ul class="space-y-2">
+            <li>
+              <a href="#" class="transition hover:text-secondary">Homepage</a>
+            </li>
+            <li>
+              <a href="#" class="transition hover:text-secondary">About Us</a>
+            </li>
+            <li>
+              <a href="#" class="transition hover:text-secondary">Help</a>
+            </li>
+            <li>
+              <a href="#" class="transition hover:text-secondary">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Info -->
+        <div>
+          <h3 class="mb-4 text-lg font-semibold text-secondary">Information</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="transition hover:text-secondary">FAQ</a></li>
+            <li>
+              <a href="#" class="transition hover:text-secondary">Terms & Conditions</a>
+            </li>
+            <li>
+              <a href="#" class="transition hover:text-secondary">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="pt-6 pb-8 text-sm text-center text-gray-400 border-t border-gray-700">
+        &copy; 2025 Dr. Mai El-Hakim. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ✅ Back to Top Button -->
+  <button id="back-to-top"
+    class="fixed z-50 p-3 text-white transition-all duration-300 transform rounded-full shadow-lg opacity-0 pointer-events-none bottom-6 right-6 bg-primary hover:bg-sky-700 hover:scale-110"
+    aria-label="Back to top">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+    </svg>
+  </button>
+  <script src="index.js"></script>
+</body>
+
 </html>
