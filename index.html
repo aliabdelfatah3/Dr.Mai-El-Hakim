@@ -366,12 +366,11 @@
     </div>
   </section>
 
-
   <!-- Services Section -->
   <section class="relative py-20 overflow-hidden bg-base">
     <!-- Decorative Circles -->
-    <div class="absolute border-2 border-secondary rounded-full top-20 left-20 w-80 h-80 opacity-20"></div>
-    <div class="absolute border-2 border-secondary rounded-full bottom-20 right-20 w-60 h-60 opacity-15"></div>
+    <div class="absolute border-2 border-secondary rounded-full top-20 left-20 w-80 h-80 opacity-50"></div>
+    <div class="absolute border-2 border-secondary rounded-full bottom-20 right-20 w-60 h-60 opacity-55"></div>
 
     <div class="container relative z-10 px-6 mx-auto max-w-7xl">
       <!-- Section Header -->
@@ -390,7 +389,7 @@
         <div class="swiper-wrapper">
           <!-- ===== Slide 1 ===== -->
           <div class="swiper-slide">
-            <div class="relative">
+            <div class="relative overflow-hidden rounded-t-3xl">
               <img src="https://sirpi.wpengine.com/wp-content/uploads/2023/05/Compre1-3.webp" alt="">
             </div>
             <div class="p-2 flex justify-between items-center gap-3">
@@ -408,7 +407,7 @@
 
           <!-- ===== Slide 2 ===== -->
           <div class="swiper-slide">
-            <div class="relative">
+            <div class="relative overflow-hidden rounded-t-3xl">
               <img src="https://sirpi.wpengine.com/wp-content/uploads/2023/05/Compre1-3.webp" alt="">
             </div>
             <div class="p-2 flex justify-between items-center gap-3">
@@ -425,7 +424,7 @@
           </div>
           <!-- ===== Slide 3 ===== -->
           <div class="swiper-slide">
-            <div class="relative">
+            <div class="relative overflow-hidden rounded-t-3xl">
               <img src="https://sirpi.wpengine.com/wp-content/uploads/2023/05/Compre1-3.webp" alt="">
             </div>
             <div class="p-2 flex justify-between items-center gap-3">
@@ -442,7 +441,7 @@
           </div>
           <!-- ===== Slide 4 ===== -->
           <div class="swiper-slide">
-            <div class="relative">
+            <div class="relative overflow-hidden rounded-t-3xl">
               <img src="https://sirpi.wpengine.com/wp-content/uploads/2023/05/Compre1-3.webp" alt="">
             </div>
             <div class="p-2 flex justify-between items-center gap-3">
@@ -590,8 +589,10 @@
     <div class="absolute border-2 border-purple-200 rounded-full bottom-20 left-20 w-60 h-60 opacity-15"></div>
   </section>
 
-  <!-- 🌟 Redesigned Videos Section with Brand Colors -->
+  <!-- 🌟 Videos Section with Brand Colors -->
   <section class="relative py-20 bg-base overflow-hidden">
+    <div class="absolute border border-primary rounded-full top-1/4 right-20 w-80 h-80 opacity-10"></div>
+    <div class="absolute border border-primary rounded-full bottom-5 left-20 w-80 h-80 opacity-15"></div>
     <!-- Decorative Blobs -->
     <div class="absolute top-10 -left-20 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
     <div class="absolute bottom-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
@@ -612,107 +613,54 @@
       </div>
 
       <!-- Videos Grid -->
-      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
         <!-- Video Card -->
         <div
           class="group relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-white border border-secondary">
           <div class="relative aspect-video">
             <!-- Iframe -->
-            <iframe class="w-full h-full object-cover" src="https://www.youtube.com/embed/ysz5S6PUM-U"
-              title="Botox Injection Procedure" frameborder="0"
+            <iframe class="w-full h-full object-cover" src="https://www.youtube.com/embed/ScMzIvxBSi4"
+              title="Laser Hair Removal Process" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
-            <!-- Overlay -->
-            <div
-              class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300">
-              <div
-                class="flex items-center justify-center w-16 h-16 bg-white rounded-full shadow-lg transform transition-transform duration-300 group-hover:scale-110 relative">
-                <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-                <span class="absolute inline-flex w-full h-full rounded-full bg-primary opacity-30 animate-ping"></span>
-              </div>
-            </div>
           </div>
           <!-- Content -->
-          <div class="p-6">
+          <div class="transition-all p-6">
+            <h3 class="mb-2 text-lg font-bold text-primary">Botox Injection Procedure</h3>
+            <p class="text-sm text-gray-600">Step-by-step guide to our advanced botox treatment.</p>
+          </div>
+        </div>
+        <div
+          class="group relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-white border border-secondary">
+          <div class="relative aspect-video">
+            <!-- Iframe -->
+            <iframe class="w-full h-full object-cover" src="https://www.youtube.com/embed/ScMzIvxBSi4"
+              title="Laser Hair Removal Process" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <!-- Content -->
+          <div class="transition-all p-6">
+            <h3 class="mb-2 text-lg font-bold text-primary">Botox Injection Procedure</h3>
+            <p class="text-sm text-gray-600">Step-by-step guide to our advanced botox treatment.</p>
+          </div>
+        </div>
+        <div
+          class="group relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-white border border-secondary">
+          <div class="relative aspect-video">
+            <!-- Iframe -->
+            <iframe class="w-full h-full object-cover" src="https://www.youtube.com/embed/ScMzIvxBSi4"
+              title="Laser Hair Removal Process" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <!-- Content -->
+          <div class="transition-all p-6">
             <h3 class="mb-2 text-lg font-bold text-primary">Botox Injection Procedure</h3>
             <p class="text-sm text-gray-600">Step-by-step guide to our advanced botox treatment.</p>
           </div>
         </div>
 
-        <!-- Repeat for other videos -->
-        <div
-          class="group relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-white border border-secondary">
-          <div class="relative aspect-video">
-            <iframe class="w-full h-full object-cover" src="https://www.youtube.com/embed/ScMzIvxBSi4"
-              title="Laser Hair Removal Process" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-            <div
-              class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300">
-              <div
-                class="flex items-center justify-center w-16 h-16 bg-white rounded-full shadow-lg transform transition-transform duration-300 group-hover:scale-110 relative">
-                <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-                <span class="absolute inline-flex w-full h-full rounded-full bg-primary opacity-30 animate-ping"></span>
-              </div>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="mb-2 text-lg font-bold text-primary">Laser Hair Removal Process</h3>
-            <p class="text-sm text-gray-600">See how our laser technology works effectively.</p>
-          </div>
-        </div>
-
-        <div
-          class="group relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-white border border-secondary">
-          <div class="relative aspect-video">
-            <iframe class="w-full h-full object-cover" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-              title="Skin Rejuvenation Journey" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-            <div
-              class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300">
-              <div
-                class="flex items-center justify-center w-16 h-16 bg-white rounded-full shadow-lg transform transition-transform duration-300 group-hover:scale-110 relative">
-                <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-                <span class="absolute inline-flex w-full h-full rounded-full bg-primary opacity-30 animate-ping"></span>
-              </div>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="mb-2 text-lg font-bold text-primary">Skin Rejuvenation Journey</h3>
-            <p class="text-sm text-gray-600">A complete skin transformation story.</p>
-          </div>
-        </div>
-
-        <div
-          class="group relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-white border border-secondary">
-          <div class="relative aspect-video">
-            <iframe class="w-full h-full object-cover" src="https://www.youtube.com/embed/jNQXAC9IVRw"
-              title="Acne Treatment Process" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-            <div
-              class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300">
-              <div
-                class="flex items-center justify-center w-16 h-16 bg-white rounded-full shadow-lg transform transition-transform duration-300 group-hover:scale-110 relative">
-                <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-                <span class="absolute inline-flex w-full h-full rounded-full bg-primary opacity-30 animate-ping"></span>
-              </div>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="mb-2 text-lg font-bold text-primary">Acne Treatment Process</h3>
-            <p class="text-sm text-gray-600">See our effective acne treatment methods.</p>
-          </div>
-        </div>
       </div>
 
       <!-- CTA Button -->
@@ -725,7 +673,7 @@
     </div>
   </section>
 
-  <!-- 🌿 Premium Clinic Gallery -->
+  <!-- 🌿 Clinic Gallery -->
   <section class="relative py-20 bg-secondary overflow-hidden">
     <div class="container relative z-10 px-6 mx-auto max-w-7xl">
       <!-- Header -->
@@ -804,6 +752,8 @@
 
   <!-- ✅ Blogs Section -->
   <section class="relative py-20 overflow-hidden bg-base">
+    <div class="absolute border border-primary rounded-full top-1/4 right-20 w-80 h-80 opacity-10"></div>
+    <div class="absolute border border-primary rounded-full bottom-5 left-20 w-80 h-80 opacity-15"></div>
     <div class="container relative z-10 px-6 mx-auto max-w-7xl">
       <!-- Section Header -->
       <div class="mb-16 text-center">
@@ -817,7 +767,7 @@
       </div>
 
       <!-- Blogs Section -->
-      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <!-- Blog Card 1 -->
         <article
           class="relative overflow-hidden transition-all duration-500 bg-white shadow-lg cursor-pointer blog-card group rounded-2xl hover:shadow-xl hover:-translate-y-2">
@@ -956,51 +906,7 @@
           </div>
         </article>
 
-        <!-- Blog Card 4 -->
-        <article
-          class="relative overflow-hidden transition-all duration-500 bg-white shadow-lg cursor-pointer blog-card group rounded-2xl hover:shadow-xl hover:-translate-y-2">
-          <div class="relative h-48">
-            <img
-              src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-              alt="anti-aging skincare image" class="object-cover w-full h-full" />
-            <div class="absolute px-3 py-1 text-xs font-bold bg-white rounded-full text-primary top-3 right-3">
-              Anti-Aging
-            </div>
-          </div>
 
-          <div class="blog-card-content">
-            <div class="blog-card-main">
-              <div class="flex items-center mb-3 space-x-2 text-xs text-gray-500">
-                <span>Dec 5, 2024</span>
-                <span>•</span>
-                <span>7 min read</span>
-              </div>
-
-              <h3 class="mb-3 text-lg font-bold leading-tight text-gray-900 transition-colors group-hover:text-primary">
-                Best Anti-Aging Ingredients for Youthful Skin
-              </h3>
-
-              <p class="mb-4 text-sm leading-relaxed text-gray-600">
-                Learn about powerful anti-aging ingredients like retinol,
-                hyaluronic acid, and peptides that can help maintain your
-                skin's youthful appearance.
-              </p>
-            </div>
-
-            <div class="blog-card-footer">
-              <a href="#" class="inline-flex items-center text-sm font-semibold text-primary hover:text-ternary group">
-                <span>Read More</span>
-                <svg class="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none"
-                  stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                </svg>
-              </a>
-              <div class="flex space-x-1">
-                <span class="px-2 py-1 text-xs rounded-full text-primary bg-ternary">Ingredients</span>
-              </div>
-            </div>
-          </div>
-        </article>
       </div>
 
       <!-- Browse All Blogs CTA -->
@@ -1272,24 +1178,23 @@
   </section>
 
   <!-- ✅ Creative Booking Form Section -->
-  <section class="relative py-20 bg-center bg-transparent backdrop-blur-sm">
+  <section class="relative py-20 bg-center bg-transparent flex flex-col justify-end">
+    <div class="mb-12 text-center">
+      <h1 class="mb-4 text-3xl font-bold text-primary md:text-4xl lg:text-5xl">
+        Book Your Appointment
+      </h1>
+      <p class="max-w-2xl mx-auto text-base text-primary md:text-lg">
+        Schedule your visit with Dr. Mai El-Hakim and take the first step
+        towards your perfect smile.
+      </p>
+    </div>
     <!-- Overlay -->
+    <div class="relative z-10 flex items-center container justify-end">
 
-    <div class="container relative z-10 max-w-4xl px-6 mx-auto">
-      <!-- ✅ Title -->
-      <div class="mb-12 text-center">
-        <h1 class="mb-4 text-3xl font-bold text-primary md:text-4xl lg:text-5xl">
-          Book Your Appointment
-        </h1>
-        <p class="max-w-2xl mx-auto text-base text-primary md:text-lg">
-          Schedule your visit with Dr. Mai El-Hakim and take the first step
-          towards your perfect smile.
-        </p>
-      </div>
 
       <!-- ✅ Booking Form -->
       <div
-        class="max-w-3xl p-6 mx-auto transition-all duration-500 transform border shadow-2xl md:p-8 bg-white/90 backdrop-blur-sm rounded-3xl border-white/20 hover:shadow-xl hover:-translate-y-2">
+        class=" p-6  transition-all duration-500 transform border shadow-2xl md:p-8 bg-transparent backdrop-blur-sm rounded-3xl border-white/20 hover:shadow-xl hover:-translate-y-2">
         <form class="grid gap-6 md:grid-cols-2">
           <!-- Name -->
           <div class="relative group md:col-span-1">
@@ -1358,7 +1263,7 @@
           <!-- Submit -->
           <div class="pt-4 text-center md:col-span-2">
             <button type="submit"
-              class="w-full px-6 py-3 font-semibold text-white transition-colors duration-300 border border-gray-400 rounded-lg shadow-lg bg-pritext-primary hover:bg-ternary hover:shadow-xl hover:-translate-y-1">
+              class="w-full px-6 py-3 font-semibold text-white transition-colors duration-300 border border-gray-400 rounded-lg shadow-lg bg-primary text-primary hover:bg-ternary hover:shadow-xl hover:-translate-y-1">
               Submit Booking
             </button>
           </div>
